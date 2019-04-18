@@ -1,0 +1,42 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/aes.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/cmac.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/soft-se.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/Region.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/queue.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/systime.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/timeServer.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/trace.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/middlewares.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
