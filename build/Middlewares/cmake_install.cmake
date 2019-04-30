@@ -32,3 +32,9 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares/Third_Party/LoRaWAN/Utilities/cmake_install.cmake")
+
+endif()
+

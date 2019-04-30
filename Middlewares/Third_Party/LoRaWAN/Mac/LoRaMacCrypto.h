@@ -45,7 +45,7 @@
 #include "LoRaMacMessageTypes.h"
 
 /*!
- * LoRaMac Cryto Status
+ * LoRaMac Crypto Status
  */
 typedef enum eLoRaMacCryptoStatus
 {

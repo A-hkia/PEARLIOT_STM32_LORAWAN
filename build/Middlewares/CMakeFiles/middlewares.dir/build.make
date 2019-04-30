@@ -57,81 +57,9 @@ include Middlewares/CMakeFiles/middlewares.dir/progress.make
 # Include the compile flags for this target's objects.
 include Middlewares/CMakeFiles/middlewares.dir/flags.make
 
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj: ../Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.i"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.i
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.s"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.s
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.requires:
-
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.requires
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.requires
-	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.provides.build
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.provides
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj
-
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj: ../Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.i"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.i
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.s"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.s
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.requires:
-
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.requires
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.requires
-	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.provides.build
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.provides
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj
-
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj: ../Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.i"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.i
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.s"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.s
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.requires:
-
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.requires
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.requires
-	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.provides.build
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.provides
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj
-
-
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj: ../Middlewares/Third_Party/LoRaWAN/Core/lora-test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Core/lora-test.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.i: cmake_force
@@ -155,7 +83,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj.
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj: ../Middlewares/Third_Party/LoRaWAN/Core/lora.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Core/lora.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.i: cmake_force
@@ -175,6 +103,78 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj.provi
 .PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj.provides
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj
+
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj: ../Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.i"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.i
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.s"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.s
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.requires:
+
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.requires
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.requires
+	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.provides.build
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.provides
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj
+
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj: ../Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.i"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.i
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.s"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.s
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.requires:
+
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.requires
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.requires
+	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.provides.build
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.provides
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj
+
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj: ../Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.i"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.i
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.s"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.s
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.requires:
+
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.requires
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.requires
+	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.provides.build
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.provides
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj
 
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/aes.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
@@ -897,11 +897,11 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj
 
 
+middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj
+middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj
-middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj
-middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/aes.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/cmac.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/soft-se.c.obj
@@ -941,11 +941,11 @@ Middlewares/CMakeFiles/middlewares.dir/build: middlewares
 
 .PHONY : Middlewares/CMakeFiles/middlewares.dir/build
 
+Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj.requires
+Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj.requires
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj.requires
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj.requires
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj.requires
-Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj.requires
-Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj.requires
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/aes.c.obj.requires
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/cmac.c.obj.requires
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/soft-se.c.obj.requires

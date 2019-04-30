@@ -34,10 +34,14 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/B-L072Z-LRWAN1/cmake_install.cmake")
-  include("/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/CMWX1ZZABZ-0xx/cmake_install.cmake")
   include("/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/Components/cmake_install.cmake")
-  include("/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/X_NUCLEO_IKS01A1/cmake_install.cmake")
+  include("/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/I_NUCLEO_LRWAN1/cmake_install.cmake")
+  include("/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/CMWX1ZZABZ-0xx/cmake_install.cmake")
+  include("/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/B-L072Z-LRWAN1/cmake_install.cmake")
+  include("/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/LRWAN_NS1/cmake_install.cmake")
+  include("/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/X_NUCLEO_IKS01A2/cmake_install.cmake")
+  include("/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/SX1276MB1LAS/cmake_install.cmake")
+  include("/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/SX1276MB1MAS/cmake_install.cmake")
 
 endif()
 

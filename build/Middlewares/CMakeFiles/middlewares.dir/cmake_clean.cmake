@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj"
+  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj"
   "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj"
   "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_rtc_template.c.obj"
   "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_spi_template.c.obj"
-  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj"
-  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj"
   "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/aes.c.obj"
   "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/cmac.c.obj"
   "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/soft-se.c.obj"

@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.hex.dir/rule:
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f CMakeFiles/Makefile2 Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.hex.dir/rule
+.PHONY : Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.hex.dir/rule
+
+# Convenience name for target.
+B-L072Z-LRWAN1-End_Node.hex: Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.hex.dir/rule
+
+.PHONY : B-L072Z-LRWAN1-End_Node.hex
+
+# fast build rule for target.
+B-L072Z-LRWAN1-End_Node.hex/fast:
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.hex.dir/build.make Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.hex.dir/build
+.PHONY : B-L072Z-LRWAN1-End_Node.hex/fast
+
+# Convenience name for target.
 Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/rule:
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f CMakeFiles/Makefile2 Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/rule
 .PHONY : Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/rule
@@ -124,6 +139,21 @@ B-L072Z-LRWAN1-End_Node: Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMak
 B-L072Z-LRWAN1-End_Node/fast:
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/build.make Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/build
 .PHONY : B-L072Z-LRWAN1-End_Node/fast
+
+# Convenience name for target.
+Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.bin.dir/rule:
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f CMakeFiles/Makefile2 Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.bin.dir/rule
+.PHONY : Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.bin.dir/rule
+
+# Convenience name for target.
+B-L072Z-LRWAN1-End_Node.bin: Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.bin.dir/rule
+
+.PHONY : B-L072Z-LRWAN1-End_Node.bin
+
+# fast build rule for target.
+B-L072Z-LRWAN1-End_Node.bin/fast:
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.bin.dir/build.make Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.bin.dir/build
+.PHONY : B-L072Z-LRWAN1-End_Node.bin/fast
 
 Core/src/mlm32l0xx_hal_msp.obj: Core/src/mlm32l0xx_hal_msp.c.obj
 
@@ -411,8 +441,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... B-L072Z-LRWAN1-End_Node"
+	@echo "... B-L072Z-LRWAN1-End_Node.hex"
 	@echo "... edit_cache"
+	@echo "... B-L072Z-LRWAN1-End_Node"
+	@echo "... B-L072Z-LRWAN1-End_Node.bin"
 	@echo "... Core/src/mlm32l0xx_hal_msp.obj"
 	@echo "... Core/src/mlm32l0xx_hal_msp.i"
 	@echo "... Core/src/mlm32l0xx_hal_msp.s"

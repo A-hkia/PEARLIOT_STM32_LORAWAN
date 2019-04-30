@@ -296,12 +296,10 @@ Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End
 Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/BSP/Components/hts221/HTS221_Driver_HL.h
 Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/BSP/Components/lps22hb/LPS22HB_Driver.h
 Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/BSP/Components/lps22hb/LPS22HB_Driver_HL.h
-Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/BSP/Components/lps25hb/LPS25HB_Driver.h
-Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/BSP/Components/lps25hb/LPS25HB_Driver_HL.h
-Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
-Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.h
-Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.h
-Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.h
+Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2.h
+Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_humidity.h
+Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_pressure.h
+Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A2/x_nucleo_iks01a2_temperature.h
 Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Include/cmsis_armcc.h
 Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Include/cmsis_armcc_V6.h
 Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/bsp.c.obj: ../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Include/cmsis_gcc.h

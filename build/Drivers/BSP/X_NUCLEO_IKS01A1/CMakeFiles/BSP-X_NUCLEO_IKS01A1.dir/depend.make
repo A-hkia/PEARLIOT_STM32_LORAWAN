@@ -83,7 +83,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
-Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
 
@@ -173,7 +173,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_accelero.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_accelero.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_accelero.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
-Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_accelero.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_accelero.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_accelero.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_accelero.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_accelero.c
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_accelero.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_accelero.h
@@ -264,7 +264,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_gyro.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_gyro.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_gyro.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
-Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_gyro.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_gyro.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_gyro.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_gyro.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_gyro.c
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_gyro.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_gyro.h
@@ -353,7 +353,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_humidity.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_humidity.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_humidity.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
-Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_humidity.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_humidity.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_humidity.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_humidity.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_humidity.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.h
@@ -442,7 +442,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_magneto.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_magneto.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_magneto.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
-Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_magneto.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_magneto.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_magneto.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_magneto.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_magneto.c
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_magneto.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_magneto.h
@@ -533,7 +533,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_pressure.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_pressure.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_pressure.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
-Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_pressure.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_pressure.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_pressure.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_pressure.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_pressure.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.h
@@ -626,7 +626,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_temperature.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_temperature.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_temperature.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
-Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_temperature.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_temperature.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_temperature.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_temperature.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_temperature.c.obj: ../Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.h

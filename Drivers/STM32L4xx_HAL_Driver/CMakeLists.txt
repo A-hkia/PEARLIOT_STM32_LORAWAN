@@ -13,6 +13,7 @@ add_library(${PROJECT_NAME} OBJECT EXCLUDE_FROM_ALL ${${PROJECT_NAME}_SOURCES})
 #Add all the header files
 target_include_directories( ${PROJECT_NAME} PUBLIC
      ${CMAKE_CURRENT_SOURCE_DIR/Inc}
+     $<TARGET_PROPERTY:${PROJECT}-${APPLICATION},INTERFACE_INCLUDE_DIRECTORIES>
 )
 
 #Specify the C standard whose features are requested to build this target

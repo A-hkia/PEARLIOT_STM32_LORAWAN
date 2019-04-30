@@ -42,10 +42,10 @@ BSP-CMWX1ZZABZ-0xx_BINARY_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeE
 BSP-CMWX1ZZABZ-0xx_SOURCE_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/CMWX1ZZABZ-0xx
 
 //Value Computed by CMake
-BSP-X_NUCLEO_IKS01A1_BINARY_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/X_NUCLEO_IKS01A1
+BSP-X_NUCLEO_IKS01A2_BINARY_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/X_NUCLEO_IKS01A2
 
 //Value Computed by CMake
-BSP-X_NUCLEO_IKS01A1_SOURCE_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1
+BSP-X_NUCLEO_IKS01A2_SOURCE_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A2
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar
@@ -216,16 +216,28 @@ Components_BINARY_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion
 //Value Computed by CMake
 Components_SOURCE_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/Components
 
+//Value Computed by CMake
+I_NUCLEO_LRWAN1_BINARY_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/I_NUCLEO_LRWAN1
+
+//Value Computed by CMake
+I_NUCLEO_LRWAN1_SOURCE_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/I_NUCLEO_LRWAN1
+
+//Value Computed by CMake
+LRWAN_NS1_BINARY_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/LRWAN_NS1
+
+//Value Computed by CMake
+LRWAN_NS1_SOURCE_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/LRWAN_NS1
+
 //Default Project is B-L072Z-LRWAN1
 PROJECT:STRING=B-L072Z-LRWAN1
 
 //Default Radio Module is sx1276
 RADIO:STRING=sx1276
 
-//Default Sensor Board is X_NUCLEO_IKS01A1
-SENSOR_BOARD:STRING=X_NUCLEO_IKS01A1
+//Default Sensor Board is X_NUCLEO_IKS01A2
+SENSOR_BOARD:STRING=X_NUCLEO_IKS01A2
 
-//Default Serie is STM32L0xx
+//Serie chosen is STM32L0xx
 SERIES:STRING=STM32L0xx
 
 //Value Computed by CMake
@@ -234,8 +246,26 @@ STM32L0xx_HAL_Driver_BINARY_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32Cub
 //Value Computed by CMake
 STM32L0xx_HAL_Driver_SOURCE_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/STM32L0xx_HAL_Driver
 
+//Value Computed by CMake
+SX1276MB1LAS_BINARY_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/SX1276MB1LAS
+
+//Value Computed by CMake
+SX1276MB1LAS_SOURCE_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/SX1276MB1LAS
+
+//Value Computed by CMake
+SX1276MB1MAS_BINARY_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/SX1276MB1MAS
+
+//Value Computed by CMake
+SX1276MB1MAS_SOURCE_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/SX1276MB1MAS
+
 //No help, variable specified on the command line.
 TOOLCHAIN_PREFIX:UNINITIALIZED=/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/
+
+//Value Computed by CMake
+Utilities_BINARY_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares/Third_Party/LoRaWAN/Utilities
+
+//Value Computed by CMake
+Utilities_SOURCE_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Utilities
 
 //Value Computed by CMake
 drivers_BINARY_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers
@@ -279,7 +309,7 @@ sx1276_SOURCE_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRW
 ########################
 
 //STRINGS property for variable: APPLICATION
-APPLICATION-STRINGS:INTERNAL=AT_Slave;AT_Master;End_Node;PingPong
+APPLICATION-STRINGS:INTERNAL=AT;End_Node;PingPong
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //ASM Compiler
@@ -292,7 +322,7 @@ CMAKE_ASM_COMPILER_WORKS:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ASM_FLAGS
 CMAKE_ASM_FLAGS-ADVANCED:INTERNAL=1
 //ASM Compiler options
-CMAKE_ASM_FLAGS:INTERNAL='-Og -g -mthumb -g2 -fno-builtin -mcpu=cortex-m0plus -Wall -Wextra -pedantic -Wno-unused-parameter -DUSE_HAL_DRIVER -DSTM32L072xx  -DUSE_B_L072Z_LRWAN1 -DREGION_EU868 -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize -x assembler-with-cpp '
+CMAKE_ASM_FLAGS:INTERNAL='-Og -g -mthumb -g2 -fno-builtin -mcpu=cortex-m0plus -Wall -Wextra -pedantic -DUSE_LRWAN_NS1 -Wno-unused-parameter -DUSE_BAND_868 -DUSE_MODEM_LORA -DUSE_MDM32L07X01 -DUSE_HAL_DRIVER -DSTM32L072xx -DDEBUG -DLOW_POWER_DISABLE -DUSE_B_L072Z_LRWAN1 -DREGION_EU868 -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize -x assembler-with-cpp '
 //ADVANCED property for variable: CMAKE_ASM_FLAGS_DEBUG
 CMAKE_ASM_FLAGS_DEBUG-ADVANCED:INTERNAL=1
 //ASM Compiler options for debug build type
@@ -330,7 +360,7 @@ CMAKE_CXX_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
 CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
 //C++ Compiler options
-CMAKE_CXX_FLAGS:INTERNAL='-Og -g -mthumb -g2 -fno-builtin -mcpu=cortex-m0plus -Wall -Wextra -pedantic -Wno-unused-parameter -DUSE_HAL_DRIVER -DSTM32L072xx  -DUSE_B_L072Z_LRWAN1 -DREGION_EU868 -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize -std=c++11 '
+CMAKE_CXX_FLAGS:INTERNAL='-Og -g -mthumb -g2 -fno-builtin -mcpu=cortex-m0plus -Wall -Wextra -pedantic -DUSE_LRWAN_NS1 -Wno-unused-parameter -DUSE_BAND_868 -DUSE_MODEM_LORA -DUSE_MDM32L07X01 -DUSE_HAL_DRIVER -DSTM32L072xx -DDEBUG -DLOW_POWER_DISABLE -DUSE_B_L072Z_LRWAN1 -DREGION_EU868 -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize -std=c++11 '
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
 CMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL=1
 //C++ Compiler options for debug build type
@@ -352,7 +382,7 @@ CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
 //C Compiler options
-CMAKE_C_FLAGS:INTERNAL='-Og -g -mthumb -g2 -fno-builtin -mcpu=cortex-m0plus -Wall -Wextra -pedantic -Wno-unused-parameter -DUSE_HAL_DRIVER -DSTM32L072xx  -DUSE_B_L072Z_LRWAN1 -DREGION_EU868 -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize -std=gnu99 '
+CMAKE_C_FLAGS:INTERNAL='-Og -g -mthumb -g2 -fno-builtin -mcpu=cortex-m0plus -Wall -Wextra -pedantic -DUSE_LRWAN_NS1 -Wno-unused-parameter -DUSE_BAND_868 -DUSE_MODEM_LORA -DUSE_MDM32L07X01 -DUSE_HAL_DRIVER -DSTM32L072xx -DDEBUG -DLOW_POWER_DISABLE -DUSE_B_L072Z_LRWAN1 -DREGION_EU868 -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize -std=gnu99 '
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
 CMAKE_C_FLAGS_DEBUG-ADVANCED:INTERNAL=1
 //C Compiler options for debug build type
@@ -415,7 +445,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -462,6 +492,4 @@ PROJECT-STRINGS:INTERNAL=B-L072Z-LRWAN1;STM32L053R8-Nucleo;STM32L073RZ-Nucleo;ST
 RADIO-STRINGS:INTERNAL=sx126x;sx1272;sx1276
 //STRINGS property for variable: SENSOR_BOARD
 SENSOR_BOARD-STRINGS:INTERNAL=X_NUCLEO_IKS01A1;X_NUCLEO_IKS01A2
-//STRINGS property for variable: SERIES
-SERIES-STRINGS:INTERNAL=STM32L0xx;STM32L1xx;STM32L4xx
 

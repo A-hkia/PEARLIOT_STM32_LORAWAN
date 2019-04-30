@@ -111,32 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BSP-B-L072Z-LRWAN1
-
-# Build rule for target.
-BSP-B-L072Z-LRWAN1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BSP-B-L072Z-LRWAN1
-.PHONY : BSP-B-L072Z-LRWAN1
-
-# fast build rule for target.
-BSP-B-L072Z-LRWAN1/fast:
-	$(MAKE) -f Drivers/BSP/B-L072Z-LRWAN1/CMakeFiles/BSP-B-L072Z-LRWAN1.dir/build.make Drivers/BSP/B-L072Z-LRWAN1/CMakeFiles/BSP-B-L072Z-LRWAN1.dir/build
-.PHONY : BSP-B-L072Z-LRWAN1/fast
-
-#=============================================================================
-# Target rules for targets named BSP-CMWX1ZZABZ-0xx
-
-# Build rule for target.
-BSP-CMWX1ZZABZ-0xx: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BSP-CMWX1ZZABZ-0xx
-.PHONY : BSP-CMWX1ZZABZ-0xx
-
-# fast build rule for target.
-BSP-CMWX1ZZABZ-0xx/fast:
-	$(MAKE) -f Drivers/BSP/CMWX1ZZABZ-0xx/CMakeFiles/BSP-CMWX1ZZABZ-0xx.dir/build.make Drivers/BSP/CMWX1ZZABZ-0xx/CMakeFiles/BSP-CMWX1ZZABZ-0xx.dir/build
-.PHONY : BSP-CMWX1ZZABZ-0xx/fast
-
-#=============================================================================
 # Target rules for targets named Components
 
 # Build rule for target.
@@ -163,17 +137,95 @@ sx1276/fast:
 .PHONY : sx1276/fast
 
 #=============================================================================
-# Target rules for targets named BSP-X_NUCLEO_IKS01A1
+# Target rules for targets named I_NUCLEO_LRWAN1
 
 # Build rule for target.
-BSP-X_NUCLEO_IKS01A1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BSP-X_NUCLEO_IKS01A1
-.PHONY : BSP-X_NUCLEO_IKS01A1
+I_NUCLEO_LRWAN1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 I_NUCLEO_LRWAN1
+.PHONY : I_NUCLEO_LRWAN1
 
 # fast build rule for target.
-BSP-X_NUCLEO_IKS01A1/fast:
-	$(MAKE) -f Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/build.make Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/build
-.PHONY : BSP-X_NUCLEO_IKS01A1/fast
+I_NUCLEO_LRWAN1/fast:
+	$(MAKE) -f Drivers/BSP/I_NUCLEO_LRWAN1/CMakeFiles/I_NUCLEO_LRWAN1.dir/build.make Drivers/BSP/I_NUCLEO_LRWAN1/CMakeFiles/I_NUCLEO_LRWAN1.dir/build
+.PHONY : I_NUCLEO_LRWAN1/fast
+
+#=============================================================================
+# Target rules for targets named BSP-CMWX1ZZABZ-0xx
+
+# Build rule for target.
+BSP-CMWX1ZZABZ-0xx: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BSP-CMWX1ZZABZ-0xx
+.PHONY : BSP-CMWX1ZZABZ-0xx
+
+# fast build rule for target.
+BSP-CMWX1ZZABZ-0xx/fast:
+	$(MAKE) -f Drivers/BSP/CMWX1ZZABZ-0xx/CMakeFiles/BSP-CMWX1ZZABZ-0xx.dir/build.make Drivers/BSP/CMWX1ZZABZ-0xx/CMakeFiles/BSP-CMWX1ZZABZ-0xx.dir/build
+.PHONY : BSP-CMWX1ZZABZ-0xx/fast
+
+#=============================================================================
+# Target rules for targets named BSP-B-L072Z-LRWAN1
+
+# Build rule for target.
+BSP-B-L072Z-LRWAN1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BSP-B-L072Z-LRWAN1
+.PHONY : BSP-B-L072Z-LRWAN1
+
+# fast build rule for target.
+BSP-B-L072Z-LRWAN1/fast:
+	$(MAKE) -f Drivers/BSP/B-L072Z-LRWAN1/CMakeFiles/BSP-B-L072Z-LRWAN1.dir/build.make Drivers/BSP/B-L072Z-LRWAN1/CMakeFiles/BSP-B-L072Z-LRWAN1.dir/build
+.PHONY : BSP-B-L072Z-LRWAN1/fast
+
+#=============================================================================
+# Target rules for targets named LRWAN_NS1
+
+# Build rule for target.
+LRWAN_NS1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LRWAN_NS1
+.PHONY : LRWAN_NS1
+
+# fast build rule for target.
+LRWAN_NS1/fast:
+	$(MAKE) -f Drivers/BSP/LRWAN_NS1/CMakeFiles/LRWAN_NS1.dir/build.make Drivers/BSP/LRWAN_NS1/CMakeFiles/LRWAN_NS1.dir/build
+.PHONY : LRWAN_NS1/fast
+
+#=============================================================================
+# Target rules for targets named BSP-X_NUCLEO_IKS01A2
+
+# Build rule for target.
+BSP-X_NUCLEO_IKS01A2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BSP-X_NUCLEO_IKS01A2
+.PHONY : BSP-X_NUCLEO_IKS01A2
+
+# fast build rule for target.
+BSP-X_NUCLEO_IKS01A2/fast:
+	$(MAKE) -f Drivers/BSP/X_NUCLEO_IKS01A2/CMakeFiles/BSP-X_NUCLEO_IKS01A2.dir/build.make Drivers/BSP/X_NUCLEO_IKS01A2/CMakeFiles/BSP-X_NUCLEO_IKS01A2.dir/build
+.PHONY : BSP-X_NUCLEO_IKS01A2/fast
+
+#=============================================================================
+# Target rules for targets named SX1276MB1LAS
+
+# Build rule for target.
+SX1276MB1LAS: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SX1276MB1LAS
+.PHONY : SX1276MB1LAS
+
+# fast build rule for target.
+SX1276MB1LAS/fast:
+	$(MAKE) -f Drivers/BSP/SX1276MB1LAS/CMakeFiles/SX1276MB1LAS.dir/build.make Drivers/BSP/SX1276MB1LAS/CMakeFiles/SX1276MB1LAS.dir/build
+.PHONY : SX1276MB1LAS/fast
+
+#=============================================================================
+# Target rules for targets named SX1276MB1MAS
+
+# Build rule for target.
+SX1276MB1MAS: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SX1276MB1MAS
+.PHONY : SX1276MB1MAS
+
+# fast build rule for target.
+SX1276MB1MAS/fast:
+	$(MAKE) -f Drivers/BSP/SX1276MB1MAS/CMakeFiles/SX1276MB1MAS.dir/build.make Drivers/BSP/SX1276MB1MAS/CMakeFiles/SX1276MB1MAS.dir/build
+.PHONY : SX1276MB1MAS/fast
 
 #=============================================================================
 # Target rules for targets named CMSIS-STM32L0xx
@@ -215,6 +267,32 @@ middlewares/fast:
 .PHONY : middlewares/fast
 
 #=============================================================================
+# Target rules for targets named Utilities
+
+# Build rule for target.
+Utilities: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Utilities
+.PHONY : Utilities
+
+# fast build rule for target.
+Utilities/fast:
+	$(MAKE) -f Middlewares/Third_Party/LoRaWAN/Utilities/CMakeFiles/Utilities.dir/build.make Middlewares/Third_Party/LoRaWAN/Utilities/CMakeFiles/Utilities.dir/build
+.PHONY : Utilities/fast
+
+#=============================================================================
+# Target rules for targets named B-L072Z-LRWAN1-End_Node.hex
+
+# Build rule for target.
+B-L072Z-LRWAN1-End_Node.hex: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 B-L072Z-LRWAN1-End_Node.hex
+.PHONY : B-L072Z-LRWAN1-End_Node.hex
+
+# fast build rule for target.
+B-L072Z-LRWAN1-End_Node.hex/fast:
+	$(MAKE) -f Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.hex.dir/build.make Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.hex.dir/build
+.PHONY : B-L072Z-LRWAN1-End_Node.hex/fast
+
+#=============================================================================
 # Target rules for targets named B-L072Z-LRWAN1-End_Node
 
 # Build rule for target.
@@ -227,6 +305,19 @@ B-L072Z-LRWAN1-End_Node/fast:
 	$(MAKE) -f Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/build.make Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/build
 .PHONY : B-L072Z-LRWAN1-End_Node/fast
 
+#=============================================================================
+# Target rules for targets named B-L072Z-LRWAN1-End_Node.bin
+
+# Build rule for target.
+B-L072Z-LRWAN1-End_Node.bin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 B-L072Z-LRWAN1-End_Node.bin
+.PHONY : B-L072Z-LRWAN1-End_Node.bin
+
+# fast build rule for target.
+B-L072Z-LRWAN1-End_Node.bin/fast:
+	$(MAKE) -f Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.bin.dir/build.make Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.bin.dir/build
+.PHONY : B-L072Z-LRWAN1-End_Node.bin/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -235,15 +326,22 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... BSP-B-L072Z-LRWAN1"
-	@echo "... BSP-CMWX1ZZABZ-0xx"
 	@echo "... Components"
 	@echo "... sx1276"
-	@echo "... BSP-X_NUCLEO_IKS01A1"
+	@echo "... I_NUCLEO_LRWAN1"
+	@echo "... BSP-CMWX1ZZABZ-0xx"
+	@echo "... BSP-B-L072Z-LRWAN1"
+	@echo "... LRWAN_NS1"
+	@echo "... BSP-X_NUCLEO_IKS01A2"
+	@echo "... SX1276MB1LAS"
+	@echo "... SX1276MB1MAS"
 	@echo "... CMSIS-STM32L0xx"
 	@echo "... STM32L0xx_HAL_Driver"
 	@echo "... middlewares"
+	@echo "... Utilities"
+	@echo "... B-L072Z-LRWAN1-End_Node.hex"
 	@echo "... B-L072Z-LRWAN1-End_Node"
+	@echo "... B-L072Z-LRWAN1-End_Node.bin"
 .PHONY : help
 
 

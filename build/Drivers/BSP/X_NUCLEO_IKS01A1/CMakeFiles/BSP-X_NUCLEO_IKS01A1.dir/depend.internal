@@ -84,7 +84,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
- ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+ ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.c
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
 Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a1_accelero.c.obj
@@ -174,7 +174,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
- ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+ ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_accelero.c
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_accelero.h
@@ -265,7 +265,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
- ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+ ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_gyro.c
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_gyro.h
@@ -354,7 +354,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
- ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+ ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.c
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_humidity.h
@@ -443,7 +443,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
- ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+ ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_magneto.c
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_magneto.h
@@ -534,7 +534,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
- ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+ ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.c
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_pressure.h
@@ -627,7 +627,7 @@ Drivers/BSP/X_NUCLEO_IKS01A1/CMakeFiles/BSP-X_NUCLEO_IKS01A1.dir/x_nucleo_iks01a
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
- ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
+ ../Projects/B-L072Z-LRWAN1/Applications/LoRa/PingPong/Core/inc/stm32l0xx_hal_conf.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.c
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/BSP/X_NUCLEO_IKS01A1/x_nucleo_iks01a1_temperature.h

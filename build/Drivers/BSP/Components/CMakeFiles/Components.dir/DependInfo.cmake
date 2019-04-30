@@ -48,7 +48,6 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/LoRaWAN/App/inc"
   "../Drivers/BSP/B-L072Z-LRWAN1"
   "../Drivers/BSP/CMWX1ZZABZ-0xx"
-  "../Drivers/BSP/X_NUCLEO_IKS01A1"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/Include"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Include"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../RTOS/Template"
@@ -60,6 +59,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Lib/ARM"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Lib/GCC"
   "../Drivers/STM32L0xx_HAL_Driver/Inc"
+  "../Drivers/BSP/X_NUCLEO_IKS01A2"
   "../Drivers/BSP/Components/sx1276"
   )
 

@@ -21,8 +21,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Middlewares/Third_Party/LoRaWAN/Mac/region"
   "../Middlewares/Third_Party/LoRaWAN/Phy"
   "../Middlewares/Third_Party/LoRaWAN/Utilities"
-  "../Drivers/BSP/B-L072Z-LRWAN1"
-  "../Drivers/BSP/CMWX1ZZABZ-0xx"
   "../Drivers/BSP/Components/Common"
   "../Drivers/BSP/Components/hts221"
   "../Drivers/BSP/Components/lis3mdl"
@@ -32,7 +30,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Drivers/BSP/Components/lsm6ds0"
   "../Drivers/BSP/Components/lsm6ds3"
   "../Drivers/BSP/Components/lsm6dsl"
-  "../Drivers/BSP/X_NUCLEO_IKS01A1"
+  "../Drivers/BSP/B-L072Z-LRWAN1"
+  "../Drivers/BSP/CMWX1ZZABZ-0xx"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/Include"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Include"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../RTOS/Template"
@@ -44,6 +43,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Lib/ARM"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Lib/GCC"
   "../Drivers/STM32L0xx_HAL_Driver/Inc"
+  "../Drivers/BSP/X_NUCLEO_IKS01A2"
   "../Drivers/BSP/Components/sx1276"
   )
 set(CMAKE_DEPENDS_CHECK_C
@@ -72,8 +72,6 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Middlewares/Third_Party/LoRaWAN/Mac/region"
   "../Middlewares/Third_Party/LoRaWAN/Phy"
   "../Middlewares/Third_Party/LoRaWAN/Utilities"
-  "../Drivers/BSP/B-L072Z-LRWAN1"
-  "../Drivers/BSP/CMWX1ZZABZ-0xx"
   "../Drivers/BSP/Components/Common"
   "../Drivers/BSP/Components/hts221"
   "../Drivers/BSP/Components/lis3mdl"
@@ -83,7 +81,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Drivers/BSP/Components/lsm6ds0"
   "../Drivers/BSP/Components/lsm6ds3"
   "../Drivers/BSP/Components/lsm6dsl"
-  "../Drivers/BSP/X_NUCLEO_IKS01A1"
+  "../Drivers/BSP/B-L072Z-LRWAN1"
+  "../Drivers/BSP/CMWX1ZZABZ-0xx"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/Include"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Include"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../RTOS/Template"
@@ -95,6 +94,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Lib/ARM"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Lib/GCC"
   "../Drivers/STM32L0xx_HAL_Driver/Inc"
+  "../Drivers/BSP/X_NUCLEO_IKS01A2"
   "../Drivers/BSP/Components/sx1276"
   )
 
