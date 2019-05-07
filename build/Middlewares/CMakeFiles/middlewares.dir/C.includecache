@@ -989,6 +989,8 @@ LoRaMacSerializer.h
 /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.h
 LoRaMacCrypto.h
 /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.h
+SE_RSC_ITF_serial_debug.h
+/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.h
 
 /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.h
 stdlib.h
@@ -1063,6 +1065,8 @@ stdbool.h
 -
 timer.h
 /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/timer.h
+
+/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.h
 
 /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c
 LoRaMac.h

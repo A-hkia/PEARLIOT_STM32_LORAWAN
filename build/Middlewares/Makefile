@@ -584,6 +584,33 @@ Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.s:
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.s
 .PHONY : Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.s
 
+Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.obj: Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.obj
+
+.PHONY : Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.obj
+
+# target to build an object file
+Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.obj:
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.obj
+.PHONY : Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.obj
+
+Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.i: Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.i
+
+.PHONY : Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.i
+
+# target to preprocess a source file
+Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.i:
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.i
+.PHONY : Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.i
+
+Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.s: Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.s
+
+.PHONY : Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.s
+
+# target to generate assembly for a file
+Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.s:
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.s
+.PHONY : Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.s
+
 Third_Party/LoRaWAN/Mac/region/Region.obj: Third_Party/LoRaWAN/Mac/region/Region.c.obj
 
 .PHONY : Third_Party/LoRaWAN/Mac/region/Region.obj
@@ -1130,6 +1157,9 @@ help:
 	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacSerializer.obj"
 	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacSerializer.i"
 	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacSerializer.s"
+	@echo "... Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.obj"
+	@echo "... Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.i"
+	@echo "... Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.s"
 	@echo "... Third_Party/LoRaWAN/Mac/region/Region.obj"
 	@echo "... Third_Party/LoRaWAN/Mac/region/Region.i"
 	@echo "... Third_Party/LoRaWAN/Mac/region/Region.s"

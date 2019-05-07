@@ -43,5 +43,5 @@ set_property(CACHE CRYPTO PROPERTY STRINGS ${CRYPTO_LIST})
 
 # Allow switching of Series - No cache is used since the serie is chosen automatically by the project choice
 set(SERIES_LIST STM32L0xx STM32L1xx STM32L4xx)
-set(SERIES STM32L0xx CACHE STRING "Default Serie is STM32L0xx")
-set_property(CACHE SERIES PROPERTY STRINGS ${SERIES_LIST})
+#set(SERIES STM32L0xx CACHE STRING "Default Serie is STM32L0xx")
+#set_property(CACHE SERIES PROPERTY STRINGS ${SERIES_LIST})
