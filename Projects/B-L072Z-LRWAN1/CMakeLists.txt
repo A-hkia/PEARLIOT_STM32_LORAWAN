@@ -4,7 +4,7 @@
 project(B-L072Z-LRWAN1)
 cmake_minimum_required(VERSION 3.6)
 
-set(SERIES STM32L0xx CACHE STRING "Serie chosen is STM32L0xx")
+#set(SERIES STM32L0xx CACHE STRING "Serie chosen is STM32L0xx")
 
 
 #Application

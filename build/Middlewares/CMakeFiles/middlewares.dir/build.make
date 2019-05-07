@@ -249,225 +249,9 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/soft-se.c.obj.
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/soft-se.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/soft-se.c.obj
 
 
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.i"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.i
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.s"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.s
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.requires:
-
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.requires
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.requires
-	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.provides.build
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.provides
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj
-
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.i"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.i
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.s"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.s
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.requires:
-
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.requires
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.requires
-	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.provides.build
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.provides
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj
-
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.i"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.i
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.s"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.s
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.requires:
-
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.requires
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.requires
-	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.provides.build
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.provides
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj
-
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.i"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.i
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.s"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.s
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.requires:
-
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.requires
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.requires
-	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.provides.build
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.provides
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj
-
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.i"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.i
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.s"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.s
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.requires:
-
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.requires
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.requires
-	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.provides.build
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.provides
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj
-
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.i"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.i
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.s"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.s
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj.requires:
-
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj.requires
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj.requires
-	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj.provides.build
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj.provides
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj
-
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.i"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.i
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.s"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.s
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.requires:
-
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.requires
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.requires
-	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.provides.build
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.provides
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj
-
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.i"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.i
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.s"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.s
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.requires:
-
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.requires
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.requires
-	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.provides.build
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.provides
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj
-
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.i"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.i
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.s"
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.s
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.requires:
-
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.requires
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.requires
-	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.provides.build
-.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.provides
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj
-
-
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/Region.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/Region.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/Region.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/Region.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/Region.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/Region.c.i: cmake_force
@@ -491,7 +275,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/Region.c.o
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAS923.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.i: cmake_force
@@ -515,7 +299,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAS92
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionAU915.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.i: cmake_force
@@ -539,7 +323,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAU91
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN470.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN470.c.i: cmake_force
@@ -563,7 +347,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN47
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCN779.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN779.c.i: cmake_force
@@ -587,7 +371,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCN77
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionCommon.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionCommon.c.i: cmake_force
@@ -611,7 +395,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionComm
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU433.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU433.c.i: cmake_force
@@ -635,7 +419,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU43
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionEU868.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU868.c.i: cmake_force
@@ -659,7 +443,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionEU86
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionIN865.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionIN865.c.i: cmake_force
@@ -683,7 +467,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionIN86
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionKR920.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionKR920.c.i: cmake_force
@@ -707,7 +491,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionKR92
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionRU864.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionRU864.c.i: cmake_force
@@ -731,7 +515,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionRU86
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/RegionUS915.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionUS915.c.i: cmake_force
@@ -755,7 +539,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionUS91
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/low_power_manager.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Utilities/low_power_manager.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/low_power_manager.c.i: cmake_force
@@ -779,7 +563,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/low_power_m
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/queue.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/queue.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/queue.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/queue.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/queue.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Utilities/queue.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/queue.c.i: cmake_force
@@ -803,7 +587,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/queue.c.obj
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/systime.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/systime.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/systime.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/systime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/systime.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/systime.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Utilities/systime.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/systime.c.i: cmake_force
@@ -827,7 +611,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/systime.c.o
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/timeServer.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/timeServer.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/timeServer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/timeServer.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/timeServer.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/timeServer.c.i: cmake_force
@@ -851,7 +635,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/timeServer.
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/trace.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/trace.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/trace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/trace.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/trace.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/trace.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Utilities/trace.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/trace.c.i: cmake_force
@@ -875,7 +659,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/trace.c.obj
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj"
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.i: cmake_force
@@ -897,6 +681,222 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj
 
 
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.i"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.i
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.s"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.s
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.requires:
+
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.requires
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.requires
+	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.provides.build
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.provides
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj
+
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.i"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.i
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.s"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.s
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.requires:
+
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.requires
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.requires
+	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.provides.build
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.provides
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj
+
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.i"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.i
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.s"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.s
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.requires:
+
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.requires
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.requires
+	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.provides.build
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.provides
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj
+
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.i"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.i
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.s"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.s
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.requires:
+
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.requires
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.requires
+	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.provides.build
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.provides
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj
+
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.i"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.i
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.s"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.s
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.requires:
+
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.requires
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.requires
+	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.provides.build
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.provides
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj
+
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.i"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.i
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.s"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.s
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj.requires:
+
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj.requires
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj.requires
+	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj.provides.build
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj.provides
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj
+
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.i"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.i
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.s"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.s
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.requires:
+
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.requires
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.requires
+	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.provides.build
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.provides
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj
+
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.i"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.i
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.s"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.s
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.requires:
+
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.requires
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.requires
+	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.provides.build
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.provides
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj
+
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj: Middlewares/CMakeFiles/middlewares.dir/flags.make
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.i"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c > CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.i
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.s"
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Middlewares && /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c -o CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.s
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.requires:
+
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.requires
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.provides: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.requires
+	$(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.provides.build
+.PHONY : Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.provides
+
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.provides.build: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj
+
+
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora-test.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Core/lora.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src/hw_gpio_template.c.obj
@@ -905,15 +905,6 @@ middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Conf/Src
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/aes.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/cmac.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/soft-se.c.obj
-middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj
-middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj
-middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj
-middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj
-middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj
-middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj
-middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj
-middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj
-middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/Region.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj
@@ -932,6 +923,15 @@ middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilitie
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/timeServer.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/trace.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj
+middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj
+middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj
+middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj
+middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj
+middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj
+middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj
+middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj
+middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj
+middlewares: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj
 middlewares: Middlewares/CMakeFiles/middlewares.dir/build.make
 
 .PHONY : middlewares
@@ -949,15 +949,6 @@ Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewa
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/aes.c.obj.requires
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/cmac.c.obj.requires
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Crypto/soft-se.c.obj.requires
-Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.requires
-Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.requires
-Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.requires
-Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.requires
-Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.requires
-Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj.requires
-Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.requires
-Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.requires
-Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.requires
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/Region.c.obj.requires
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAS923.c.obj.requires
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/region/RegionAU915.c.obj.requires
@@ -976,6 +967,15 @@ Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewa
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/timeServer.c.obj.requires
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/trace.c.obj.requires
 Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj.requires
+Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMac.c.obj.requires
+Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c.obj.requires
+Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c.obj.requires
+Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c.obj.requires
+Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.obj.requires
+Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj.requires
+Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj.requires
+Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj.requires
+Middlewares/CMakeFiles/middlewares.dir/requires: Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj.requires
 
 .PHONY : Middlewares/CMakeFiles/middlewares.dir/requires
 

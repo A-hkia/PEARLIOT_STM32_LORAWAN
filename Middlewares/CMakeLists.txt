@@ -7,27 +7,70 @@ cmake_minimum_required(VERSION 3.6)
 #Because APPLICATION PingPong only needs the subfolder Utilities
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Utilities)
 
-if(APPLICATION STREQUAL AT)
-	file(GLOB ${PROJECT_NAME}_SOURCES
-	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Core/lora-test.c"
-	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Conf/Src/*.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Crypto/*.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/*.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/region/*.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Utilities/*.c"
-	)
-	
-else()
+#if(APPLICATION STREQUAL AT)
+#	file(GLOB ${PROJECT_NAME}_SOURCES
+#	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Core/lora-test.c"
+#	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Conf/Src/*.c"
+#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Crypto/*.c"
+#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/*.c"
+#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/region/*.c"
+#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Utilities/*.c"
+#	)
+#	
+#else()
+#	file(GLOB ${PROJECT_NAME}_SOURCES
+#	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Core/*.c"
+#	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Conf/Src/*.c"
+#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Crypto/*.c"
+#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/*.c"
+#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/region/*.c"
+#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Utilities/*.c"
+#    )
+#endif()
+#	
+if(CRYPTO STREQUAL PearlIoT)
 	file(GLOB ${PROJECT_NAME}_SOURCES
 	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Core/*.c"
 	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Conf/Src/*.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Crypto/*.c"
-    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/*.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/region/*.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Utilities/*.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Core/*.c"
+	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Conf/Src/*.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Crypto/*.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/region/*.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Utilities/*.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMac.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacParser.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c"
+    )
+elseif(CRYPTO STREQUAL Soft-se)
+	file(GLOB ${PROJECT_NAME}_SOURCES
+	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Core/*.c"
+	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Conf/Src/*.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Crypto/*.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/region/*.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Utilities/*.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMac.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacAdr.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacClassB.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacParser.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c"
+    
     )
 endif()
-	
+
+
 add_library(${PROJECT_NAME} OBJECT EXCLUDE_FROM_ALL ${${PROJECT_NAME}_SOURCES})
 	
 #---------------------------------------------------------------------------------------
@@ -112,6 +155,8 @@ elseif(RADIO STREQUAL sx1276)
 		$<TARGET_PROPERTY:sx1276,INTERFACE_INCLUDE_DIRECTORIES>  
 	)	
 endif()
+
+
 
 #Specify the C standard whose features are requested to build this target
 set_property(TARGET ${PROJECT_NAME} PROPERTY C_STANDARD 11)

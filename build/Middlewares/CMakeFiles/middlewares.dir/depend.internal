@@ -1143,7 +1143,7 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQue
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacTypes.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/region/Region.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/timer.h
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj
  ../Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.h
  ../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Include/cmsis_armcc.h
  ../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Include/cmsis_armcc_V6.h
@@ -1227,14 +1227,13 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.o
  ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/LoRaWAN/App/inc/hw_conf.h
  ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/LoRaWAN/App/inc/utilities_conf.h
  ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/LoRaWAN/App/inc/vcom.h
- /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c
+ /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacHeaderTypes.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacMessageTypes.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacTypes.h
- /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/secure-element.h
  /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/timer.h
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj
  ../Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.h

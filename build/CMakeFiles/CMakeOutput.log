@@ -29,32 +29,32 @@ The CXX compiler identification is GNU, found in "/home/abdallah/eclipse-workspa
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_98338/fast"
-/usr/bin/make -f CMakeFiles/cmTC_98338.dir/build.make CMakeFiles/cmTC_98338.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a58f5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a58f5.dir/build.make CMakeFiles/cmTC_a58f5.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_98338.dir/testCCompiler.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_98338.dir/testCCompiler.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C static library libcmTC_98338.a
-/usr/bin/cmake -P CMakeFiles/cmTC_98338.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98338.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_98338.a  CMakeFiles/cmTC_98338.dir/testCCompiler.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_98338.a
+Building C object CMakeFiles/cmTC_a58f5.dir/testCCompiler.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_a58f5.dir/testCCompiler.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C static library libcmTC_a58f5.a
+/usr/bin/cmake -P CMakeFiles/cmTC_a58f5.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a58f5.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_a58f5.a  CMakeFiles/cmTC_a58f5.dir/testCCompiler.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_a58f5.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_16ffd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_16ffd.dir/build.make CMakeFiles/cmTC_16ffd.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_d0fdb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d0fdb.dir/build.make CMakeFiles/cmTC_d0fdb.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_16ffd.dir/CMakeCCompilerABI.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_16ffd.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C static library libcmTC_16ffd.a
-/usr/bin/cmake -P CMakeFiles/cmTC_16ffd.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16ffd.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_16ffd.a  CMakeFiles/cmTC_16ffd.dir/CMakeCCompilerABI.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_16ffd.a
+Building C object CMakeFiles/cmTC_d0fdb.dir/CMakeCCompilerABI.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_d0fdb.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C static library libcmTC_d0fdb.a
+/usr/bin/cmake -P CMakeFiles/cmTC_d0fdb.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0fdb.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_d0fdb.a  CMakeFiles/cmTC_d0fdb.dir/CMakeCCompilerABI.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_d0fdb.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -62,16 +62,16 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_16ffd/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_16ffd.dir/build.make CMakeFiles/cmTC_16ffd.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d0fdb/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d0fdb.dir/build.make CMakeFiles/cmTC_d0fdb.dir/build]
   ignore line: [make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_16ffd.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_16ffd.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C static library libcmTC_16ffd.a]
-  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_16ffd.dir/cmake_clean_target.cmake]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16ffd.dir/link.txt --verbose=1]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_16ffd.a  CMakeFiles/cmTC_16ffd.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_16ffd.a]
+  ignore line: [Building C object CMakeFiles/cmTC_d0fdb.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_d0fdb.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C static library libcmTC_d0fdb.a]
+  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_d0fdb.dir/cmake_clean_target.cmake]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0fdb.dir/link.txt --verbose=1]
+  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_d0fdb.a  CMakeFiles/cmTC_d0fdb.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_d0fdb.a]
   ignore line: [make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp']
   ignore line: []
   implicit libs: []
@@ -84,16 +84,16 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7f69b/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7f69b.dir/build.make CMakeFiles/cmTC_7f69b.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c628c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c628c.dir/build.make CMakeFiles/cmTC_c628c.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7f69b.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c11 -o CMakeFiles/cmTC_7f69b.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_7f69b.a
-/usr/bin/cmake -P CMakeFiles/cmTC_7f69b.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f69b.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_7f69b.a  CMakeFiles/cmTC_7f69b.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_7f69b.a
+Building C object CMakeFiles/cmTC_c628c.dir/feature_tests.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c11 -o CMakeFiles/cmTC_c628c.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_c628c.a
+/usr/bin/cmake -P CMakeFiles/cmTC_c628c.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c628c.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_c628c.a  CMakeFiles/cmTC_c628c.dir/feature_tests.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_c628c.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -106,16 +106,16 @@ make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5a6b7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5a6b7.dir/build.make CMakeFiles/cmTC_5a6b7.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_6ea30/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6ea30.dir/build.make CMakeFiles/cmTC_6ea30.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5a6b7.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c99 -o CMakeFiles/cmTC_5a6b7.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_5a6b7.a
-/usr/bin/cmake -P CMakeFiles/cmTC_5a6b7.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a6b7.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_5a6b7.a  CMakeFiles/cmTC_5a6b7.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_5a6b7.a
+Building C object CMakeFiles/cmTC_6ea30.dir/feature_tests.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c99 -o CMakeFiles/cmTC_6ea30.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_6ea30.a
+/usr/bin/cmake -P CMakeFiles/cmTC_6ea30.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ea30.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_6ea30.a  CMakeFiles/cmTC_6ea30.dir/feature_tests.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_6ea30.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -128,16 +128,16 @@ make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_bcdeb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_bcdeb.dir/build.make CMakeFiles/cmTC_bcdeb.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_30bbb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_30bbb.dir/build.make CMakeFiles/cmTC_30bbb.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bcdeb.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c90 -o CMakeFiles/cmTC_bcdeb.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_bcdeb.a
-/usr/bin/cmake -P CMakeFiles/cmTC_bcdeb.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bcdeb.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_bcdeb.a  CMakeFiles/cmTC_bcdeb.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_bcdeb.a
+Building C object CMakeFiles/cmTC_30bbb.dir/feature_tests.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c90 -o CMakeFiles/cmTC_30bbb.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_30bbb.a
+/usr/bin/cmake -P CMakeFiles/cmTC_30bbb.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30bbb.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_30bbb.a  CMakeFiles/cmTC_30bbb.dir/feature_tests.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_30bbb.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -148,32 +148,32 @@ make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_752bf/fast"
-/usr/bin/make -f CMakeFiles/cmTC_752bf.dir/build.make CMakeFiles/cmTC_752bf.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ae11c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ae11c.dir/build.make CMakeFiles/cmTC_ae11c.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_752bf.dir/testCXXCompiler.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_752bf.dir/testCXXCompiler.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX static library libcmTC_752bf.a
-/usr/bin/cmake -P CMakeFiles/cmTC_752bf.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_752bf.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_752bf.a  CMakeFiles/cmTC_752bf.dir/testCXXCompiler.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_752bf.a
+Building CXX object CMakeFiles/cmTC_ae11c.dir/testCXXCompiler.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_ae11c.dir/testCXXCompiler.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX static library libcmTC_ae11c.a
+/usr/bin/cmake -P CMakeFiles/cmTC_ae11c.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae11c.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_ae11c.a  CMakeFiles/cmTC_ae11c.dir/testCXXCompiler.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_ae11c.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a211a/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a211a.dir/build.make CMakeFiles/cmTC_a211a.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_87d5f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_87d5f.dir/build.make CMakeFiles/cmTC_87d5f.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_a211a.dir/CMakeCXXCompilerABI.cpp.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_a211a.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX static library libcmTC_a211a.a
-/usr/bin/cmake -P CMakeFiles/cmTC_a211a.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a211a.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_a211a.a  CMakeFiles/cmTC_a211a.dir/CMakeCXXCompilerABI.cpp.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_a211a.a
+Building CXX object CMakeFiles/cmTC_87d5f.dir/CMakeCXXCompilerABI.cpp.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_87d5f.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX static library libcmTC_87d5f.a
+/usr/bin/cmake -P CMakeFiles/cmTC_87d5f.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87d5f.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_87d5f.a  CMakeFiles/cmTC_87d5f.dir/CMakeCXXCompilerABI.cpp.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_87d5f.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -181,16 +181,16 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_a211a/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a211a.dir/build.make CMakeFiles/cmTC_a211a.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_87d5f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_87d5f.dir/build.make CMakeFiles/cmTC_87d5f.dir/build]
   ignore line: [make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_a211a.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_a211a.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX static library libcmTC_a211a.a]
-  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_a211a.dir/cmake_clean_target.cmake]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a211a.dir/link.txt --verbose=1]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_a211a.a  CMakeFiles/cmTC_a211a.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_a211a.a]
+  ignore line: [Building CXX object CMakeFiles/cmTC_87d5f.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_87d5f.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX static library libcmTC_87d5f.a]
+  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_87d5f.dir/cmake_clean_target.cmake]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87d5f.dir/link.txt --verbose=1]
+  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_87d5f.a  CMakeFiles/cmTC_87d5f.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_87d5f.a]
   ignore line: [make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp']
   ignore line: []
   implicit libs: []
@@ -203,16 +203,16 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_636fc/fast"
-/usr/bin/make -f CMakeFiles/cmTC_636fc.dir/build.make CMakeFiles/cmTC_636fc.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_42e47/fast"
+/usr/bin/make -f CMakeFiles/cmTC_42e47.dir/build.make CMakeFiles/cmTC_42e47.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_636fc.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++1z -o CMakeFiles/cmTC_636fc.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_636fc.a
-/usr/bin/cmake -P CMakeFiles/cmTC_636fc.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_636fc.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_636fc.a  CMakeFiles/cmTC_636fc.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_636fc.a
+Building CXX object CMakeFiles/cmTC_42e47.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++1z -o CMakeFiles/cmTC_42e47.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_42e47.a
+/usr/bin/cmake -P CMakeFiles/cmTC_42e47.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42e47.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_42e47.a  CMakeFiles/cmTC_42e47.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_42e47.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -278,16 +278,16 @@ make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_3dc43/fast"
-/usr/bin/make -f CMakeFiles/cmTC_3dc43.dir/build.make CMakeFiles/cmTC_3dc43.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b7195/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7195.dir/build.make CMakeFiles/cmTC_b7195.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_3dc43.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++14 -o CMakeFiles/cmTC_3dc43.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_3dc43.a
-/usr/bin/cmake -P CMakeFiles/cmTC_3dc43.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3dc43.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_3dc43.a  CMakeFiles/cmTC_3dc43.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_3dc43.a
+Building CXX object CMakeFiles/cmTC_b7195.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++14 -o CMakeFiles/cmTC_b7195.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_b7195.a
+/usr/bin/cmake -P CMakeFiles/cmTC_b7195.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7195.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_b7195.a  CMakeFiles/cmTC_b7195.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_b7195.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -353,16 +353,16 @@ make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_77f38/fast"
-/usr/bin/make -f CMakeFiles/cmTC_77f38.dir/build.make CMakeFiles/cmTC_77f38.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a90ef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a90ef.dir/build.make CMakeFiles/cmTC_a90ef.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_77f38.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++11 -o CMakeFiles/cmTC_77f38.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_77f38.a
-/usr/bin/cmake -P CMakeFiles/cmTC_77f38.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77f38.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_77f38.a  CMakeFiles/cmTC_77f38.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_77f38.a
+Building CXX object CMakeFiles/cmTC_a90ef.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++11 -o CMakeFiles/cmTC_a90ef.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_a90ef.a
+/usr/bin/cmake -P CMakeFiles/cmTC_a90ef.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a90ef.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_a90ef.a  CMakeFiles/cmTC_a90ef.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_a90ef.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -428,16 +428,16 @@ make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0f099/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0f099.dir/build.make CMakeFiles/cmTC_0f099.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_2c25f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2c25f.dir/build.make CMakeFiles/cmTC_2c25f.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_0f099.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++98 -o CMakeFiles/cmTC_0f099.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_0f099.a
-/usr/bin/cmake -P CMakeFiles/cmTC_0f099.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f099.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_0f099.a  CMakeFiles/cmTC_0f099.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_0f099.a
+Building CXX object CMakeFiles/cmTC_2c25f.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++98 -o CMakeFiles/cmTC_2c25f.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_2c25f.a
+/usr/bin/cmake -P CMakeFiles/cmTC_2c25f.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c25f.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_2c25f.a  CMakeFiles/cmTC_2c25f.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_2c25f.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -535,32 +535,32 @@ The CXX compiler identification is GNU, found in "/home/abdallah/eclipse-workspa
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e65b9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e65b9.dir/build.make CMakeFiles/cmTC_e65b9.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_0abe6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0abe6.dir/build.make CMakeFiles/cmTC_0abe6.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e65b9.dir/testCCompiler.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_e65b9.dir/testCCompiler.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C static library libcmTC_e65b9.a
-/usr/bin/cmake -P CMakeFiles/cmTC_e65b9.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e65b9.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_e65b9.a  CMakeFiles/cmTC_e65b9.dir/testCCompiler.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_e65b9.a
+Building C object CMakeFiles/cmTC_0abe6.dir/testCCompiler.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_0abe6.dir/testCCompiler.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C static library libcmTC_0abe6.a
+/usr/bin/cmake -P CMakeFiles/cmTC_0abe6.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0abe6.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_0abe6.a  CMakeFiles/cmTC_0abe6.dir/testCCompiler.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_0abe6.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_60c6e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_60c6e.dir/build.make CMakeFiles/cmTC_60c6e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_36e99/fast"
+/usr/bin/make -f CMakeFiles/cmTC_36e99.dir/build.make CMakeFiles/cmTC_36e99.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_60c6e.dir/CMakeCCompilerABI.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_60c6e.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C static library libcmTC_60c6e.a
-/usr/bin/cmake -P CMakeFiles/cmTC_60c6e.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60c6e.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_60c6e.a  CMakeFiles/cmTC_60c6e.dir/CMakeCCompilerABI.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_60c6e.a
+Building C object CMakeFiles/cmTC_36e99.dir/CMakeCCompilerABI.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_36e99.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C static library libcmTC_36e99.a
+/usr/bin/cmake -P CMakeFiles/cmTC_36e99.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36e99.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_36e99.a  CMakeFiles/cmTC_36e99.dir/CMakeCCompilerABI.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_36e99.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -568,16 +568,16 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_60c6e/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_60c6e.dir/build.make CMakeFiles/cmTC_60c6e.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_36e99/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_36e99.dir/build.make CMakeFiles/cmTC_36e99.dir/build]
   ignore line: [make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_60c6e.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_60c6e.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C static library libcmTC_60c6e.a]
-  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_60c6e.dir/cmake_clean_target.cmake]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60c6e.dir/link.txt --verbose=1]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_60c6e.a  CMakeFiles/cmTC_60c6e.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_60c6e.a]
+  ignore line: [Building C object CMakeFiles/cmTC_36e99.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_36e99.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C static library libcmTC_36e99.a]
+  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_36e99.dir/cmake_clean_target.cmake]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36e99.dir/link.txt --verbose=1]
+  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_36e99.a  CMakeFiles/cmTC_36e99.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_36e99.a]
   ignore line: [make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp']
   ignore line: []
   implicit libs: []
@@ -590,16 +590,16 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_947a7/fast"
-/usr/bin/make -f CMakeFiles/cmTC_947a7.dir/build.make CMakeFiles/cmTC_947a7.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_9e712/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9e712.dir/build.make CMakeFiles/cmTC_9e712.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_947a7.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c11 -o CMakeFiles/cmTC_947a7.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_947a7.a
-/usr/bin/cmake -P CMakeFiles/cmTC_947a7.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_947a7.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_947a7.a  CMakeFiles/cmTC_947a7.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_947a7.a
+Building C object CMakeFiles/cmTC_9e712.dir/feature_tests.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c11 -o CMakeFiles/cmTC_9e712.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_9e712.a
+/usr/bin/cmake -P CMakeFiles/cmTC_9e712.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e712.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_9e712.a  CMakeFiles/cmTC_9e712.dir/feature_tests.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_9e712.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -612,16 +612,16 @@ make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_15ce6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_15ce6.dir/build.make CMakeFiles/cmTC_15ce6.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_3f513/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3f513.dir/build.make CMakeFiles/cmTC_3f513.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_15ce6.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c99 -o CMakeFiles/cmTC_15ce6.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_15ce6.a
-/usr/bin/cmake -P CMakeFiles/cmTC_15ce6.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15ce6.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_15ce6.a  CMakeFiles/cmTC_15ce6.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_15ce6.a
+Building C object CMakeFiles/cmTC_3f513.dir/feature_tests.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c99 -o CMakeFiles/cmTC_3f513.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_3f513.a
+/usr/bin/cmake -P CMakeFiles/cmTC_3f513.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f513.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_3f513.a  CMakeFiles/cmTC_3f513.dir/feature_tests.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_3f513.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -634,16 +634,16 @@ make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5df1d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5df1d.dir/build.make CMakeFiles/cmTC_5df1d.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_91276/fast"
+/usr/bin/make -f CMakeFiles/cmTC_91276.dir/build.make CMakeFiles/cmTC_91276.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5df1d.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c90 -o CMakeFiles/cmTC_5df1d.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_5df1d.a
-/usr/bin/cmake -P CMakeFiles/cmTC_5df1d.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5df1d.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_5df1d.a  CMakeFiles/cmTC_5df1d.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_5df1d.a
+Building C object CMakeFiles/cmTC_91276.dir/feature_tests.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c90 -o CMakeFiles/cmTC_91276.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
+Linking C static library libcmTC_91276.a
+/usr/bin/cmake -P CMakeFiles/cmTC_91276.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91276.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_91276.a  CMakeFiles/cmTC_91276.dir/feature_tests.c.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_91276.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -654,32 +654,32 @@ make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_9b884/fast"
-/usr/bin/make -f CMakeFiles/cmTC_9b884.dir/build.make CMakeFiles/cmTC_9b884.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_f38b9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f38b9.dir/build.make CMakeFiles/cmTC_f38b9.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_9b884.dir/testCXXCompiler.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_9b884.dir/testCXXCompiler.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX static library libcmTC_9b884.a
-/usr/bin/cmake -P CMakeFiles/cmTC_9b884.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b884.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_9b884.a  CMakeFiles/cmTC_9b884.dir/testCXXCompiler.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_9b884.a
+Building CXX object CMakeFiles/cmTC_f38b9.dir/testCXXCompiler.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_f38b9.dir/testCXXCompiler.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX static library libcmTC_f38b9.a
+/usr/bin/cmake -P CMakeFiles/cmTC_f38b9.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f38b9.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_f38b9.a  CMakeFiles/cmTC_f38b9.dir/testCXXCompiler.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_f38b9.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e5e32/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e5e32.dir/build.make CMakeFiles/cmTC_e5e32.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a1a20/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a1a20.dir/build.make CMakeFiles/cmTC_a1a20.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e5e32.dir/CMakeCXXCompilerABI.cpp.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_e5e32.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX static library libcmTC_e5e32.a
-/usr/bin/cmake -P CMakeFiles/cmTC_e5e32.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5e32.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_e5e32.a  CMakeFiles/cmTC_e5e32.dir/CMakeCXXCompilerABI.cpp.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_e5e32.a
+Building CXX object CMakeFiles/cmTC_a1a20.dir/CMakeCXXCompilerABI.cpp.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_a1a20.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX static library libcmTC_a1a20.a
+/usr/bin/cmake -P CMakeFiles/cmTC_a1a20.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1a20.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_a1a20.a  CMakeFiles/cmTC_a1a20.dir/CMakeCXXCompilerABI.cpp.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_a1a20.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -687,16 +687,16 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_e5e32/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_e5e32.dir/build.make CMakeFiles/cmTC_e5e32.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_a1a20/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a1a20.dir/build.make CMakeFiles/cmTC_a1a20.dir/build]
   ignore line: [make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_e5e32.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_e5e32.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX static library libcmTC_e5e32.a]
-  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_e5e32.dir/cmake_clean_target.cmake]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5e32.dir/link.txt --verbose=1]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_e5e32.a  CMakeFiles/cmTC_e5e32.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_e5e32.a]
+  ignore line: [Building CXX object CMakeFiles/cmTC_a1a20.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_a1a20.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX static library libcmTC_a1a20.a]
+  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_a1a20.dir/cmake_clean_target.cmake]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1a20.dir/link.txt --verbose=1]
+  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_a1a20.a  CMakeFiles/cmTC_a1a20.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_a1a20.a]
   ignore line: [make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp']
   ignore line: []
   implicit libs: []
@@ -709,16 +709,16 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_d9c8e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d9c8e.dir/build.make CMakeFiles/cmTC_d9c8e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_b1558/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b1558.dir/build.make CMakeFiles/cmTC_b1558.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d9c8e.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++1z -o CMakeFiles/cmTC_d9c8e.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_d9c8e.a
-/usr/bin/cmake -P CMakeFiles/cmTC_d9c8e.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9c8e.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_d9c8e.a  CMakeFiles/cmTC_d9c8e.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_d9c8e.a
+Building CXX object CMakeFiles/cmTC_b1558.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++1z -o CMakeFiles/cmTC_b1558.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_b1558.a
+/usr/bin/cmake -P CMakeFiles/cmTC_b1558.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1558.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_b1558.a  CMakeFiles/cmTC_b1558.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_b1558.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -784,16 +784,16 @@ make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_abf69/fast"
-/usr/bin/make -f CMakeFiles/cmTC_abf69.dir/build.make CMakeFiles/cmTC_abf69.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_53da5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_53da5.dir/build.make CMakeFiles/cmTC_53da5.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_abf69.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++14 -o CMakeFiles/cmTC_abf69.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_abf69.a
-/usr/bin/cmake -P CMakeFiles/cmTC_abf69.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abf69.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_abf69.a  CMakeFiles/cmTC_abf69.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_abf69.a
+Building CXX object CMakeFiles/cmTC_53da5.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++14 -o CMakeFiles/cmTC_53da5.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_53da5.a
+/usr/bin/cmake -P CMakeFiles/cmTC_53da5.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53da5.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_53da5.a  CMakeFiles/cmTC_53da5.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_53da5.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -859,16 +859,16 @@ make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_76fdc/fast"
-/usr/bin/make -f CMakeFiles/cmTC_76fdc.dir/build.make CMakeFiles/cmTC_76fdc.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_1fd3c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1fd3c.dir/build.make CMakeFiles/cmTC_1fd3c.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_76fdc.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++11 -o CMakeFiles/cmTC_76fdc.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_76fdc.a
-/usr/bin/cmake -P CMakeFiles/cmTC_76fdc.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76fdc.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_76fdc.a  CMakeFiles/cmTC_76fdc.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_76fdc.a
+Building CXX object CMakeFiles/cmTC_1fd3c.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++11 -o CMakeFiles/cmTC_1fd3c.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_1fd3c.a
+/usr/bin/cmake -P CMakeFiles/cmTC_1fd3c.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fd3c.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_1fd3c.a  CMakeFiles/cmTC_1fd3c.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_1fd3c.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 
@@ -934,522 +934,16 @@ make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e791c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e791c.dir/build.make CMakeFiles/cmTC_e791c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_7031e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7031e.dir/build.make CMakeFiles/cmTC_7031e.dir/build
 make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e791c.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++98 -o CMakeFiles/cmTC_e791c.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_e791c.a
-/usr/bin/cmake -P CMakeFiles/cmTC_e791c.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e791c.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_e791c.a  CMakeFiles/cmTC_e791c.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_e791c.a
-make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-
-
-    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:0cxx_alias_templates
-    Feature record: CXX_FEATURE:0cxx_alignas
-    Feature record: CXX_FEATURE:0cxx_alignof
-    Feature record: CXX_FEATURE:0cxx_attributes
-    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:0cxx_auto_type
-    Feature record: CXX_FEATURE:0cxx_binary_literals
-    Feature record: CXX_FEATURE:0cxx_constexpr
-    Feature record: CXX_FEATURE:0cxx_contextual_conversions
-    Feature record: CXX_FEATURE:0cxx_decltype
-    Feature record: CXX_FEATURE:0cxx_decltype_auto
-    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:0cxx_default_function_template_args
-    Feature record: CXX_FEATURE:0cxx_defaulted_functions
-    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:0cxx_delegating_constructors
-    Feature record: CXX_FEATURE:0cxx_deleted_functions
-    Feature record: CXX_FEATURE:0cxx_digit_separators
-    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:0cxx_explicit_conversions
-    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:0cxx_extern_templates
-    Feature record: CXX_FEATURE:0cxx_final
-    Feature record: CXX_FEATURE:0cxx_func_identifier
-    Feature record: CXX_FEATURE:0cxx_generalized_initializers
-    Feature record: CXX_FEATURE:0cxx_generic_lambdas
-    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:0cxx_inline_namespaces
-    Feature record: CXX_FEATURE:0cxx_lambdas
-    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:0cxx_local_type_template_args
-    Feature record: CXX_FEATURE:0cxx_long_long_type
-    Feature record: CXX_FEATURE:0cxx_noexcept
-    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:0cxx_nullptr
-    Feature record: CXX_FEATURE:0cxx_override
-    Feature record: CXX_FEATURE:0cxx_range_for
-    Feature record: CXX_FEATURE:0cxx_raw_string_literals
-    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:0cxx_return_type_deduction
-    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:0cxx_rvalue_references
-    Feature record: CXX_FEATURE:0cxx_sizeof_member
-    Feature record: CXX_FEATURE:0cxx_static_assert
-    Feature record: CXX_FEATURE:0cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:0cxx_thread_local
-    Feature record: CXX_FEATURE:0cxx_trailing_return_types
-    Feature record: CXX_FEATURE:0cxx_unicode_literals
-    Feature record: CXX_FEATURE:0cxx_uniform_initialization
-    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:0cxx_user_literals
-    Feature record: CXX_FEATURE:0cxx_variable_templates
-    Feature record: CXX_FEATURE:0cxx_variadic_macros
-    Feature record: CXX_FEATURE:0cxx_variadic_templates
-Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
-arm-none-eabi-gcc (GNU MCU Eclipse ARM Embedded GCC, 64-bit) 8.2.1 20181213 (release) [gcc-8-branch revision 267074]
-Copyright (C) 2018 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-The target system is: Generic -  - ARM
-The host system is: Linux - 4.18.0-17-generic - x86_64
-Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc 
-Build flags: 
-Id flags: -c 
-
-The output was:
-0
-
-
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
-
-The C compiler identification is GNU, found in "/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.o"
-
-Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++ 
-Build flags: 
-Id flags: -c 
-
-The output was:
-0
-
-
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
-
-The CXX compiler identification is GNU, found in "/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.o"
-
-Determining if the C compiler works passed with the following output:
-Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_6fd62/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6fd62.dir/build.make CMakeFiles/cmTC_6fd62.dir/build
-make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_6fd62.dir/testCCompiler.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_6fd62.dir/testCCompiler.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C static library libcmTC_6fd62.a
-/usr/bin/cmake -P CMakeFiles/cmTC_6fd62.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fd62.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_6fd62.a  CMakeFiles/cmTC_6fd62.dir/testCCompiler.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_6fd62.a
-make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-
-
-Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_a6a95/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a6a95.dir/build.make CMakeFiles/cmTC_a6a95.dir/build
-make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a6a95.dir/CMakeCCompilerABI.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_a6a95.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C static library libcmTC_a6a95.a
-/usr/bin/cmake -P CMakeFiles/cmTC_a6a95.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6a95.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_a6a95.a  CMakeFiles/cmTC_a6a95.dir/CMakeCCompilerABI.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_a6a95.a
-make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-
-
-Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_a6a95/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a6a95.dir/build.make CMakeFiles/cmTC_a6a95.dir/build]
-  ignore line: [make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_a6a95.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc    -o CMakeFiles/cmTC_a6a95.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C static library libcmTC_a6a95.a]
-  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_a6a95.dir/cmake_clean_target.cmake]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6a95.dir/link.txt --verbose=1]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_a6a95.a  CMakeFiles/cmTC_a6a95.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_a6a95.a]
-  ignore line: [make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp']
-  ignore line: []
-  implicit libs: []
-  implicit dirs: []
-  implicit fwks: []
-
-
-
-
-Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_fbffb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fbffb.dir/build.make CMakeFiles/cmTC_fbffb.dir/build
-make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fbffb.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c11 -o CMakeFiles/cmTC_fbffb.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_fbffb.a
-/usr/bin/cmake -P CMakeFiles/cmTC_fbffb.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fbffb.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_fbffb.a  CMakeFiles/cmTC_fbffb.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_fbffb.a
-make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:1c_restrict
-    Feature record: C_FEATURE:1c_static_assert
-    Feature record: C_FEATURE:1c_variadic_macros
-
-
-Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_b1d2c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b1d2c.dir/build.make CMakeFiles/cmTC_b1d2c.dir/build
-make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_b1d2c.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c99 -o CMakeFiles/cmTC_b1d2c.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_b1d2c.a
-/usr/bin/cmake -P CMakeFiles/cmTC_b1d2c.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1d2c.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_b1d2c.a  CMakeFiles/cmTC_b1d2c.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_b1d2c.a
-make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:1c_restrict
-    Feature record: C_FEATURE:0c_static_assert
-    Feature record: C_FEATURE:1c_variadic_macros
-
-
-Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_4c66f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_4c66f.dir/build.make CMakeFiles/cmTC_4c66f.dir/build
-make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_4c66f.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-gcc   -std=c90 -o CMakeFiles/cmTC_4c66f.dir/feature_tests.c.obj   -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.c
-Linking C static library libcmTC_4c66f.a
-/usr/bin/cmake -P CMakeFiles/cmTC_4c66f.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c66f.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_4c66f.a  CMakeFiles/cmTC_4c66f.dir/feature_tests.c.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_4c66f.a
-make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-
-
-    Feature record: C_FEATURE:1c_function_prototypes
-    Feature record: C_FEATURE:0c_restrict
-    Feature record: C_FEATURE:0c_static_assert
-    Feature record: C_FEATURE:0c_variadic_macros
-Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_7d6cd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7d6cd.dir/build.make CMakeFiles/cmTC_7d6cd.dir/build
-make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7d6cd.dir/testCXXCompiler.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_7d6cd.dir/testCXXCompiler.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX static library libcmTC_7d6cd.a
-/usr/bin/cmake -P CMakeFiles/cmTC_7d6cd.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d6cd.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_7d6cd.a  CMakeFiles/cmTC_7d6cd.dir/testCXXCompiler.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_7d6cd.a
-make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-
-
-Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_ae506/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ae506.dir/build.make CMakeFiles/cmTC_ae506.dir/build
-make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ae506.dir/CMakeCXXCompilerABI.cpp.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_ae506.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX static library libcmTC_ae506.a
-/usr/bin/cmake -P CMakeFiles/cmTC_ae506.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae506.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_ae506.a  CMakeFiles/cmTC_ae506.dir/CMakeCXXCompilerABI.cpp.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_ae506.a
-make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-
-
-Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(arm-none-eabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_ae506/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_ae506.dir/build.make CMakeFiles/cmTC_ae506.dir/build]
-  ignore line: [make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_ae506.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++     -o CMakeFiles/cmTC_ae506.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX static library libcmTC_ae506.a]
-  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_ae506.dir/cmake_clean_target.cmake]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae506.dir/link.txt --verbose=1]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_ae506.a  CMakeFiles/cmTC_ae506.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_ae506.a]
-  ignore line: [make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp']
-  ignore line: []
-  implicit libs: []
-  implicit dirs: []
-  implicit fwks: []
-
-
-
-
-Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_b6b0d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_b6b0d.dir/build.make CMakeFiles/cmTC_b6b0d.dir/build
-make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b6b0d.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++1z -o CMakeFiles/cmTC_b6b0d.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_b6b0d.a
-/usr/bin/cmake -P CMakeFiles/cmTC_b6b0d.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6b0d.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_b6b0d.a  CMakeFiles/cmTC_b6b0d.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_b6b0d.a
-make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-
-
-    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:1cxx_alias_templates
-    Feature record: CXX_FEATURE:1cxx_alignas
-    Feature record: CXX_FEATURE:1cxx_alignof
-    Feature record: CXX_FEATURE:1cxx_attributes
-    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:1cxx_auto_type
-    Feature record: CXX_FEATURE:1cxx_binary_literals
-    Feature record: CXX_FEATURE:1cxx_constexpr
-    Feature record: CXX_FEATURE:1cxx_contextual_conversions
-    Feature record: CXX_FEATURE:1cxx_decltype
-    Feature record: CXX_FEATURE:1cxx_decltype_auto
-    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:1cxx_default_function_template_args
-    Feature record: CXX_FEATURE:1cxx_defaulted_functions
-    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:1cxx_delegating_constructors
-    Feature record: CXX_FEATURE:1cxx_deleted_functions
-    Feature record: CXX_FEATURE:1cxx_digit_separators
-    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:1cxx_explicit_conversions
-    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:1cxx_extern_templates
-    Feature record: CXX_FEATURE:1cxx_final
-    Feature record: CXX_FEATURE:1cxx_func_identifier
-    Feature record: CXX_FEATURE:1cxx_generalized_initializers
-    Feature record: CXX_FEATURE:1cxx_generic_lambdas
-    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:1cxx_inline_namespaces
-    Feature record: CXX_FEATURE:1cxx_lambdas
-    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:1cxx_local_type_template_args
-    Feature record: CXX_FEATURE:1cxx_long_long_type
-    Feature record: CXX_FEATURE:1cxx_noexcept
-    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:1cxx_nullptr
-    Feature record: CXX_FEATURE:1cxx_override
-    Feature record: CXX_FEATURE:1cxx_range_for
-    Feature record: CXX_FEATURE:1cxx_raw_string_literals
-    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:1cxx_return_type_deduction
-    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:1cxx_rvalue_references
-    Feature record: CXX_FEATURE:1cxx_sizeof_member
-    Feature record: CXX_FEATURE:1cxx_static_assert
-    Feature record: CXX_FEATURE:1cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
-    Feature record: CXX_FEATURE:1cxx_trailing_return_types
-    Feature record: CXX_FEATURE:1cxx_unicode_literals
-    Feature record: CXX_FEATURE:1cxx_uniform_initialization
-    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:1cxx_user_literals
-    Feature record: CXX_FEATURE:1cxx_variable_templates
-    Feature record: CXX_FEATURE:1cxx_variadic_macros
-    Feature record: CXX_FEATURE:1cxx_variadic_templates
-
-
-Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_d1920/fast"
-/usr/bin/make -f CMakeFiles/cmTC_d1920.dir/build.make CMakeFiles/cmTC_d1920.dir/build
-make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d1920.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++14 -o CMakeFiles/cmTC_d1920.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_d1920.a
-/usr/bin/cmake -P CMakeFiles/cmTC_d1920.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1920.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_d1920.a  CMakeFiles/cmTC_d1920.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_d1920.a
-make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-
-
-    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:1cxx_alias_templates
-    Feature record: CXX_FEATURE:1cxx_alignas
-    Feature record: CXX_FEATURE:1cxx_alignof
-    Feature record: CXX_FEATURE:1cxx_attributes
-    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:1cxx_auto_type
-    Feature record: CXX_FEATURE:1cxx_binary_literals
-    Feature record: CXX_FEATURE:1cxx_constexpr
-    Feature record: CXX_FEATURE:1cxx_contextual_conversions
-    Feature record: CXX_FEATURE:1cxx_decltype
-    Feature record: CXX_FEATURE:1cxx_decltype_auto
-    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:1cxx_default_function_template_args
-    Feature record: CXX_FEATURE:1cxx_defaulted_functions
-    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:1cxx_delegating_constructors
-    Feature record: CXX_FEATURE:1cxx_deleted_functions
-    Feature record: CXX_FEATURE:1cxx_digit_separators
-    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:1cxx_explicit_conversions
-    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:1cxx_extern_templates
-    Feature record: CXX_FEATURE:1cxx_final
-    Feature record: CXX_FEATURE:1cxx_func_identifier
-    Feature record: CXX_FEATURE:1cxx_generalized_initializers
-    Feature record: CXX_FEATURE:1cxx_generic_lambdas
-    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:1cxx_inline_namespaces
-    Feature record: CXX_FEATURE:1cxx_lambdas
-    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:1cxx_local_type_template_args
-    Feature record: CXX_FEATURE:1cxx_long_long_type
-    Feature record: CXX_FEATURE:1cxx_noexcept
-    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:1cxx_nullptr
-    Feature record: CXX_FEATURE:1cxx_override
-    Feature record: CXX_FEATURE:1cxx_range_for
-    Feature record: CXX_FEATURE:1cxx_raw_string_literals
-    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:1cxx_return_type_deduction
-    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:1cxx_rvalue_references
-    Feature record: CXX_FEATURE:1cxx_sizeof_member
-    Feature record: CXX_FEATURE:1cxx_static_assert
-    Feature record: CXX_FEATURE:1cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
-    Feature record: CXX_FEATURE:1cxx_trailing_return_types
-    Feature record: CXX_FEATURE:1cxx_unicode_literals
-    Feature record: CXX_FEATURE:1cxx_uniform_initialization
-    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:1cxx_user_literals
-    Feature record: CXX_FEATURE:1cxx_variable_templates
-    Feature record: CXX_FEATURE:1cxx_variadic_macros
-    Feature record: CXX_FEATURE:1cxx_variadic_templates
-
-
-Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_fcb41/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fcb41.dir/build.make CMakeFiles/cmTC_fcb41.dir/build
-make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_fcb41.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++11 -o CMakeFiles/cmTC_fcb41.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_fcb41.a
-/usr/bin/cmake -P CMakeFiles/cmTC_fcb41.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fcb41.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_fcb41.a  CMakeFiles/cmTC_fcb41.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_fcb41.a
-make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-
-
-    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
-    Feature record: CXX_FEATURE:1cxx_alias_templates
-    Feature record: CXX_FEATURE:1cxx_alignas
-    Feature record: CXX_FEATURE:1cxx_alignof
-    Feature record: CXX_FEATURE:1cxx_attributes
-    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
-    Feature record: CXX_FEATURE:1cxx_auto_type
-    Feature record: CXX_FEATURE:0cxx_binary_literals
-    Feature record: CXX_FEATURE:1cxx_constexpr
-    Feature record: CXX_FEATURE:0cxx_contextual_conversions
-    Feature record: CXX_FEATURE:1cxx_decltype
-    Feature record: CXX_FEATURE:0cxx_decltype_auto
-    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
-    Feature record: CXX_FEATURE:1cxx_default_function_template_args
-    Feature record: CXX_FEATURE:1cxx_defaulted_functions
-    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
-    Feature record: CXX_FEATURE:1cxx_delegating_constructors
-    Feature record: CXX_FEATURE:1cxx_deleted_functions
-    Feature record: CXX_FEATURE:0cxx_digit_separators
-    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
-    Feature record: CXX_FEATURE:1cxx_explicit_conversions
-    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
-    Feature record: CXX_FEATURE:1cxx_extern_templates
-    Feature record: CXX_FEATURE:1cxx_final
-    Feature record: CXX_FEATURE:1cxx_func_identifier
-    Feature record: CXX_FEATURE:1cxx_generalized_initializers
-    Feature record: CXX_FEATURE:0cxx_generic_lambdas
-    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
-    Feature record: CXX_FEATURE:1cxx_inline_namespaces
-    Feature record: CXX_FEATURE:1cxx_lambdas
-    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
-    Feature record: CXX_FEATURE:1cxx_local_type_template_args
-    Feature record: CXX_FEATURE:1cxx_long_long_type
-    Feature record: CXX_FEATURE:1cxx_noexcept
-    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
-    Feature record: CXX_FEATURE:1cxx_nullptr
-    Feature record: CXX_FEATURE:1cxx_override
-    Feature record: CXX_FEATURE:1cxx_range_for
-    Feature record: CXX_FEATURE:1cxx_raw_string_literals
-    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
-    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
-    Feature record: CXX_FEATURE:0cxx_return_type_deduction
-    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
-    Feature record: CXX_FEATURE:1cxx_rvalue_references
-    Feature record: CXX_FEATURE:1cxx_sizeof_member
-    Feature record: CXX_FEATURE:1cxx_static_assert
-    Feature record: CXX_FEATURE:1cxx_strong_enums
-    Feature record: CXX_FEATURE:1cxx_template_template_parameters
-    Feature record: CXX_FEATURE:1cxx_thread_local
-    Feature record: CXX_FEATURE:1cxx_trailing_return_types
-    Feature record: CXX_FEATURE:1cxx_unicode_literals
-    Feature record: CXX_FEATURE:1cxx_uniform_initialization
-    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
-    Feature record: CXX_FEATURE:1cxx_user_literals
-    Feature record: CXX_FEATURE:0cxx_variable_templates
-    Feature record: CXX_FEATURE:1cxx_variadic_macros
-    Feature record: CXX_FEATURE:1cxx_variadic_templates
-
-
-Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp
-
-Run Build Command:"/usr/bin/make" "cmTC_953b8/fast"
-/usr/bin/make -f CMakeFiles/cmTC_953b8.dir/build.make CMakeFiles/cmTC_953b8.dir/build
-make[1]: Entering directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_953b8.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++98 -o CMakeFiles/cmTC_953b8.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
-Linking CXX static library libcmTC_953b8.a
-/usr/bin/cmake -P CMakeFiles/cmTC_953b8.dir/cmake_clean_target.cmake
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_953b8.dir/link.txt --verbose=1
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_953b8.a  CMakeFiles/cmTC_953b8.dir/feature_tests.cxx.obj
-/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_953b8.a
+Building CXX object CMakeFiles/cmTC_7031e.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content//bin/arm-none-eabi-g++    -std=c++98 -o CMakeFiles/cmTC_7031e.dir/feature_tests.cxx.obj -c /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/feature_tests.cxx
+Linking CXX static library libcmTC_7031e.a
+/usr/bin/cmake -P CMakeFiles/cmTC_7031e.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7031e.dir/link.txt --verbose=1
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ar qc libcmTC_7031e.a  CMakeFiles/cmTC_7031e.dir/feature_tests.cxx.obj
+/home/abdallah/opt/xPacks/@gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.4.1/.content/bin/arm-none-eabi-ranlib libcmTC_7031e.a
 make[1]: Leaving directory '/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/CMakeFiles/CMakeTmp'
 
 

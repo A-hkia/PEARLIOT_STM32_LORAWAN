@@ -974,7 +974,7 @@ stdint.h
 LoRaMac.h
 /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.h
 
-/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c
+/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c
 stdbool.h
 -
 stdlib.h
@@ -983,16 +983,12 @@ stdint.h
 -
 utilities.h
 /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/utilities.h
-secure-element.h
-/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/secure-element.h
 LoRaMacParser.h
 /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.h
 LoRaMacSerializer.h
 /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.h
 LoRaMacCrypto.h
 /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.h
-utilities.h
-/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/utilities.h
 
 /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.h
 stdlib.h

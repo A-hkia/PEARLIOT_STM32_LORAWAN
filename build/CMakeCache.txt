@@ -210,6 +210,9 @@ CMSIS_BINARY_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWA
 //Value Computed by CMake
 CMSIS_SOURCE_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Drivers/CMSIS
 
+//Default Crypto is PearlIoT
+CRYPTO:STRING=PearlIoT
+
 //Value Computed by CMake
 Components_BINARY_DIR:STATIC=/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Drivers/BSP/Components
 
@@ -237,7 +240,7 @@ RADIO:STRING=sx1276
 //Default Sensor Board is X_NUCLEO_IKS01A2
 SENSOR_BOARD:STRING=X_NUCLEO_IKS01A2
 
-//Serie chosen is STM32L0xx
+//Default Serie is STM32L0xx
 SERIES:STRING=STM32L0xx
 
 //Value Computed by CMake
@@ -486,10 +489,14 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//STRINGS property for variable: CRYPTO
+CRYPTO-STRINGS:INTERNAL=PearlIoT;Soft-se
 //STRINGS property for variable: PROJECT
 PROJECT-STRINGS:INTERNAL=B-L072Z-LRWAN1;STM32L053R8-Nucleo;STM32L073RZ-Nucleo;STM32L152RE-Nucleo;STM32L476RG-Nucleo
 //STRINGS property for variable: RADIO
 RADIO-STRINGS:INTERNAL=sx126x;sx1272;sx1276
 //STRINGS property for variable: SENSOR_BOARD
 SENSOR_BOARD-STRINGS:INTERNAL=X_NUCLEO_IKS01A1;X_NUCLEO_IKS01A2
+//STRINGS property for variable: SERIES
+SERIES-STRINGS:INTERNAL=STM32L0xx;STM32L1xx;STM32L4xx
 

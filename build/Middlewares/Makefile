@@ -476,32 +476,32 @@ Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.s:
 	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.s
 .PHONY : Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c.s
 
-Third_Party/LoRaWAN/Mac/LoRaMacCrypto.obj: Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj
+Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.obj: Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj
 
-.PHONY : Third_Party/LoRaWAN/Mac/LoRaMacCrypto.obj
+.PHONY : Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.obj
 
 # target to build an object file
-Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj:
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj
-.PHONY : Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.obj
+Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj:
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj
+.PHONY : Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj
 
-Third_Party/LoRaWAN/Mac/LoRaMacCrypto.i: Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.i
+Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.i: Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.i
 
-.PHONY : Third_Party/LoRaWAN/Mac/LoRaMacCrypto.i
+.PHONY : Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.i
 
 # target to preprocess a source file
-Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.i:
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.i
-.PHONY : Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.i
+Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.i:
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.i
+.PHONY : Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.i
 
-Third_Party/LoRaWAN/Mac/LoRaMacCrypto.s: Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.s
+Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.s: Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.s
 
-.PHONY : Third_Party/LoRaWAN/Mac/LoRaMacCrypto.s
+.PHONY : Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.s
 
 # target to generate assembly for a file
-Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.s:
-	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.s
-.PHONY : Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c.s
+Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.s:
+	cd /home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build && $(MAKE) -f Middlewares/CMakeFiles/middlewares.dir/build.make Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.s
+.PHONY : Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.s
 
 Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.obj: Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj
 
@@ -1118,9 +1118,9 @@ help:
 	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.obj"
 	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.i"
 	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.s"
-	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacCrypto.obj"
-	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacCrypto.i"
-	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacCrypto.s"
+	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.obj"
+	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.i"
+	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.s"
 	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.obj"
 	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.i"
 	@echo "... Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.s"
