@@ -34,10 +34,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj"
   "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacParser.c.obj"
   "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c.obj"
-  "CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.obj"
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang C CXX)
+foreach(lang C)
   include(CMakeFiles/middlewares.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

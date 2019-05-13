@@ -1218,8 +1218,10 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart.h
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_usart_ex.h
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_hal_wwdg.h
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/systime.h
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/timeServer.h
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/trace.h
+Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/util_console.h
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/utilities.h
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/mlm32l0xx_hw_conf.h
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc/stm32l0xx_hal_conf.h
@@ -1233,7 +1235,6 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.h
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.h
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacTypes.h
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.h
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacCrypto-SE.c.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/timer.h
 
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c.obj: ../Drivers/BSP/B-L072Z-LRWAN1/b-l072z-lrwan1.h
@@ -3160,12 +3161,4 @@ Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/trace.h
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/utilities.c
 Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Utilities/utilities.c.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/utilities.h
-
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/systime.h
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/trace.h
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.obj: ../Middlewares/Third_Party/LoRaWAN/Utilities/util_console.h
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/LoRaWAN/App/inc/utilities_conf.h
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.obj: ../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/LoRaWAN/App/inc/vcom.h
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp
-Middlewares/CMakeFiles/middlewares.dir/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp.obj: ../Middlewares/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.h
 

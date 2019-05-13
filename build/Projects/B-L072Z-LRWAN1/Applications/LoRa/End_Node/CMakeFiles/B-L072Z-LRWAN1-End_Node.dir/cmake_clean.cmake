@@ -15,6 +15,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang ASM C CXX)
+foreach(lang ASM C)
   include(CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

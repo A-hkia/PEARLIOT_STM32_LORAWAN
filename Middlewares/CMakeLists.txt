@@ -49,8 +49,8 @@ if(CRYPTO STREQUAL PearlIoT)
     "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacFCntHandler.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacParser.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.c"
-	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/SE_RSC_ITF_serial_debug.cpp"    
     )
+    
 elseif(CRYPTO STREQUAL Soft-se)
 	file(GLOB ${PROJECT_NAME}_SOURCES
 	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Core/*.c"
