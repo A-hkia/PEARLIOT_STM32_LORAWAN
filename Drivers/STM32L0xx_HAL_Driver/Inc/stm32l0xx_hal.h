@@ -47,6 +47,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l0xx_hal_conf.h"
 
+
 /** @addtogroup STM32L0xx_HAL_Driver
   * @{
   */
@@ -176,7 +177,7 @@
 /**
   * @brief  TIM3 Peripherals Debug mode 
   */ 
-#define __HAL_DBGMCU_FREEZE_TIM3()     SET_BIT(DBGMCU->APB1FZ,DBGMCU_APB1_FZ_DBG_TIM3_STOP)
+#define __HAL_DBGMCU_FREEZE_TIM3()     SET_BIT(DBGMCU->APB1FZ,DBGMCU                               _APB1_FZ_DBG_TIM3_STOP)
 #define __HAL_DBGMCU_UNFREEZE_TIM3()   CLEAR_BIT(DBGMCU->APB1FZ,DBGMCU_APB1_FZ_DBG_TIM3_STOP)
 #endif
 

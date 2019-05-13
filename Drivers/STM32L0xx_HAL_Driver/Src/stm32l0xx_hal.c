@@ -52,6 +52,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l0xx_hal.h"
+#include "core_cm0plus.h"
+
 
 /** @addtogroup STM32L0xx_HAL_Driver
   * @{

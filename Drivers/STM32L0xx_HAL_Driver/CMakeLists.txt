@@ -11,7 +11,7 @@ file(GLOB ${PROJECT_NAME}_SOURCES
 
 add_library(${PROJECT_NAME} OBJECT EXCLUDE_FROM_ALL ${${PROJECT_NAME}_SOURCES})
 
-#add_dependencies(${PROJECT_NAME} CMSIS-STM32L0xx)
+add_dependencies(${PROJECT_NAME} CMSIS-STM32L0xx)
 
 
 #Add all the header files

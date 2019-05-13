@@ -61,9 +61,10 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Drivers/BSP/Components/lsm6ds0"
   "../Drivers/BSP/Components/lsm6ds3"
   "../Drivers/BSP/Components/lsm6dsl"
-  "../Projects/STM32L053R8-Nucleo/Applications/LoRa/End_Node/Core/inc"
-  "../Projects/STM32L053R8-Nucleo/Applications/LoRa/End_Node/LoRaWAN/App/inc"
-  "../Drivers/BSP/STM32L0xx_Nucleo"
+  "../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc"
+  "../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/LoRaWAN/App/inc"
+  "../Drivers/BSP/B-L072Z-LRWAN1"
+  "../Drivers/BSP/CMWX1ZZABZ-0xx"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/Include"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Include"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../RTOS/Template"
@@ -75,9 +76,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Lib/ARM"
   "../Drivers/CMSIS/Device/ST/STM32L0xx/../../../Lib/GCC"
   "../Drivers/STM32L0xx_HAL_Driver/Inc"
-  "../Drivers/BSP/Components/sx1276"
-  "../Drivers/BSP/SX1276MB1LAS"
   "../Drivers/BSP/X_NUCLEO_IKS01A2"
+  "../Drivers/BSP/Components/sx1276"
   )
 
 # Targets to which this target links.
