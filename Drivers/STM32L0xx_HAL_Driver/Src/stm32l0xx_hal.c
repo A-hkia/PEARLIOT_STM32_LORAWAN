@@ -53,6 +53,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l0xx_hal.h"
 #include "core_cm0plus.h"
+//#include "stm32l0xx_hal_flash_ex.h"
+//#include "stm32l0xx_hal_def.h"
+
+
+
 
 
 /** @addtogroup STM32L0xx_HAL_Driver
