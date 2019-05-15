@@ -305,7 +305,7 @@ uint32_t HW_GetRandomSeed( void )
   * @param unique ID
   * @retval none
   */
-void HW_GetUniqueId( uint8_t *id )
+__weak void HW_GetUniqueId( uint8_t *id )
 {
     id[7] = ( ( *( uint32_t* )ID1 )+ ( *( uint32_t* )ID3 ) ) >> 24;
     id[6] = ( ( *( uint32_t* )ID1 )+ ( *( uint32_t* )ID3 ) ) >> 16;

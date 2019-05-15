@@ -57,12 +57,14 @@ target_include_directories( ${PROJECT_NAME} PUBLIC
 #---------------------------------------------------------------------------------------
 
 if(SENSOR_BOARD STREQUAL X_NUCLEO_IKS01A1)
+	target_compile_definitions(${PROJECT_NAME} PUBLIC -DSENSOR_ENABLED)
 	target_link_libraries(${PROJECT_NAME} $<TARGET_OBJECTS:BSP-X_NUCLEO_IKS01A1>)
 	add_dependencies(${PROJECT_NAME} BSP-X_NUCLEO_IKS01A1)
 	target_include_directories( ${PROJECT_NAME} PUBLIC
 		$<TARGET_PROPERTY:BSP-X_NUCLEO_IKS01A1,INTERFACE_INCLUDE_DIRECTORIES>  
 	)  	
 elseif(SENSOR_BOARD STREQUAL X_NUCLEO_IKS01A2)
+	target_compile_definitions(${PROJECT_NAME} PUBLIC -DSENSOR_ENABLED)
 	target_link_libraries(${PROJECT_NAME} $<TARGET_OBJECTS:BSP-X_NUCLEO_IKS01A2>)
 	add_dependencies(${PROJECT_NAME} BSP-X_NUCLEO_IKS01A2)
 	target_include_directories( ${PROJECT_NAME} PUBLIC

@@ -9,6 +9,11 @@ set(CMAKE_DEPENDS_CHECK_ASM
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
 
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_ASM
+  "SENSOR_ENABLED"
+  )
+
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "../Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/Core/inc"
@@ -59,6 +64,11 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/LoRaWAN/App/src/vcom.c" "/home/abdallah/eclipse-workspace/STM32CubeExpansion_LRWAN_V1.2.0/build/Projects/B-L072Z-LRWAN1/Applications/LoRa/End_Node/CMakeFiles/B-L072Z-LRWAN1-End_Node.dir/LoRaWAN/App/src/vcom.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "SENSOR_ENABLED"
+  )
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
