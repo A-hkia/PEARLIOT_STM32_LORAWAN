@@ -86,7 +86,8 @@
 #define HEX16(X)  X[0],X[1], X[2],X[3], X[4],X[5], X[6],X[7],X[8],X[9], X[10],X[11], X[12],X[13], X[14],X[15]
 #define HEX8(X)   X[0],X[1], X[2],X[3], X[4],X[5], X[6],X[7]
 static uint8_t DevEui[] = LORAWAN_DEVICE_EUI;
-static uint8_t JoinEui[] = LORAWAN_JOIN_EUI;
+// allow extern reference to JoinEUI
+uint8_t JoinEui[] = LORAWAN_JOIN_EUI;
 static uint8_t AppKey[] = LORAWAN_APP_KEY;
 static uint8_t NwkKey[] = LORAWAN_NWK_KEY;
 
@@ -459,7 +460,8 @@ void LORA_Init (LoRaMainCallback_t *callbacks, LoRaParam_t* LoRaParam )
   LoRaMainCallbacks = callbacks;
   
 #if (STATIC_DEVICE_EUI != 1)
-  LoRaMainCallbacks->BoardGetUniqueId( DevEui );  
+  LoRaMainCallbacks->BoardGetUniqueId( DevEui );
+  //LoRaMainCallbacks->BoardGetUniqueId( JoinEui );
 #endif
   
 #if( OVER_THE_AIR_ACTIVATION != 0 )
