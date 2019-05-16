@@ -631,36 +631,21 @@ LoRaMacCryptoStatus_t LoRaMacCryptoDeriveMcSessionKeyPair( AddressIdentifier_t a
      return LORAMAC_CRYPTO_SUCCESS;
 }
 
-LoRaMacCryptoStatus_t HW_GetUniqueId(uint8_t *devEUI, LoRaMacMessageData_t* macMsg)
+LoRaMacCryptoStatus_t HW_GetUniqueId(uint8_t *devEUI, uint8_t* pearliot_buffer)
 {
-//  uint16_t err;
-//  uint16_t deveui_len = 8;
-//
-//  err = SE_API_Get_Data(0x0400 | profile, NULL, 0, devEUI, &deveui_len);
-//
-//  return (err != (MW_STATUS_SE_STATUS_BASE + SE_STATUS_SUCCESSFUL_EXECUTION));
 
-	uint8_t length, status;
-	uint8_t pearl_iot_buf [256];
+	uint8_t length =3;
+	uint8_t  status;
 
-	if( ( macMsg == 0 ) )
-  {
-      return LORAMAC_CRYPTO_ERROR_NPE;
-  }
+	pearliot_buffer[0] = TAG_GET_DATA;
+	pearliot_buffer[1]=0x84;
+	pearliot_buffer[2]=0x00;
 
-	pearl_iot_buf[0] = TAG_GET_DATA;
-	pearl_iot_buf[1]=0x84;
-	pearl_iot_buf[2]=0x00;
-
-	memcpy(&pearl_iot_buf[3],macMsg->Buffer, macMsg->BufSize);
-  //length = macMsg->BufSize +1;
-  status = MDL_i2c_prot_SendReceiveAppCommand(pearl_iot_buf, &length);
+  status = MDL_i2c_prot_SendReceiveAppCommand(pearliot_buffer, &length);
   if (status != SE_API_SUCCESS) {
   	return LORAMAC_CRYPTO_ERROR;
   }
-  memcpy(macMsg->Buffer,pearliot_buffer,length);
-  macMsg->BufSize=length;
-  //SE_RSC_serial_debug_hex (LOG_DBG, (char*)"[I2C PROT] GetDevEUI response: ", Buffer, length);
+  memcpy(devEUI,pearliot_buffer,length);
 
 return LORAMAC_CRYPTO_SUCCESS;
 }
