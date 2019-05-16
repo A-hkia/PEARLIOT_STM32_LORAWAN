@@ -67,11 +67,15 @@
   * @param TickPriority: Tick interrupt priority.
   * @retval HAL status
   */
+
+//We have to disable this so the HAL_InitTick function in the HAL drivers can be used
+#if 0
 HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
 {
    /* Return function status */
   return HAL_OK;
 }
+#endif
 
 /**
   * @brief This function provides delay (in ms)

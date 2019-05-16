@@ -175,7 +175,6 @@ int main( void )
 {
   /* STM32 HAL library initialization*/
   HAL_Init();
-  
   /* Configure the system clock*/
   SystemClock_Config();
   
@@ -192,10 +191,11 @@ int main( void )
   LPM_SetOffMode(LPM_APPLI_Id , LPM_Disable );
   
   PRINTF("VERSION: %X\n\r", VERSION);
+  //We added the suspend tick before LoRa functions because we no longer need the system tick
+  HAL_SuspendTick();
   
   /* Configure the Lora Stack*/
   LORA_Init( &LoRaMainCallbacks, &LoRaParamInit);
-  
   LORA_Join();
   
   LoraStartTx( TX_ON_TIMER) ;

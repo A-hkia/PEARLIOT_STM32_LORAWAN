@@ -61,6 +61,8 @@ Maintainer: Miguel Luis and Gregory Cristian
 #include "radio.h"
 #include "debug.h"
 #include "vcom.h"
+#include "stm32l0xx_hal_def.h"
+
 
 /*!
  *  \brief Unique Devices IDs register set ( STM32L0xxx )
@@ -301,7 +303,7 @@ uint32_t HW_GetRandomSeed( void )
   * @param unique ID
   * @retval none
   */
-void HW_GetUniqueId( uint8_t *id )
+__weak void HW_GetUniqueId( uint8_t *id )
 {
     id[7] = ( ( *( uint32_t* )ID1 )+ ( *( uint32_t* )ID3 ) ) >> 24;
     id[6] = ( ( *( uint32_t* )ID1 )+ ( *( uint32_t* )ID3 ) ) >> 16;

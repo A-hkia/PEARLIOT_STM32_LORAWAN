@@ -42,7 +42,6 @@
 #include "LoRaMacParser.h"
 #include "LoRaMacSerializer.h"
 #include "LoRaMacCrypto.h"
-//#include <stm32l0xx_hal_i2c.h>
 #include <string.h>
 
 
@@ -160,12 +159,24 @@ static uint32_t timeout = SE_RSC_I2C_TIMEOUT_1S;        /*!< I2C timeout */
 #endif
 
 #define LOG_DBG     4 /*!< Debug, info, error, warning Log level */
-// Command tag
+// Command tags
 #define TAG_SECURE_UPLINK   0x60  /*!< LORA INS tag for secure uplink */
 #define TAG_VERIFY_DOWNLINK 0x61  /*!< LORA INS tag for verify downlink */
 #define TAG_JOIN_REQUEST    0x62  /*!< LORA INS tag for join request */
 #define TAG_REJOIN_REQUEST  0x63  /*!< LORA INS tag for rejoin request */
 #define TAG_JOIN_ACCEPT     0x64  /*!< LORA INS tag for join accept */
+
+//Communication tags
+#define TAG_MLS_WRAP                       0x21 /*!< Tag for MLS Wrap command */
+#define TAG_MLS_UNWRAP                     0x20 /*!< Tag for MLS Unwrap command */
+#define TAG_PUT_DATA                       0x04 /*!< Tag for Put Data command */
+#define TAG_GET_DATA                       0x0D /*!< Tag for Get Data command */
+#define TAG_GET_RANDOM                     0x10 /*!< Tag for Get Random command */
+#define TAG_READ_GPIO                      0xE0 /*!< Tag for Read GPIO line state command */
+#define TAG_WRITE_GPIO                     0xE1 /*!< Tag for Write GPIO line state command */
+
+// Command tag
+//#define DEV_EUI_ADDRESS		0x8400  /*!< DevEUI's address in the SE */
 
 #define SE_RSC_I2C_SUCCESS                         0x00 /*!< Generic no error */
 // Status
@@ -188,6 +199,46 @@ static uint32_t timeout = SE_RSC_I2C_TIMEOUT_1S;        /*!< I2C timeout */
 #define MDL_I2C_PROT_RS_LAST_RFU        0xFF    /*!< Response first part - last RFU value */
 #define MDL_I2C_PROT_RS_FIRST_OK        0x00    /*!< Response first part - Status first possible value */
 #define MDL_I2C_PROT_RS_LAST_OK         0xEF    /*!< Response first part - Status last possible value */
+
+// SE communication
+#define MW_STATUS_SE_STATUS_BASE                0x0000   /*!< No error on MW side, SE status */
+#define MW_STATUS_WRONG_PARAMETER               0x0100   /*!< Wrong parameter provided to the MW function */
+#define MW_STATUS_BUFFER_LENGTH                 0x0200   /*!< Buffer allocation on MW side has failed */
+#define MW_STATUS_OUTPUT_LENGTH                 0x0300   /*!< MW output buffer not large enough to get the answer from the SE */
+#define MW_STATUS_COMM_FAILURE                  0x0400   /*!< Communication failure with the SE */
+
+typedef enum
+{
+    // Success
+    SE_STATUS_SUCCESSFUL_EXECUTION = 0x00,              /*!< SE successful execution */
+
+    // Error system
+    SE_STATUS_UNSPECIFIED_ERROR = 0x10,                 /*!< SE unspecified error */
+    SE_STATUS_INSTRUCTION_NOT_SUPPORTED = 0x11,         /*!< SE instruction not supported */
+    SE_STATUS_INVALID_DATA_OBJECT_IDENTIFIER = 0x12,    /*!< SE invalid data object identifier */
+    SE_STATUS_INCONSISTENT_FORMAT = 0x13,               /*!< SE inconsistent format */
+    SE_STATUS_ACCESS_FORBIDDEN = 0x14,                  /*!< SE access forbidden */
+    SE_STATUS_INVALID_STATE = 0x15,                     /*!< SE invalid state */
+    SE_STATUS_OUTPUT_BUFFER_OVERFLOW = 0x16,            /*!< SE output buffer overflow */
+    SE_STATUS_SECURITY_ERROR = 0x17,                    /*!< SE security error */
+
+    // Error application
+    SE_STATUS_COUNTER_OVERFLOW = 0x20,                  /*!< SE counter overflow */
+
+    // Proprietary 80-FF
+
+    // Only in debug mode
+    SE_STATUS_DBG_MUTE = 0xE0,                          /*!< SE debug MUTE */
+    SE_STATUS_DBG_IOL = 0xE1,                           /*!< SE debug IOL */
+    SE_STATUS_DBG_RAM_ALLOC = 0xE2,                     /*!< SE debug RAM ALLOC */
+    SE_STATUS_DBG_RAM_OVERWRITE = 0xE3,                 /*!< SE debug RAM OVERWRITE */
+    SE_STATUS_DBG_CSU = 0xE4,                           /*!< SE debug CSU */
+    SE_STATUS_DBG_TEARING = 0xE5,                       /*!< SE debug TEARING */
+
+    // Internal
+    SE_STATUS_INT_SUB_COMMAND = 0xF0                    /*!< SE internal sub command*/
+
+} se_status_t;
 
 //Second buffer to be used in functions that may overwrite the first buffer
 //***************************************
@@ -323,6 +374,7 @@ static uint16_t MDL_i2c_prot_SendReceiveAppCommand(uint8_t* sendRcvBuffer, uint8
     uint8_t nb_read_resp = 0;
     uint8_t status;
 
+    HAL_ResumeTick();
     SE_RSC_serial_debug_hex (LOG_DBG, (char*)"[I2C PROT] Command: ", sendRcvBuffer, *sendRcvBufferLength);
 
     //Initialize peripheral
@@ -412,6 +464,9 @@ static uint16_t MDL_i2c_prot_SendReceiveAppCommand(uint8_t* sendRcvBuffer, uint8
 /*
  *  API functions
  */
+
+
+
 
 LoRaMacCryptoStatus_t LoRaMacCryptoInit( EventNvmCtxChanged cryptoNvmCtxChanged )
 {
@@ -576,4 +631,36 @@ LoRaMacCryptoStatus_t LoRaMacCryptoDeriveMcSessionKeyPair( AddressIdentifier_t a
      return LORAMAC_CRYPTO_SUCCESS;
 }
 
+LoRaMacCryptoStatus_t HW_GetUniqueId(uint8_t *devEUI, LoRaMacMessageData_t* macMsg)
+{
+//  uint16_t err;
+//  uint16_t deveui_len = 8;
+//
+//  err = SE_API_Get_Data(0x0400 | profile, NULL, 0, devEUI, &deveui_len);
+//
+//  return (err != (MW_STATUS_SE_STATUS_BASE + SE_STATUS_SUCCESSFUL_EXECUTION));
 
+	uint8_t length, status;
+	uint8_t pearl_iot_buf [256];
+
+	if( ( macMsg == 0 ) )
+  {
+      return LORAMAC_CRYPTO_ERROR_NPE;
+  }
+
+	pearl_iot_buf[0] = TAG_GET_DATA;
+	pearl_iot_buf[1]=0x84;
+	pearl_iot_buf[2]=0x00;
+
+	memcpy(&pearl_iot_buf[3],macMsg->Buffer, macMsg->BufSize);
+  //length = macMsg->BufSize +1;
+  status = MDL_i2c_prot_SendReceiveAppCommand(pearl_iot_buf, &length);
+  if (status != SE_API_SUCCESS) {
+  	return LORAMAC_CRYPTO_ERROR;
+  }
+  memcpy(macMsg->Buffer,pearliot_buffer,length);
+  macMsg->BufSize=length;
+  //SE_RSC_serial_debug_hex (LOG_DBG, (char*)"[I2C PROT] GetDevEUI response: ", Buffer, length);
+
+return LORAMAC_CRYPTO_SUCCESS;
+}
