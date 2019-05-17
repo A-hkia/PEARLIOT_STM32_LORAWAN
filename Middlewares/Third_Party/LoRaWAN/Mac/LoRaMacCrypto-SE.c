@@ -633,7 +633,7 @@ LoRaMacCryptoStatus_t LoRaMacCryptoDeriveMcSessionKeyPair( AddressIdentifier_t a
 
 extern uint8_t JoinEui[];
 
-LoRaMacCryptoStatus_t HW_GetUniqueId(uint8_t *DevEui, uint8_t* pearliot_buffer)
+LoRaMacCryptoStatus_t HW_GetUniqueId(uint8_t *id, uint8_t* pearliot_buffer)
 {
 
 	uint8_t length;
@@ -647,7 +647,7 @@ LoRaMacCryptoStatus_t HW_GetUniqueId(uint8_t *DevEui, uint8_t* pearliot_buffer)
 	if (status != SE_API_SUCCESS) {
 		return LORAMAC_CRYPTO_ERROR;
 	}
-	memcpy(DevEui,pearliot_buffer,length);
+	memcpy(id,pearliot_buffer,length);
 
 	pearliot_buffer[0] = TAG_GET_DATA;
 	pearliot_buffer[1]=0x84;
