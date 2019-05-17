@@ -460,8 +460,8 @@ void LORA_Init (LoRaMainCallback_t *callbacks, LoRaParam_t* LoRaParam )
   LoRaMainCallbacks = callbacks;
   
 #if (STATIC_DEVICE_EUI != 1)
-  LoRaMainCallbacks->BoardGetUniqueId( DevEui );
-  //LoRaMainCallbacks->BoardGetUniqueId( JoinEui );
+  LoRaMainCallbacks->BoardGetUniqueId(DevEui);
+ // LoRaMainCallbacks->BoardGetUniqueId(JoinEui);
 #endif
   
 #if( OVER_THE_AIR_ACTIVATION != 0 )
