@@ -87,7 +87,7 @@
 #define HEX8(X)   X[0],X[1], X[2],X[3], X[4],X[5], X[6],X[7]
 static uint8_t DevEui[] = LORAWAN_DEVICE_EUI;
 // allow extern reference to JoinEUI
-uint8_t JoinEui[] = LORAWAN_JOIN_EUI;
+static uint8_t JoinEui[] = LORAWAN_JOIN_EUI;
 static uint8_t AppKey[] = LORAWAN_APP_KEY;
 static uint8_t NwkKey[] = LORAWAN_NWK_KEY;
 
