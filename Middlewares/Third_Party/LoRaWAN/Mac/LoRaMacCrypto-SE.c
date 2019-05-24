@@ -267,6 +267,7 @@ uint8_t SE_RSC_i2c_Init(uint32_t frequency)
         /* Not supported yet -> please add your desired frequency settings */
         return SE_RSC_I2C_FAIL;
     }
+#elif defined (USE_MIROMICO)
 #else
 #error "Add your platform here"
 #endif

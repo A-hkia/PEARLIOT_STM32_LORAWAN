@@ -16,7 +16,15 @@ if(PROJECT STREQUAL B-L072Z-LRWAN1)
     #The same linker script is used for the three applications (AT_Slave/End_Node/PingPong)
 	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/B-L072Z-LRWAN1)
     include(stm32l072)
-    
+
+#Choice MIROMICO
+elseif(PROJECT STREQUAL MIROMICO)
+    # Configure toolchain for MIROMICO
+    set(LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/MIROMICO/Applications/LoRa/AT_Slave/SW4STM32/STM32L071CZYx_FLASH.ld)
+    #The same linker script is used for the three applications (AT_Slave/End_Node/PingPong)
+	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/MIROMICO)
+    include(stm32l071)
+        
 #Choice STM32L053R8-Nucleo
 elseif(PROJECT STREQUAL STM32L053R8-Nucleo)
 	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/STM32L053R8-Nucleo)

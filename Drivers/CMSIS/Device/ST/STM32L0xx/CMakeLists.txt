@@ -23,7 +23,6 @@ file(GLOB ${PROJECT_NAME}_SOURCES
 #    "${CMAKE_CURRENT_SOURCE_DIR}/../../../DSP_Lib/Source/TransformFunctions/*.c"   
        
 )
-set_property(SOURCE startup_stm32l072xx.s PROPERTY LANGUAGE C)
 
 add_library(${PROJECT_NAME} OBJECT EXCLUDE_FROM_ALL ${${PROJECT_NAME}_SOURCES})
 

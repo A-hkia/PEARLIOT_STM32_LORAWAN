@@ -4,30 +4,6 @@
 project(middlewares)
 cmake_minimum_required(VERSION 3.6)
 
-#Because APPLICATION PingPong only needs the subfolder Utilities
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Utilities)
-
-#if(APPLICATION STREQUAL AT)
-#	file(GLOB ${PROJECT_NAME}_SOURCES
-#	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Core/lora-test.c"
-#	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Conf/Src/*.c"
-#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Crypto/*.c"
-#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/*.c"
-#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/region/*.c"
-#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Utilities/*.c"
-#	)
-#	
-#else()
-#	file(GLOB ${PROJECT_NAME}_SOURCES
-#	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Core/*.c"
-#	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Conf/Src/*.c"
-#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Crypto/*.c"
-#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/*.c"
-#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Mac/region/*.c"
-#    "${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Utilities/*.c"
-#    )
-#endif()
-#	
 if(CRYPTO STREQUAL PearlIoT)
 	file(GLOB ${PROJECT_NAME}_SOURCES
 	"${CMAKE_CURRENT_SOURCE_DIR}/Third_Party/LoRaWAN/Core/*.c"
@@ -145,11 +121,17 @@ if(RADIO STREQUAL sx126x)
 	target_include_directories( ${PROJECT_NAME} PUBLIC
 		$<TARGET_PROPERTY:sx126x,INTERFACE_INCLUDE_DIRECTORIES>  
 	)  	
-elseif(RADIO STREQUAL sx1272)
+elseif(RADIO STREQUAL sx1272 AND NOT(PROJECT STREQUAL MIROMICO))
 	add_dependencies(${PROJECT_NAME} sx1272)
 	target_include_directories( ${PROJECT_NAME} PUBLIC
 		$<TARGET_PROPERTY:sx1272,INTERFACE_INCLUDE_DIRECTORIES>  
 	)
+elseif(RADIO STREQUAL sx1272 AND PROJECT STREQUAL MIROMICO)
+target_compile_definitions(${PROJECT_NAME} PUBLIC -DFMLR72_L0)
+	add_dependencies(${PROJECT_NAME} Miromico_drivers)
+	target_include_directories( ${PROJECT_NAME} PUBLIC
+		$<TARGET_PROPERTY:Miromico_drivers,INTERFACE_INCLUDE_DIRECTORIES>  
+	)  	
 elseif(RADIO STREQUAL sx1276)
 	add_dependencies(${PROJECT_NAME} sx1276)
 	target_include_directories( ${PROJECT_NAME} PUBLIC

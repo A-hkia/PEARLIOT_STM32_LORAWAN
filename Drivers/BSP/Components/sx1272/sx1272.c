@@ -60,7 +60,9 @@
 #include "radio.h"
 #include "sx1272.h"
 #include "timeServer.h"
-
+#ifdef USE_MIROMICO
+#include "FMLR72_L0.h"
+#endif
 /*
  * Local types definition
  */

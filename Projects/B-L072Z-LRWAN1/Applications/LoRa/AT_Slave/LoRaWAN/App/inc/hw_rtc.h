@@ -133,7 +133,6 @@ uint32_t HW_RTC_GetTimerElapsedTime( void );
  * @retval none
  */
 uint32_t HW_RTC_GetTimerValue( void );
-
 /*!
  * @brief Set the RTC timer Reference
  * @retval  Timer Reference Value in  Ticks
