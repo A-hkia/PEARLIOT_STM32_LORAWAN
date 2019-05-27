@@ -21,37 +21,37 @@ Maintainer: Miguel Luis and Gregory Cristian
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics International N.V. 
+  * <h2><center>&copy; Copyright (c) 2017 STMicroelectronics International N.V.
   * All rights reserved.</center></h2>
   *
-  * Redistribution and use in source and binary forms, with or without 
+  * Redistribution and use in source and binary forms, with or without
   * modification, are permitted, provided that the following conditions are met:
   *
-  * 1. Redistribution of source code must retain the above copyright notice, 
+  * 1. Redistribution of source code must retain the above copyright notice,
   *    this list of conditions and the following disclaimer.
   * 2. Redistributions in binary form must reproduce the above copyright notice,
   *    this list of conditions and the following disclaimer in the documentation
   *    and/or other materials provided with the distribution.
-  * 3. Neither the name of STMicroelectronics nor the names of other 
-  *    contributors to this software may be used to endorse or promote products 
+  * 3. Neither the name of STMicroelectronics nor the names of other
+  *    contributors to this software may be used to endorse or promote products
   *    derived from this software without specific written permission.
-  * 4. This software, including modifications and/or derivative works of this 
+  * 4. This software, including modifications and/or derivative works of this
   *    software, must execute solely and exclusively on microcontroller or
   *    microprocessor devices manufactured by or for STMicroelectronics.
-  * 5. Redistribution and use of this software other than as permitted under 
-  *    this license is void and will automatically terminate your rights under 
-  *    this license. 
+  * 5. Redistribution and use of this software other than as permitted under
+  *    this license is void and will automatically terminate your rights under
+  *    this license.
   *
-  * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS" 
-  * AND ANY EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT 
-  * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+  * THIS SOFTWARE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS "AS IS"
+  * AND ANY EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT
+  * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
   * PARTICULAR PURPOSE AND NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY
-  * RIGHTS ARE DISCLAIMED TO THE FULLEST EXTENT PERMITTED BY LAW. IN NO EVENT 
+  * RIGHTS ARE DISCLAIMED TO THE FULLEST EXTENT PERMITTED BY LAW. IN NO EVENT
   * SHALL STMICROELECTRONICS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
   * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-  * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, 
-  * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
-  * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+  * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
+  * OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
   * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
   * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   *
@@ -62,6 +62,7 @@ Maintainer: Miguel Luis and Gregory Cristian
 #include <math.h>
 #include <time.h>
 #include "hw.h"
+#include "hw_rtc.h"
 #include "low_power_manager.h"
 #include "systime.h"
 #include "FMLR72_L0.h"
@@ -72,11 +73,11 @@ Maintainer: Miguel Luis and Gregory Cristian
 typedef struct
 {
   uint32_t  Rtc_Time; /* Reference time */
-  
+
   RTC_TimeTypeDef RTC_Calndr_Time; /* Reference time in calendar format */
 
   RTC_DateTypeDef RTC_Calndr_Date; /* Reference date in calendar format */
-  
+
 } RtcTimerContext_t;
 
 /* Private define ------------------------------------------------------------*/
@@ -127,13 +128,13 @@ static bool HW_RTC_Initalized = false;
 /*!
  * \brief compensates MCU wakeup time
  */
- 
+
 static bool McuWakeUpTimeInitialized = false;
 
 /*!
  * \brief compensates MCU wakeup time
  */
- 
+
 static int16_t McuWakeUpTimeCal = 0;
 
 /*!
@@ -208,14 +209,14 @@ static void HW_RTC_SetConfig( void )
   RtcHandle.Init.OutPutType = RTC_OUTPUT_TYPE_OPENDRAIN;
 
   HAL_RTC_Init( &RtcHandle );
-  
+
   /*Monday 1st January 2016*/
   RTC_DateStruct.Year = 0;
   RTC_DateStruct.Month = RTC_MONTH_JANUARY;
   RTC_DateStruct.Date = 1;
   RTC_DateStruct.WeekDay = RTC_WEEKDAY_MONDAY;
   HAL_RTC_SetDate(&RtcHandle , &RTC_DateStruct, RTC_FORMAT_BIN);
-  
+
   /*at 0:0:0*/
   RTC_TimeStruct.Hours = 0;
   RTC_TimeStruct.Minutes = 0;
@@ -225,9 +226,9 @@ static void HW_RTC_SetConfig( void )
   RTC_TimeStruct.SubSeconds = 0;
   RTC_TimeStruct.StoreOperation = RTC_DAYLIGHTSAVING_NONE;
   RTC_TimeStruct.DayLightSaving = RTC_STOREOPERATION_RESET;
-  
+
   HAL_RTC_SetTime(&RtcHandle , &RTC_TimeStruct, RTC_FORMAT_BIN);
-  
+
  /*Enable Direct Read of the calendar registers (not through Shadow) */
   HAL_RTCEx_EnableBypassShadow(&RtcHandle);
 }
@@ -243,10 +244,10 @@ void HW_RTC_setMcuWakeUpTime( void )
 {
   RTC_TimeTypeDef RTC_TimeStruct;
   RTC_DateTypeDef RTC_DateStruct;
-  
+
   TimerTime_t now, hit;
   int16_t McuWakeUpTime;
-  
+
   if ((McuWakeUpTimeInitialized == false) &&
       ( HAL_NVIC_GetPendingIRQ( RTC_Alarm_IRQn ) == 1))
   { /* warning: works ok if now is below 30 days
@@ -260,7 +261,7 @@ void HW_RTC_setMcuWakeUpTime( void )
           60*(RTC_AlarmStructure.AlarmTime.Hours+
           24*(RTC_AlarmStructure.AlarmDateWeekDay)));
     hit = ( hit << N_PREDIV_S ) + (PREDIV_S - RTC_AlarmStructure.AlarmTime.SubSeconds);
-      
+
     McuWakeUpTime = (int16_t) ((now-hit));
     McuWakeUpTimeCal += McuWakeUpTime;
   }
@@ -301,7 +302,7 @@ TimerTime_t HW_RTC_Tick2ms( uint32_t tick )
 {
 /*return( ( timeMicroSec * RTC_ALARM_TIME_BASE ) ); */
   uint32_t seconds = tick>>N_PREDIV_S;
-  tick = tick&PREDIV_S;  
+  tick = tick&PREDIV_S;
   return  ( ( seconds*1000 ) + ((tick*1000)>>N_PREDIV_S) );
 }
 
@@ -340,7 +341,7 @@ uint32_t HW_RTC_GetTimerElapsedTime( void )
 {
   RTC_TimeTypeDef RTC_TimeStruct;
   RTC_DateTypeDef RTC_DateStruct;
-  
+
   uint32_t CalendarValue = (uint32_t) HW_RTC_GetCalendarValue(&RTC_DateStruct, &RTC_TimeStruct );
 
   return( ( uint32_t )( CalendarValue - RtcTimerContext.Rtc_Time ));
@@ -355,7 +356,7 @@ uint32_t HW_RTC_GetTimerValue( void )
 {
   RTC_TimeTypeDef RTC_TimeStruct;
   RTC_DateTypeDef RTC_DateStruct;
-  
+
   uint32_t CalendarValue = (uint32_t) HW_RTC_GetCalendarValue(&RTC_DateStruct, &RTC_TimeStruct );
 
   return( CalendarValue );
@@ -371,7 +372,7 @@ void HW_RTC_StopAlarm( void )
   HAL_RTC_DeactivateAlarm(&RtcHandle, RTC_ALARM_A );
   /* Clear RTC Alarm Flag */
   __HAL_RTC_ALARM_CLEAR_FLAG( &RtcHandle, RTC_FLAG_ALRAF);
-  /* Clear the EXTI's line Flag for RTC Alarm */  
+  /* Clear the EXTI's line Flag for RTC Alarm */
   __HAL_RTC_ALARM_EXTI_CLEAR_FLAG();
 }
 
@@ -385,10 +386,10 @@ void HW_RTC_IrqHandler ( void )
   RTC_HandleTypeDef* hrtc=&RtcHandle;
   /* enable low power at irq*/
   LPM_SetStopMode(LPM_RTC_Id , LPM_Enable );
-  
+
   /* Clear the EXTI's line Flag for RTC Alarm */
   __HAL_RTC_ALARM_EXTI_CLEAR_FLAG();
-  
+
     /* Get the AlarmA interrupt source enable status */
   if(__HAL_RTC_ALARM_GET_IT_SOURCE(hrtc, RTC_IT_ALRA) != RESET)
   {
@@ -396,7 +397,7 @@ void HW_RTC_IrqHandler ( void )
     if(__HAL_RTC_ALARM_GET_FLAG(hrtc, RTC_FLAG_ALRAF) != RESET)
     {
       /* Clear the AlarmA interrupt pending bit */
-      __HAL_RTC_ALARM_CLEAR_FLAG(hrtc, RTC_FLAG_ALRAF); 
+      __HAL_RTC_ALARM_CLEAR_FLAG(hrtc, RTC_FLAG_ALRAF);
       /* AlarmA callback */
       HAL_RTC_AlarmAEventCallback(hrtc);
     }
@@ -473,13 +474,13 @@ static void HW_RTC_StartWakeUpAlarm( uint32_t timeoutValue )
   RTC_DateTypeDef RTC_DateStruct = RtcTimerContext.RTC_Calndr_Date;
 
   HW_RTC_StopAlarm( );
-  
+
   /*reverse counter */
   rtcAlarmSubSeconds =  PREDIV_S - RTC_TimeStruct.SubSeconds;
   rtcAlarmSubSeconds += ( timeoutValue & PREDIV_S);
   /* convert timeout  to seconds */
   timeoutValue >>= N_PREDIV_S;  /* convert timeout  in seconds */
-  
+
   /*convert microsecs to RTC format and add to 'Now' */
   rtcAlarmDays =  RTC_DateStruct.Date;
   while (timeoutValue >= SECONDS_IN_1DAY)
@@ -487,7 +488,7 @@ static void HW_RTC_StartWakeUpAlarm( uint32_t timeoutValue )
     timeoutValue -= SECONDS_IN_1DAY;
     rtcAlarmDays++;
   }
-  
+
   /* calc hours */
   rtcAlarmHours = RTC_TimeStruct.Hours;
   while (timeoutValue >= SECONDS_IN_1HOUR)
@@ -495,7 +496,7 @@ static void HW_RTC_StartWakeUpAlarm( uint32_t timeoutValue )
     timeoutValue -= SECONDS_IN_1HOUR;
     rtcAlarmHours++;
   }
-  
+
   /* calc minutes */
   rtcAlarmMinutes = RTC_TimeStruct.Minutes;
   while (timeoutValue >= SECONDS_IN_1MINUTE)
@@ -503,7 +504,7 @@ static void HW_RTC_StartWakeUpAlarm( uint32_t timeoutValue )
     timeoutValue -= SECONDS_IN_1MINUTE;
     rtcAlarmMinutes++;
   }
-   
+
   /* calc seconds */
   rtcAlarmSeconds =  RTC_TimeStruct.Seconds + timeoutValue;
 
@@ -513,9 +514,9 @@ static void HW_RTC_StartWakeUpAlarm( uint32_t timeoutValue )
     rtcAlarmSubSeconds -= (PREDIV_S+1);
     rtcAlarmSeconds++;
   }
-  
+
   while (rtcAlarmSeconds >= SECONDS_IN_1MINUTE)
-  { 
+  {
     rtcAlarmSeconds -= SECONDS_IN_1MINUTE;
     rtcAlarmMinutes++;
   }
@@ -525,42 +526,42 @@ static void HW_RTC_StartWakeUpAlarm( uint32_t timeoutValue )
     rtcAlarmMinutes -= MINUTES_IN_1HOUR;
     rtcAlarmHours++;
   }
-  
+
   while (rtcAlarmHours >= HOURS_IN_1DAY)
   {
     rtcAlarmHours -= HOURS_IN_1DAY;
     rtcAlarmDays++;
   }
 
-  if( RTC_DateStruct.Year % 4 == 0 ) 
+  if( RTC_DateStruct.Year % 4 == 0 )
   {
-    if( rtcAlarmDays > DaysInMonthLeapYear[ RTC_DateStruct.Month - 1 ] )    
+    if( rtcAlarmDays > DaysInMonthLeapYear[ RTC_DateStruct.Month - 1 ] )
     {
       rtcAlarmDays = rtcAlarmDays % DaysInMonthLeapYear[ RTC_DateStruct.Month - 1 ];
     }
   }
   else
   {
-    if( rtcAlarmDays > DaysInMonth[ RTC_DateStruct.Month - 1 ] )    
-    {   
+    if( rtcAlarmDays > DaysInMonth[ RTC_DateStruct.Month - 1 ] )
+    {
       rtcAlarmDays = rtcAlarmDays % DaysInMonth[ RTC_DateStruct.Month - 1 ];
     }
   }
 
   /* Set RTC_AlarmStructure with calculated values*/
   RTC_AlarmStructure.AlarmTime.SubSeconds = PREDIV_S-rtcAlarmSubSeconds;
-  RTC_AlarmStructure.AlarmSubSecondMask  = HW_RTC_ALARMSUBSECONDMASK; 
+  RTC_AlarmStructure.AlarmSubSecondMask  = HW_RTC_ALARMSUBSECONDMASK;
   RTC_AlarmStructure.AlarmTime.Seconds = rtcAlarmSeconds;
   RTC_AlarmStructure.AlarmTime.Minutes = rtcAlarmMinutes;
   RTC_AlarmStructure.AlarmTime.Hours   = rtcAlarmHours;
   RTC_AlarmStructure.AlarmDateWeekDay    = ( uint8_t )rtcAlarmDays;
   RTC_AlarmStructure.AlarmTime.TimeFormat   = RTC_TimeStruct.TimeFormat;
-  RTC_AlarmStructure.AlarmDateWeekDaySel   = RTC_ALARMDATEWEEKDAYSEL_DATE; 
+  RTC_AlarmStructure.AlarmDateWeekDaySel   = RTC_ALARMDATEWEEKDAYSEL_DATE;
   RTC_AlarmStructure.AlarmMask       = RTC_ALARMMASK_NONE;
   RTC_AlarmStructure.Alarm = RTC_ALARM_A;
   RTC_AlarmStructure.AlarmTime.DayLightSaving = RTC_DAYLIGHTSAVING_NONE;
   RTC_AlarmStructure.AlarmTime.StoreOperation = RTC_STOREOPERATION_RESET;
-  
+
   /* Set RTC_Alarm */
   HAL_RTC_SetAlarm_IT( &RtcHandle, &RTC_AlarmStructure, RTC_FORMAT_BIN );
 }
@@ -578,35 +579,35 @@ static uint64_t HW_RTC_GetCalendarValue( RTC_DateTypeDef* RTC_DateStruct, RTC_Ti
   uint32_t first_read;
   uint32_t correction;
   uint32_t seconds;
-  
+
   /* Get Time and Date*/
   HAL_RTC_GetTime( &RtcHandle, RTC_TimeStruct, RTC_FORMAT_BIN );
- 
+
    /* make sure it is correct due to asynchronus nature of RTC*/
   do {
     first_read = RTC_TimeStruct->SubSeconds;
     HAL_RTC_GetDate( &RtcHandle, RTC_DateStruct, RTC_FORMAT_BIN );
     HAL_RTC_GetTime( &RtcHandle, RTC_TimeStruct, RTC_FORMAT_BIN );
   } while (first_read != RTC_TimeStruct->SubSeconds);
- 
+
   /* calculte amount of elapsed days since 01/01/2000 */
   seconds= DIVC( (DAYS_IN_YEAR*3 + DAYS_IN_LEAP_YEAR)* RTC_DateStruct->Year , 4);
 
   correction = ( (RTC_DateStruct->Year % 4) == 0 ) ? DAYS_IN_MONTH_CORRECTION_LEAP : DAYS_IN_MONTH_CORRECTION_NORM ;
- 
+
   seconds +=( DIVC( (RTC_DateStruct->Month-1)*(30+31) ,2 ) - (((correction>> ((RTC_DateStruct->Month-1)*2) )&0x3)));
 
   seconds += (RTC_DateStruct->Date -1);
-  
-  /* convert from days to seconds */
-  seconds *= SECONDS_IN_1DAY; 
 
-  seconds += ( ( uint32_t )RTC_TimeStruct->Seconds + 
+  /* convert from days to seconds */
+  seconds *= SECONDS_IN_1DAY;
+
+  seconds += ( ( uint32_t )RTC_TimeStruct->Seconds +
              ( ( uint32_t )RTC_TimeStruct->Minutes * SECONDS_IN_1MINUTE ) +
              ( ( uint32_t )RTC_TimeStruct->Hours * SECONDS_IN_1HOUR ) ) ;
 
 
-  
+
   calendarValue = (((uint64_t) seconds)<<N_PREDIV_S) + ( PREDIV_S - RTC_TimeStruct->SubSeconds);
 
   return( calendarValue );
@@ -614,24 +615,24 @@ static uint64_t HW_RTC_GetCalendarValue( RTC_DateTypeDef* RTC_DateStruct, RTC_Ti
 
 /*!
  * \brief Get system time
- * \param [IN]   pointer to ms 
- *               
- * \return uint32_t seconds 
+ * \param [IN]   pointer to ms
+ *
+ * \return uint32_t seconds
  */
 uint32_t HW_RTC_GetCalendarTime( uint16_t *mSeconds)
 {
   RTC_TimeTypeDef RTC_TimeStruct ;
   RTC_DateTypeDef RTC_DateStruct;
   uint32_t ticks;
-  
+
   uint64_t calendarValue = HW_RTC_GetCalendarValue( &RTC_DateStruct, &RTC_TimeStruct );
-  
+
   uint32_t seconds = (uint32_t) calendarValue >>N_PREDIV_S;
-  
+
   ticks =  (uint32_t) calendarValue&PREDIV_S;
-  
+
   *mSeconds = HW_RTC_Tick2ms(ticks);
-  
+
   return seconds;
 }
 

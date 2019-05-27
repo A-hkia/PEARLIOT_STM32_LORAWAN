@@ -48,6 +48,7 @@
 #include <string.h>
 #include <stdarg.h>
 #include "utilities.h"
+#include "utilities_conf.h"
 #include "queue.h"
 #include "trace.h"
 #include "low_power_manager.h"
@@ -110,7 +111,9 @@ int32_t TraceSend( const char *strFormat, ...)
     LPM_SetStopMode(LPM_UART_TX_Id , LPM_Disable );
 
     RESTORE_PRIMASK();
+#ifndef USE_MIROMICO
     OutputTrace((uint8_t*)buffer, bufSize);
+#endif
   }
   else
   {

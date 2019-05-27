@@ -8,6 +8,10 @@
 /* Includes ------------------------------------------------------------------*/
 #include "hw.h"
 #include "fmlr72_l0_it.h"
+#include "hw_uart.h"
+#include "hw_rtc.h"
+#include "stm32l0xx_ll_usart.h"
+
 
 /******************************************************************************/
 /*                 STM32L1xx Peripherals Interrupt Handlers                   */

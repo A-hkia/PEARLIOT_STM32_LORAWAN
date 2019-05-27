@@ -14,7 +14,7 @@ extern "C" {
 
 /** Define battery limits for current hardware */
 #define VDDA_VREFINT_CAL         	((uint32_t) 3000)
-//#define VDD_BAT                  	((uint32_t) 3000)
+#define VDD_BAT                  	((uint32_t) 3000)
 #define VDD_MIN                  	1800
 
 // LED definitions

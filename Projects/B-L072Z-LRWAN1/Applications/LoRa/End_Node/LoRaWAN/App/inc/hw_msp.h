@@ -141,7 +141,7 @@ void HW_DeInit( void );
 uint32_t HW_GetRandomSeed( void );
 
 /*!
- * \brief Gets the board 64 bits unique ID 
+ * \brief Gets the board 64 bits unique ID
  *
  * \param [IN] id Pointer to an array that will contain the Unique ID
  */

@@ -4,8 +4,11 @@
 #include "lora.h"
 #include "bsp.h"
 #include "timeServer.h"
-#include "vcom.h"
 #include "version.h"
+#include "hw_id.h"
+#include "FMLR72_L0.h"
+#include "hw_uart.h"
+#include "hw_adc.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -180,6 +183,8 @@ static void LORA_HasJoined( void )
   LORA_RequestClass( LORAWAN_DEFAULT_CLASS );
 }
 
+
+
 static void Send( void )
 {
   /* USER CODE BEGIN 3 */
@@ -196,7 +201,7 @@ static void Send( void )
     return;
   }
 
-  TVL1(PRINTF("SEND REQUEST\n\r");)
+ // TVL1(PRINTF("SEND REQUEST\n\r"));
 #ifndef CAYENNE_LPP
   int32_t latitude, longitude = 0;
   uint16_t altitudeGps = 0;

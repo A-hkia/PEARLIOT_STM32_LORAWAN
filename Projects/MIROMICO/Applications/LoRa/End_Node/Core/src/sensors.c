@@ -1,6 +1,7 @@
 #include <stdint.h>
 #include "hw.h"
 #include "sensors.h"
+#include "hw_uart.h"
 
 
 /** Cayenne LPP definitions */
@@ -170,3 +171,4 @@ int8_t LPP_Digital(uint8_t nr, uint8_t d, uint8_t* buf, uint8_t* n)
     return -1;
   }
 }
+

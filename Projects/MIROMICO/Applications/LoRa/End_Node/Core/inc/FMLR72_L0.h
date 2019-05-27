@@ -16,6 +16,7 @@ extern "C" {
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32l0xx_hal.h"
+#include "hw_led.h"
 
 /* LORA I/O definition */
 #define GET_LORA_SPI						HW_SPI2_GetHandle

@@ -114,6 +114,7 @@
   #include "stm32l0xx_hal.h"
   #include "stm32l0xx_hal_conf.h"
   #include "board_conf.h"
+  #include "FMLR72_L0.h"
 #endif
 
 /* --------Preprocessor compile swicth------------ */

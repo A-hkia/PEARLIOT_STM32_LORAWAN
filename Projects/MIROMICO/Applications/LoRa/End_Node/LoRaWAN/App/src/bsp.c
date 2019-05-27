@@ -11,8 +11,12 @@
 #include <string.h>
 #include <stdlib.h>
 #include "hw.h"
+#include "hw_adc.h"
 #include "bsp.h"
+#include "hw_uart.h"
+#include "hw_gpio.h"
 #include "FMLR72_L0.h"
+
 
 /* Private variables ---------------------------------------------------------*/
 static SHT_HandleTypedef h_sht;

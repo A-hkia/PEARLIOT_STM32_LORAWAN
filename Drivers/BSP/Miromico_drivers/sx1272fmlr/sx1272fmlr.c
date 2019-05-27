@@ -10,6 +10,7 @@
 #include "sx1272.h"
 #include "sx1272fmlr.h"
 #include "FMLR72_L0.h"
+#include "hw_gpio.h"
 
 #define IRQ_HIGH_PRIORITY  0
 

@@ -1,4 +1,5 @@
 #include "hw.h"
+#include "FMLR72_L0.h"
 
 /** Definition of adc resolution */
 #define ADC_RESOLUTION    ADC_RESOLUTION_12B

@@ -8,6 +8,7 @@
  */
 
 #include "MX25_CMD.h"
+#include "hw_gpio.h"
 
 /* internal functions */
 static void MX25_CSHigh();

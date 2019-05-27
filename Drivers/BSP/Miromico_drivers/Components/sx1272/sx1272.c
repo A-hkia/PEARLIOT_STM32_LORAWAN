@@ -13,6 +13,8 @@
 #include "timeServer.h"
 //#include "delay.h"
 #include "FMLR72_L0.h"
+#include "hw_uart.h"
+#include "hw_gpio.h"
 
 /*
  * Local types definition

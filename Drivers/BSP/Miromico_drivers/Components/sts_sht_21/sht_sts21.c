@@ -1,5 +1,6 @@
 #include "sht_sts21.h"
 #include "hw.h"
+#include "hw_rtc.h"
 #include "assert.h"
 #include "debug.h"
 
