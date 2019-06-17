@@ -12,7 +12,9 @@
 #include "hw_rtc.h"
 #include "stm32l0xx_ll_usart.h"
 
-
+//void Reset_Handler(void) {
+//	while(1);
+//}
 /******************************************************************************/
 /*                 STM32L1xx Peripherals Interrupt Handlers                   */
 /*  Add here the Interrupt Handler for the used peripheral(s) (PPP), for the  */
@@ -23,25 +25,25 @@
 void USART1_IRQHandler(void)
 {
   // Check RXNE flag value in ISR register
-  if (LL_USART_IsActiveFlag_RXNE(USART1) && LL_USART_IsEnabledIT_RXNE(USART1)) {
+//  if (LL_USART_IsActiveFlag_RXNE(USART1) && LL_USART_IsEnabledIT_RXNE(USART1)) {
     // RXNE flag will be cleared by reading of RDR register (done in call)
     // Call function in charge of handling Character reception
     HW_UART_Rx_Callback(USART1);
-  } else {
+ // } else {
     // Error_Callback();
-  }
+  //}
 }
 
 void USART2_IRQHandler(void)
 {
   // Check RXNE flag value in ISR register
-  if (LL_USART_IsActiveFlag_RXNE(USART2) && LL_USART_IsEnabledIT_RXNE(USART2)) {
+  //if (LL_USART_IsActiveFlag_RXNE(USART2) && LL_USART_IsEnabledIT_RXNE(USART2)) {
     // RXNE flag will be cleared by reading of RDR register (done in call)
     // Call function in charge of handling Character reception
     HW_UART_Rx_Callback(USART2);
-  } else {
+  //} else {
     // Error_Callback();
-  }
+  //}
 }
 
 void RTC_IRQHandler(void)

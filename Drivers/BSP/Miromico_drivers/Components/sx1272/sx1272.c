@@ -11,7 +11,7 @@
 #include "radio.h"
 #include "sx1272.h"
 #include "timeServer.h"
-//#include "delay.h"
+#include "hw_spi.h"
 #include "FMLR72_L0.h"
 #include "hw_uart.h"
 #include "hw_gpio.h"

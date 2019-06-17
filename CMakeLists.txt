@@ -12,7 +12,7 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Middlewares)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Projects)
 
 # Allow switching of Projects
-set(PROJECT_LIST B-L072Z-LRWAN1 MIROMICO STM32L053R8-Nucleo STM32L073RZ-Nucleo STM32L152RE-Nucleo STM32L476RG-Nucleo)
+set(PROJECT_LIST B-L072Z-LRWAN1 MIROMICO STM32L053R8-Nucleo STM32L073RZ-Nucleo STM32L152RE-Nucleo STM32L476RG-Nucleo STM32WB55-Nucleo)
 set(PROJECT B-L072Z-LRWAN1 CACHE STRING "Default Project is B-L072Z-LRWAN1")
 set_property(CACHE PROJECT PROPERTY STRINGS ${PROJECT_LIST})
 
@@ -42,6 +42,4 @@ set(CRYPTO PearlIoT CACHE STRING "Default Crypto is PearlIoT")
 set_property(CACHE CRYPTO PROPERTY STRINGS ${CRYPTO_LIST})
 
 # Allow switching of Series - No cache is used since the serie is chosen automatically by the project choice
-set(SERIES_LIST STM32L0xx STM32L1xx STM32L4xx)
-#set(SERIES STM32L0xx CACHE STRING "Default Serie is STM32L0xx")
-#set_property(CACHE SERIES PROPERTY STRINGS ${SERIES_LIST})
+set(SERIES_LIST STM32L0xx STM32L1xx STM32L4xx STM32WBxx)

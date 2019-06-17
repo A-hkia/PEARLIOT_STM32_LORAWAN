@@ -66,7 +66,7 @@ Maintainer: Miguel Luis and Gregory Cristian
 #include "low_power_manager.h"
 #include "systime.h"
 #include "FMLR72_L0.h"
-
+#include "core_cm0plus.h"
 
 
 /* Private typedef -----------------------------------------------------------*/
@@ -403,7 +403,6 @@ void HW_RTC_IrqHandler ( void )
     }
   }
 }
-
 
 /*!
  * @brief a delay of delay ms by polling RTC

@@ -10,7 +10,14 @@
 #include "radio.h"
 #include "debug.h"
 #include "bsp.h"
+#include "hw_spi.h"
+#include "hw_rtc.h"
+#include "hw_uart.h"
+#include "hw_i2c.h"
+#include "hw_adc.h"
 #include "FMLR72_L0.h"
+
+
 
 /** Get CUP reset source */
 static eResetSrc_t HW_GetResetSource();
@@ -76,6 +83,8 @@ eResetSrc_t HW_Init()
     application_hw_init();
     HW_LED_Init(LED_GREEN);
     HW_LED_Init(LED_RED);
+    //We added TraceInit to be able to initialize the virtual communication ports
+    TraceInit( );
 
     McuInitialized = true;
   }

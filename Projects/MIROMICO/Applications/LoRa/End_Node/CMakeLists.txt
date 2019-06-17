@@ -93,3 +93,4 @@ set_property(TARGET ${PROJECT_NAME} PROPERTY C_STANDARD 11)
 # Create output in hex and binary format
 create_bin_output(${PROJECT_NAME})
 create_hex_output(${PROJECT_NAME})
+

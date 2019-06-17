@@ -11,5 +11,7 @@ elseif(SERIES STREQUAL STM32L1xx)
 	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Device/ST/STM32L1xx)
 elseif(SERIES STREQUAL STM32L4xx)
 	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Device/ST/STM32L4xx)
+elseif(SERIES STREQUAL STM32WBxx)
+	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Device/ST/STM32WBxx)
 endif()
 

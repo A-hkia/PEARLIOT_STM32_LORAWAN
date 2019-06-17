@@ -1,5 +1,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "hw.h"
+#include "hw_gpio.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -23,6 +24,51 @@ static SPI_HandleTypeDef hspi1;
 SPI_HandleTypeDef* HW_SPI1_GetHandle()
 {
   return &hspi1;
+}
+
+void HW_SPI1_IoDeInit(void)
+{
+  GPIO_InitTypeDef initStruct = {0};
+
+  initStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  initStruct.Pull = GPIO_PULLDOWN;
+  HW_GPIO_Init(SPI1_MOSI_PORT, SPI1_MOSI_PIN, &initStruct);
+  HW_GPIO_Write(SPI1_MOSI_PORT, SPI1_MOSI_PIN, 0);
+  HW_GPIO_Init(SPI1_MISO_PORT, SPI1_MISO_PIN, &initStruct);
+  HW_GPIO_Write(SPI1_MISO_PORT, SPI1_MISO_PIN, 0);
+  HW_GPIO_Init(SPI1_SCLK_PORT, SPI1_SCLK_PIN, &initStruct);
+  HW_GPIO_Write(SPI1_SCLK_PORT, SPI1_SCLK_PIN, 0);
+}
+
+/*!
+ * @brief De-initializes the SPI1 object and MCU peripheral
+ *
+ * @param [IN] none
+ */
+void HW_SPI1_DeInit(void)
+{
+  HAL_SPI_DeInit(&hspi1);
+
+  /*##-1- Reset peripherals ####*/
+  __HAL_RCC_SPI1_FORCE_RESET();
+  __HAL_RCC_SPI1_RELEASE_RESET();
+  /*##-2- Configure the SPI1 GPIOs */
+  HW_SPI1_IoDeInit();
+}
+
+void HW_SPI1_IoInit(void)
+{
+  GPIO_InitTypeDef initStruct = {0};
+  initStruct.Mode = GPIO_MODE_AF_PP;
+  initStruct.Pull = GPIO_NOPULL;
+  initStruct.Speed = GPIO_SPEED_HIGH;
+
+  initStruct.Alternate = SPI1_SCLK_AF;
+  HW_GPIO_Init(SPI1_SCLK_PORT, SPI1_SCLK_PIN, &initStruct);
+  initStruct.Alternate = SPI1_MISO_AF;
+  HW_GPIO_Init(SPI1_MISO_PORT, SPI1_MISO_PIN, &initStruct);
+  initStruct.Alternate = SPI1_MOSI_AF;
+  HW_GPIO_Init(SPI1_MOSI_PORT, SPI1_MOSI_PIN, &initStruct);
 }
 
 /*!
@@ -57,50 +103,6 @@ void HW_SPI1_Init(void)
   HW_SPI1_IoInit();
 }
 
-/*!
- * @brief De-initializes the SPI1 object and MCU peripheral
- *
- * @param [IN] none
- */
-void HW_SPI1_DeInit(void)
-{
-  HAL_SPI_DeInit(&hspi1);
-
-  /*##-1- Reset peripherals ####*/
-  __HAL_RCC_SPI1_FORCE_RESET();
-  __HAL_RCC_SPI1_RELEASE_RESET();
-  /*##-2- Configure the SPI1 GPIOs */
-  HW_SPI1_IoDeInit();
-}
-
-void HW_SPI1_IoInit(void)
-{
-  GPIO_InitTypeDef initStruct = {0};
-  initStruct.Mode = GPIO_MODE_AF_PP;
-  initStruct.Pull = GPIO_NOPULL;
-  initStruct.Speed = GPIO_SPEED_HIGH;
-
-  initStruct.Alternate = SPI1_SCLK_AF;
-  HW_GPIO_Init(SPI1_SCLK_PORT, SPI1_SCLK_PIN, &initStruct);
-  initStruct.Alternate = SPI1_MISO_AF;
-  HW_GPIO_Init(SPI1_MISO_PORT, SPI1_MISO_PIN, &initStruct);
-  initStruct.Alternate = SPI1_MOSI_AF;
-  HW_GPIO_Init(SPI1_MOSI_PORT, SPI1_MOSI_PIN, &initStruct);
-}
-
-void HW_SPI1_IoDeInit(void)
-{
-  GPIO_InitTypeDef initStruct = {0};
-
-  initStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  initStruct.Pull = GPIO_PULLDOWN;
-  HW_GPIO_Init(SPI1_MOSI_PORT, SPI1_MOSI_PIN, &initStruct);
-  HW_GPIO_Write(SPI1_MOSI_PORT, SPI1_MOSI_PIN, 0);
-  HW_GPIO_Init(SPI1_MISO_PORT, SPI1_MISO_PIN, &initStruct);
-  HW_GPIO_Write(SPI1_MISO_PORT, SPI1_MISO_PIN, 0);
-  HW_GPIO_Init(SPI1_SCLK_PORT, SPI1_SCLK_PIN, &initStruct);
-  HW_GPIO_Write(SPI1_SCLK_PORT, SPI1_SCLK_PIN, 0);
-}
 #endif
 
 #if defined(USE_SPI2)
@@ -111,37 +113,18 @@ SPI_HandleTypeDef* HW_SPI2_GetHandle()
   return &hspi2;
 }
 
-/*!
- * @brief Initializes the SPI2 object and MCU peripheral
- *
- * @param [IN] none
- */
-void HW_SPI2_Init(void)
+void HW_SPI2_IoDeInit(void)
 {
-  /*##-1- Configure the SPI peripheral */
-  /* Set the SPI parameters */
-  hspi2.Instance = SPI2;
+  GPIO_InitTypeDef initStruct = {0};
 
-  hspi2.Init.BaudRatePrescaler = SpiFrequency(10000000);
-  hspi2.Init.Direction      = SPI_DIRECTION_2LINES;
-  hspi2.Init.Mode           = SPI_MODE_MASTER;
-  hspi2.Init.CLKPolarity    = SPI_POLARITY_LOW;
-  hspi2.Init.CLKPhase       = SPI_PHASE_1EDGE;
-  hspi2.Init.DataSize       = SPI_DATASIZE_8BIT;
-  hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
-  hspi2.Init.FirstBit       = SPI_FIRSTBIT_MSB;
-  hspi2.Init.NSS            = SPI_NSS_SOFT;
-  hspi2.Init.TIMode         = SPI_TIMODE_DISABLE;
-
-  SPI2_CLK_ENABLE();
-
-  if (HAL_SPI_Init(&hspi2) != HAL_OK) {
-    /* Initialization Error */
-    Error_Handler();
-  }
-
-  /*##-2- Configure the SPI GPIOs */
-  HW_SPI2_IoInit();
+  initStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  initStruct.Pull = GPIO_PULLDOWN;
+  HW_GPIO_Init(SPI2_MOSI_PORT, SPI2_MOSI_PIN, &initStruct);
+  HW_GPIO_Write(SPI2_MOSI_PORT, SPI2_MOSI_PIN, 0);
+  HW_GPIO_Init(SPI2_MISO_PORT, SPI2_MISO_PIN, &initStruct);
+  HW_GPIO_Write(SPI2_MISO_PORT, SPI2_MISO_PIN, 0);
+  HW_GPIO_Init(SPI2_SCLK_PORT, SPI2_SCLK_PIN, &initStruct);
+  HW_GPIO_Write(SPI2_SCLK_PORT, SPI2_SCLK_PIN, 0);
 }
 
 /*!
@@ -176,18 +159,38 @@ void HW_SPI2_IoInit(void)
   HW_GPIO_Init(SPI2_MOSI_PORT, SPI2_MOSI_PIN, &initStruct);
 }
 
-void HW_SPI2_IoDeInit(void)
-{
-  GPIO_InitTypeDef initStruct = {0};
 
-  initStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  initStruct.Pull = GPIO_PULLDOWN;
-  HW_GPIO_Init(SPI2_MOSI_PORT, SPI2_MOSI_PIN, &initStruct);
-  HW_GPIO_Write(SPI2_MOSI_PORT, SPI2_MOSI_PIN, 0);
-  HW_GPIO_Init(SPI2_MISO_PORT, SPI2_MISO_PIN, &initStruct);
-  HW_GPIO_Write(SPI2_MISO_PORT, SPI2_MISO_PIN, 0);
-  HW_GPIO_Init(SPI2_SCLK_PORT, SPI2_SCLK_PIN, &initStruct);
-  HW_GPIO_Write(SPI2_SCLK_PORT, SPI2_SCLK_PIN, 0);
+/*!
+ * @brief Initializes the SPI2 object and MCU peripheral
+ *
+ * @param [IN] none
+ */
+void HW_SPI2_Init(void)
+{
+  /*##-1- Configure the SPI peripheral */
+  /* Set the SPI parameters */
+  hspi2.Instance = SPI2;
+
+  hspi2.Init.BaudRatePrescaler = SpiFrequency(10000000);
+  hspi2.Init.Direction      = SPI_DIRECTION_2LINES;
+  hspi2.Init.Mode           = SPI_MODE_MASTER;
+  hspi2.Init.CLKPolarity    = SPI_POLARITY_LOW;
+  hspi2.Init.CLKPhase       = SPI_PHASE_1EDGE;
+  hspi2.Init.DataSize       = SPI_DATASIZE_8BIT;
+  hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  hspi2.Init.FirstBit       = SPI_FIRSTBIT_MSB;
+  hspi2.Init.NSS            = SPI_NSS_SOFT;
+  hspi2.Init.TIMode         = SPI_TIMODE_DISABLE;
+
+  SPI2_CLK_ENABLE();
+
+  if (HAL_SPI_Init(&hspi2) != HAL_OK) {
+    /* Initialization Error */
+    Error_Handler();
+  }
+
+  /*##-2- Configure the SPI GPIOs */
+  HW_SPI2_IoInit();
 }
 #endif
 

@@ -1,6 +1,7 @@
 #include "hw.h"
 #include "FMLR72_L0.h"
 #include "hw_adc.h"
+#include "hw_gpio.h"
 
 /* Internal voltage reference, parameter VREFINT_CAL*/
 #define VREFINT_CAL               ((uint16_t*) ((uint32_t) 0x1FF80078))

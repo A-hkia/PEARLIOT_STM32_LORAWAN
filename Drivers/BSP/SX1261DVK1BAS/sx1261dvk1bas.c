@@ -61,6 +61,7 @@
 #include "hw.h"
 #include "radio.h"
 #include "sx126x_board.h"
+#include "utilities.h"
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 #define BOARD_TCXO_WAKEUP_TIME  0 // no TCXO

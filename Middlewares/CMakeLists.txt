@@ -111,15 +111,24 @@ elseif(SERIES STREQUAL STM32L4xx)
 		$<TARGET_PROPERTY:CMSIS-STM32L4xx,INTERFACE_INCLUDE_DIRECTORIES>
 		$<TARGET_PROPERTY:STM32L4xx_HAL_Driver,INTERFACE_INCLUDE_DIRECTORIES>  
 	)  
-endif()   
-
+elseif(SERIES STREQUAL STM32WBxx)
+	add_dependencies(${PROJECT_NAME} CMSIS-STM32WBxx)	
+	add_dependencies(${PROJECT_NAME} STM32WBxx_HAL_Driver)
+	target_include_directories( ${PROJECT_NAME} PUBLIC
+		$<TARGET_PROPERTY:CMSIS-STM32WBxx,INTERFACE_INCLUDE_DIRECTORIES>
+		$<TARGET_PROPERTY:STM32WBxx_HAL_Driver,INTERFACE_INCLUDE_DIRECTORIES>  
+	)  
+endif()  
 #---------------------------------------------------------------------------------------
 # Libraries - Radio
 #---------------------------------------------------------------------------------------   
 if(RADIO STREQUAL sx126x)
 	add_dependencies(${PROJECT_NAME} sx126x)
+	add_dependencies(${PROJECT_NAME} SX1261DVK1BAS)
 	target_include_directories( ${PROJECT_NAME} PUBLIC
-		$<TARGET_PROPERTY:sx126x,INTERFACE_INCLUDE_DIRECTORIES>  
+		$<TARGET_PROPERTY:sx126x,INTERFACE_INCLUDE_DIRECTORIES>
+		$<TARGET_PROPERTY:SX1261DVK1BAS,INTERFACE_INCLUDE_DIRECTORIES>  
+		  
 	)  	
 elseif(RADIO STREQUAL sx1272 AND NOT(PROJECT STREQUAL MIROMICO))
 	add_dependencies(${PROJECT_NAME} sx1272)

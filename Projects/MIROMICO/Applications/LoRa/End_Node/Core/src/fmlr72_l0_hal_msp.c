@@ -47,7 +47,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "hw.h"
-//#include "delay.h"
+#include "hw_rtc.h"
 #include "timeServer.h"
 #include "hw_gpio.h"
 /* when fast wake up is enabled, the mcu wakes up in ~20us  * and
@@ -69,54 +69,33 @@
   * @param TickPriority: Tick interrupt priority.
   * @retval HAL status
   */
+//We have to disable this so the HAL_InitTick function in the HAL drivers can be used
+
 HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
 {
   /* Return function status */
+  HW_RTC_Init();
   return HAL_OK;
 }
+
 
 /**
   * @brief This function provides delay (in ms)
   * @param Delay: specifies the delay time length, in milliseconds.
   * @retval None
   */
-void HAL_Delay(__IO uint32_t Delay)
+void HAL_Delay(uint32_t Delay)
 {
-  DelayMs(Delay);   /* based on RTC */
+  HW_RTC_DelayMs(Delay);
+  //DelayMs(Delay);   /* based on RTC */
 }
-/**
-  * @brief  Configure IO ports.
-  * @retval None
-  */
-void HW_GpioDefaultInit(void)
+
+uint32_t HAL_GetTick(void)
 {
-    GPIO_InitTypeDef GPIO_InitStruct={0};
-
-  /* Configure all GPIO as analog to reduce current consumption on non used IOs */
-  /* Enable GPIOs clock */
-  __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
-  __HAL_RCC_GPIOC_CLK_ENABLE();
-  __HAL_RCC_GPIOH_CLK_ENABLE();
-
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  /* All GPIOs except debug pins (SWCLK and SWD) */
-  GPIO_InitStruct.Pin = GPIO_PIN_All & (~( GPIO_PIN_13 | GPIO_PIN_14) );
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-
-  /* All GPIOs */
-  GPIO_InitStruct.Pin = GPIO_PIN_All;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
-  HAL_GPIO_Init(GPIOH, &GPIO_InitStruct);
-
-  /* Disable GPIOs clock */
-  __HAL_RCC_GPIOA_CLK_DISABLE();
-  __HAL_RCC_GPIOB_CLK_DISABLE();
-  __HAL_RCC_GPIOC_CLK_DISABLE();
-  __HAL_RCC_GPIOH_CLK_DISABLE();
+	HW_RTC_GetTimerValue();
 }
+
+
 /**
   * @brief  Initializes the MSP.
   * @retval None

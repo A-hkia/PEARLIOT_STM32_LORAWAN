@@ -48,6 +48,30 @@
 #ifndef __HW_CONF_H__
 #define __HW_CONF_H__
 
+#define USE_ADC
+#define USE_RTC
+#define USE_I2C1
+
+#define USE_USART1
+#define USE_USART2
+
+// Usage of SPI is module and application depended.
+// Make sure LoRa SPI is enabled
+#if defined(CMWX1ZZABZ)
+// LoRa
+#define USE_SPI1
+// not used
+#undef USE_SPI2
+#elif defined(FMLR72_L0)
+// external flash
+#define USE_SPI1
+// LoRa
+#define USE_SPI2
+#else
+#error Define module type
+#endif
+
+
 #ifdef __cplusplus
  extern "C" {
 #endif

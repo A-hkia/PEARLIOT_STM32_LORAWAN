@@ -1,0 +1,61 @@
+Project: STM32L073RZ-Nucleo_Applications_LoRa_PingPong_EWARM
+Converter: IARProjectParser
+Date: 20190604
+
+Project needs GCC compatible startup code and linker script
+sx1276mb1mas: FPU set to default FPU for device: None.
+sx1276mb1mas: FPU set to none.
+sx1272mb2das: FPU set to default FPU for device: None.
+sx1272mb2das: FPU set to none.
+sx1276mb1las: FPU set to default FPU for device: None.
+sx1276mb1las: FPU set to none.
+sx1261dvk1bas: FPU set to default FPU for device: None.
+sx1261dvk1bas: FPU set to none.
+sx1262dvk1cas: FPU set to default FPU for device: None.
+sx1262dvk1cas: FPU set to none.
+sx1262dvk1das: FPU set to default FPU for device: None.
+sx1262dvk1das: FPU set to none.
+sx1276mb1mas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1276mb1mas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1261dvk1bas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1261dvk1bas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1cas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1cas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1276mb1mas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1276mb1mas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1272mb2das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1272mb2das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1276mb1las: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1276mb1las: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1261dvk1bas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1261dvk1bas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1cas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1cas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1276mb1mas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1276mb1mas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1276mb1las: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1276mb1las: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1261dvk1bas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1261dvk1bas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1cas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1cas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1276mb1mas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1276mb1mas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1272mb2das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1272mb2das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1261dvk1bas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1261dvk1bas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1cas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1cas: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1262dvk1das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1272mb2das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1272mb2das: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1276mb1las: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+sx1276mb1las: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.

@@ -262,6 +262,7 @@
   * @{
   */
 
+
 /** @defgroup ADC ADC
   * @brief ADC HAL module driver
   * @{

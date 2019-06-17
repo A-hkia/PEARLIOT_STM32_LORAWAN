@@ -1,0 +1,27 @@
+Project: AT_Master_EWARM
+Converter: IARProjectParser
+Date: 20190604
+
+Project needs GCC compatible startup code and linker script
+I_NUCLEO_LRWAN1: FPU set to default FPU for device: None.
+I_NUCLEO_LRWAN1: FPU set to none.
+MDM32L07X01: FPU set to default FPU for device: None.
+MDM32L07X01: FPU set to none.
+LRWAN_NS1: FPU set to default FPU for device: None.
+LRWAN_NS1: FPU set to none.
+MDM32L07X01: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+MDM32L07X01: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+I_NUCLEO_LRWAN1: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+I_NUCLEO_LRWAN1: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+LRWAN_NS1: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+LRWAN_NS1: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+I_NUCLEO_LRWAN1: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+I_NUCLEO_LRWAN1: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+MDM32L07X01: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+MDM32L07X01: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+LRWAN_NS1: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+LRWAN_NS1: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+I_NUCLEO_LRWAN1: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+I_NUCLEO_LRWAN1: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+LRWAN_NS1: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+LRWAN_NS1: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.

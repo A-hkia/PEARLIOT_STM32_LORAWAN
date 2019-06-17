@@ -19,6 +19,7 @@
  * \author    Miguel Luis ( Semtech )
  *
  * \author    Gregory Cristian ( Semtech )
+ *
  */
 #ifndef __RADIO_H__
 #define __RADIO_H__

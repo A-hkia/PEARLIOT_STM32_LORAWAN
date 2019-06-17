@@ -1,0 +1,9 @@
+Project: LoRa_End_Node_EWARM
+Converter: IARProjectParser
+Date: 20190604
+
+Project needs GCC compatible startup code and linker script
+mlm32l07x01: FPU set to default FPU for device: None.
+mlm32l07x01: FPU set to none.
+mlm32l07x01: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.
+mlm32l07x01: ATTENTION: Failed to determine FPU core for the device: null, MCU information uncertain.

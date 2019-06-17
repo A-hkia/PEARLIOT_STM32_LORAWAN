@@ -52,9 +52,8 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-#ifndef USE_MIROMICO
+
 #include "vcom.h"
-#endif
 /*low power manager configuration*/
 typedef enum
 {
@@ -66,10 +65,8 @@ typedef enum
   LPM_UART_TX_Id =  (1 << 5),
 } LPM_Id_t;
 
-#ifndef USE_MIROMICO
 #define OutputInit  vcom_Init
 #define OutputTrace vcom_Trace
-#endif
 
 #define VERBOSE_LEVEL_0 0
 #define VERBOSE_LEVEL_1 1

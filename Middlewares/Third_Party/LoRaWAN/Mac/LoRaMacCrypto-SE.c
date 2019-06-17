@@ -248,12 +248,15 @@ static uint8_t pearliot_buffer[256];
 //***************************************
 uint8_t SE_RSC_i2c_Init(uint32_t frequency)
 {
+
     I2cHandle.Instance             = I2Cx;
 
 #if defined(USE_STM32L1XX_NUCLEO)
     I2cHandle.Init.ClockSpeed      = frequency;
     I2cHandle.Init.DutyCycle       = I2C_DUTYCYCLE;
+    I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
 #elif defined (USE_B_L072Z_LRWAN1)
+    I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
     if (frequency == 100000)
     {
         I2cHandle.Init.Timing = NUCLEO_I2C_EXPBD_TIMING_100KHZ;
@@ -267,11 +270,17 @@ uint8_t SE_RSC_i2c_Init(uint32_t frequency)
         /* Not supported yet -> please add your desired frequency settings */
         return SE_RSC_I2C_FAIL;
     }
-#elif defined (USE_MIROMICO)
+#elif defined(USE_MIROMICO)
+    I2cHandle.Init.Timing =0x00B07DB9;
+    I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
+    I2cHandle.Init.OwnAddress2     = 0;
+#elif defined(USE_STM32WB55_NUCLEO)
+    I2cHandle.Init.Timing =0x00707CBB;
+    I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
+    I2cHandle.Init.OwnAddress2     = 0;
 #else
 #error "Add your platform here"
 #endif
-    I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
     I2cHandle.Init.AddressingMode  = I2C_ADDRESSINGMODE_7BIT;
     I2cHandle.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
     //I2cHandle.Init.OwnAddress2     = 0xFF;
@@ -396,7 +405,6 @@ static uint16_t MDL_i2c_prot_SendReceiveAppCommand(uint8_t* sendRcvBuffer, uint8
         do
         {
             // Wait before polling
-            // SE_RSC_delay_ms(MDL_I2C_PROT_DELAY);
             HAL_Delay(MDL_I2C_PROT_WAIT);
             // Read Response Status
             nb_read_resp++;
@@ -632,33 +640,23 @@ LoRaMacCryptoStatus_t LoRaMacCryptoDeriveMcSessionKeyPair( AddressIdentifier_t a
      return LORAMAC_CRYPTO_SUCCESS;
 }
 
-extern uint8_t JoinEui[];
 
-LoRaMacCryptoStatus_t HW_GetUniqueId(uint8_t *id, uint8_t* pearliot_buffer)
+LoRaMacCryptoStatus_t HW_GetUniqueId(uint8_t *id)
 {
 
 	uint8_t length;
 	uint8_t  status;
 
-	pearliot_buffer[0] = TAG_GET_DATA;
+	pearliot_buffer[0]=TAG_GET_DATA;
 	pearliot_buffer[1]=0x84;
 	pearliot_buffer[2]=0x00;
 	length = 3;
 	status = MDL_i2c_prot_SendReceiveAppCommand(pearliot_buffer, &length);
-	if (status != SE_API_SUCCESS) {
-		return LORAMAC_CRYPTO_ERROR;
+	if (status == SE_API_SUCCESS) {
+		memcpy(id,pearliot_buffer,length);
+	     return LORAMAC_CRYPTO_SUCCESS;
 	}
-	memcpy(id,pearliot_buffer,length);
-
-	pearliot_buffer[0] = TAG_GET_DATA;
-	pearliot_buffer[1]=0x84;
-	pearliot_buffer[2]=0x20;
-	length = 3;
-	status = MDL_i2c_prot_SendReceiveAppCommand(pearliot_buffer, &length);
-	if (status != SE_API_SUCCESS) {
-		return LORAMAC_CRYPTO_ERROR;
+	else{
+    return LORAMAC_CRYPTO_ERROR;
 	}
-	memcpy(JoinEui,pearliot_buffer,length);
-
-	return LORAMAC_CRYPTO_SUCCESS;
 }

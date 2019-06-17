@@ -55,6 +55,12 @@ elseif(PROJECT STREQUAL STM32L476RG-Nucleo)
     # Configure toolchain for STM32L476RG-Nucleo
     set(LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/STM32L476RG-Nucleo/Applications/LoRa/End_Node/SW4STM32/sx1261dvk1bas/STM32L476RGTx_FLASH.ld)
     #The same linker script is used for the two applications (End_Node/PingPong)
+    
+#Choice STM32WB55-Nucleo
+elseif(PROJECT STREQUAL STM32WB55-Nucleo)
+	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/STM32WB55-Nucleo)
+    # Configure toolchain for STM32WB55-Nucleo
+    set(LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/STM32WB55-Nucleo/Applications/LoRa/End_Node/SW4STM32/stm32wb55xx_flash_cm4.ld)
+    #The same linker script is used for the three applications (AT_Master/End_Node/PingPong)
+    include(stm32wb55)
 endif()
-
-

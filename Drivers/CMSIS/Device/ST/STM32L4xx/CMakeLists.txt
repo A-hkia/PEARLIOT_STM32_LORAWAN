@@ -17,7 +17,15 @@ add_library(${PROJECT_NAME} OBJECT EXCLUDE_FROM_ALL ${${PROJECT_NAME}_SOURCES})
 target_include_directories( ${PROJECT_NAME} PUBLIC
      ${CMAKE_CURRENT_SOURCE_DIR}/Include
      $<TARGET_PROPERTY:${PROJECT}-${APPLICATION},INTERFACE_INCLUDE_DIRECTORIES>
-     
+	 ${CMAKE_CURRENT_SOURCE_DIR}/../../../Include
+     ${CMAKE_CURRENT_SOURCE_DIR}/../../../RTOS/Template
+     ${CMAKE_CURRENT_SOURCE_DIR}/../../../Documentation/Core/html
+     ${CMAKE_CURRENT_SOURCE_DIR}/../../../Documentation/Core/html/search
+     ${CMAKE_CURRENT_SOURCE_DIR}/../../../Documentation/DSP/html
+     ${CMAKE_CURRENT_SOURCE_DIR}/../../../Documentation/DSP/html/search
+     ${CMAKE_CURRENT_SOURCE_DIR}/../../../Documentation/General/html
+     ${CMAKE_CURRENT_SOURCE_DIR}/../../../Lib/ARM
+     ${CMAKE_CURRENT_SOURCE_DIR}/../../../Lib/GCC     
 )
 
 

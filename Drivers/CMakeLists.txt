@@ -15,6 +15,8 @@ elseif(SERIES STREQUAL STM32L1xx)
 	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/STM32L1xx_HAL_Driver)
 elseif(SERIES STREQUAL STM32L4xx)
 	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/STM32L4xx_HAL_Driver)
+elseif(SERIES STREQUAL STM32WBxx)
+	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/STM32WBxx_HAL_Driver)
 endif()
 
 

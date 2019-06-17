@@ -9,6 +9,7 @@
 
 #include "hw.h"
 #include "hw_uart.h"
+#include "hw_gpio.h"
 #include <stdarg.h>
 #include "stm32l0xx_ll_usart.h"
 #include "stm32l0xx_ll_bus.h"

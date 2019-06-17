@@ -106,8 +106,8 @@ extern "C" {
 /* --------------------------- USART HW definition -------------------------------*/
 
 /* Definition for USART1 Pins */
-//#define USARTX                           USART1
-//#define USARTX_CLK_ENABLE()              __USART1_CLK_ENABLE();
+#define USARTX                           USART1
+#define USARTX_CLK_ENABLE()              __USART1_CLK_ENABLE();
 #define USART1_RX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
 #define USART1_TX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
 #define USART1_TX_PIN                   GPIO_PIN_9
@@ -118,8 +118,8 @@ extern "C" {
 #define USART1_RX_AF                    GPIO_AF4_USART1
 
 /* Definition for USARTx's NVIC */
-//#define USART1_IRQn                     USART1_IRQn
-//#define USART1_IRQHandler               USART1_IRQHandler
+#define USART1_IRQn                     USART1_IRQn
+#define USART1_IRQHandler               USART1_IRQHandler
 
 /* Definition for USART2 Pins */
 #define USART2_RX_GPIO_CLK_ENABLE()     __HAL_RCC_GPIOA_CLK_ENABLE()
@@ -130,6 +130,40 @@ extern "C" {
 #define USART2_RX_PIN                  GPIO_PIN_2
 #define USART2_RX_GPIO_PORT            GPIOA
 #define USART2_RX_AF                   GPIO_AF4_USART2
+
+
+/* --------------------------- UART HW definition FROM BL072 - Needed for vcom.c-------------------------------*/
+
+/* Definition for UARTx clock resources */
+//#define USARTx                           USART1
+#define USARTx_CLK_ENABLE()              __USART1_CLK_ENABLE();
+#define USARTx_RX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
+#define USARTx_TX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
+#define DMAx_CLK_ENABLE()                __HAL_RCC_DMA1_CLK_ENABLE()
+
+#define USARTx_TX_PIN                    GPIO_PIN_9
+#define USARTx_TX_GPIO_PORT              GPIOA
+#define USARTx_TX_AF                     GPIO_AF4_USART1
+#define USARTx_RX_PIN                    GPIO_PIN_10
+#define USARTx_RX_GPIO_PORT              GPIOA
+#define USARTx_RX_AF                     GPIO_AF4_USART1
+
+/* Definition for USARTx's NVIC */
+#define USARTx_IRQn                      USART1_IRQn
+#define USARTx_IRQHandler                USART1_IRQHandler
+/* Definition for USARTx's DMA */
+#define USARTx_TX_DMA_CHANNEL             DMA1_Channel7
+
+/* Definition for USARTx's DMA Request */
+#define USARTx_TX_DMA_REQUEST             DMA_REQUEST_5
+
+/* Definition for USARTx's NVIC */
+#define USARTx_DMA_TX_IRQn                DMA1_Channel4_5_6_7_IRQn
+#define USARTx_DMA_TX_IRQHandler          DMA1_Channel4_5_6_7_IRQHandler
+
+#define USARTx_Priority 1
+#define USARTx_DMA_Priority 1
+
 
 /* --------------------------- RTC HW definition -------------------------------- */
 

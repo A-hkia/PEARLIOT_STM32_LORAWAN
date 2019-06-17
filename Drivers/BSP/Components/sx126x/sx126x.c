@@ -61,6 +61,7 @@
 #include "radio.h"
 #include "sx126x.h"
 #include "sx126x_board.h"
+#include "utilities.h"
 
 /*
  * Local types definition
