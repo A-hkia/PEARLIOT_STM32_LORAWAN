@@ -58,7 +58,7 @@ extern "C" {
 /* --------------------------- UART HW definition FROM BL072-------------------------------*/
 
 /* Definition for UARTx clock resources */
-//#define USARTx                           USART1
+#define USARTx                           USART1
 #define USARTx_CLK_ENABLE()              __USART1_CLK_ENABLE();
 #define USARTx_RX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
 #define USARTx_TX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()

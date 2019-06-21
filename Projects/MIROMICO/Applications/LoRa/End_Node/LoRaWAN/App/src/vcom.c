@@ -75,21 +75,20 @@ void vcom_Init(  void (*TxCb)(void) )
       - Parity = ODD parity
       - BaudRate = 921600 baud
       - Hardware flow control disabled (RTS and CTS signals) */
-//#ifndef USE_MIROMICO
-//  UartHandle.Instance        = USARTx;
-//#endif
-//  UartHandle.Init.BaudRate   = 9600;
-//  UartHandle.Init.WordLength = UART_WORDLENGTH_8B;
-//  UartHandle.Init.StopBits   = UART_STOPBITS_1;
-//  UartHandle.Init.Parity     = UART_PARITY_NONE;
-//  UartHandle.Init.HwFlowCtl  = UART_HWCONTROL_NONE;
-//  UartHandle.Init.Mode       = UART_MODE_TX_RX;
-//
-//  if(HAL_UART_Init(&UartHandle) != HAL_OK)
-//  {
-//    /* Initialization Error */
-//    Error_Handler();
-//  }
+  UartHandle.Instance        = USARTx;
+
+  UartHandle.Init.BaudRate   = 9600;
+  UartHandle.Init.WordLength = UART_WORDLENGTH_8B;
+  UartHandle.Init.StopBits   = UART_STOPBITS_1;
+  UartHandle.Init.Parity     = UART_PARITY_NONE;
+  UartHandle.Init.HwFlowCtl  = UART_HWCONTROL_NONE;
+  UartHandle.Init.Mode       = UART_MODE_TX_RX;
+
+  if(HAL_UART_Init(&UartHandle) != HAL_OK)
+  {
+    /* Initialization Error */
+    Error_Handler();
+  }
 }
 
 void vcom_Trace(  uint8_t *p_data, uint16_t size )
@@ -150,12 +149,9 @@ void vcom_DeInit(void)
   HAL_UART_DeInit(&UartHandle);
 }
 
-void HAL_UART_MspInit(UART_HandleTypeDef *huart)
+void vcom_IoInit(void)
 {
-  static DMA_HandleTypeDef hdma_tx;
-  
-  
-  /*##-1- Enable peripherals and GPIO Clocks #################################*/
+  GPIO_InitTypeDef  GPIO_InitStruct={0};
   /* Enable GPIO TX/RX clock */
   USARTx_TX_GPIO_CLK_ENABLE();
   USARTx_RX_GPIO_CLK_ENABLE();
@@ -207,10 +203,8 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef *huart)
 {
   vcom_IoDeInit( );
   /*##-1- Reset peripherals ##################################################*/
-#if 0
   USARTx_FORCE_RESET();
   USARTx_RELEASE_RESET();
-#endif
   /*##-3- Disable the DMA #####################################################*/
   /* De-Initialize the DMA channel associated to reception process */
   if(huart->hdmarx != 0)

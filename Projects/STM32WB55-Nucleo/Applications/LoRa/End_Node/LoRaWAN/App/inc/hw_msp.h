@@ -145,7 +145,7 @@ uint32_t HW_GetRandomSeed( void );
  *
  * \param [IN] id Pointer to an array that will contain the Unique ID
  */
-__weak void HW_GetUniqueId( uint8_t *id );
+void HW_GetUniqueId( uint8_t *id );
 
   /*!
  * \brief Initializes the HW and enters stope mode

@@ -26,7 +26,9 @@
 #include "hw.h"
 #include "bsp.h"
 #include "timeServer.h"
+#include "vcom.h"
 #include "version.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -113,9 +115,13 @@ static void LoraStartTx(TxEventType_t EventType);
 /* tx timer callback function*/
 static void OnTxTimerEvent( void );
 
+
 /* Private variables ---------------------------------------------------------*/
 /* load Main call backs structure*/
-static LoRaMainCallback_t LoRaMainCallbacks = { HW_GetUniqueId,
+static LoRaMainCallback_t LoRaMainCallbacks = { HW_GetBatteryLevel,
+												HW_GetTemperatureLevel,
+												HW_GetUniqueId,
+                                                HW_GetRandomSeed,
                                                 LORA_RxData,
                                                 LORA_HasJoined,
                                                 LORA_ConfirmClass,
@@ -208,8 +214,6 @@ int main(void)
     LPM_SetOffMode(LPM_APPLI_Id , LPM_Disable );
 
     PRINTF("VERSION: %X\n\r", VERSION);
-    //We added the suspend tick before LoRa functions because we no longer need the system tick
-    HAL_SuspendTick();
 
     /* Configure the Lora Stack*/
     LORA_Init( &LoRaMainCallbacks, &LoRaParamInit);
@@ -868,6 +872,36 @@ static void LORA_TxNeeded ( void )
   * @brief  This function is executed in case of error occurrence.
   * @retval None
   */
+
+uint32_t HW_GetRandomSeed( void )
+{
+  return 0;
+}
+
+/**
+  * @brief This function return a unique ID
+  * @param unique ID
+  * @retval none
+  */
+__weak void HW_GetUniqueId( uint8_t *id )
+{
+}
+
+uint16_t HW_GetTemperatureLevel( void )
+{
+  uint16_t temperatureDegreeC = 0;
+  return (uint16_t) temperatureDegreeC;
+}
+/**
+  * @brief This function return the battery level
+  * @param none
+  * @retval the battery level  1 (very low) to 254 (fully charged)
+  */
+uint8_t HW_GetBatteryLevel( void )
+{
+  uint8_t batteryLevel = 0;
+  return batteryLevel;
+}
 __weak void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */

@@ -92,6 +92,8 @@ target_compile_definitions(${PROJECT_NAME} PUBLIC $<$<BOOL:${USE_DEBUGGER}>:USE_
 #Specify the C standard whose features are requested to build this target
 set_property(TARGET ${PROJECT_NAME} PROPERTY C_STANDARD 11)
 
+target_link_libraries(${PROJECT_NAME} m)
 # Create output in hex and binary format
 create_bin_output(${PROJECT_NAME})
 create_hex_output(${PROJECT_NAME})
+

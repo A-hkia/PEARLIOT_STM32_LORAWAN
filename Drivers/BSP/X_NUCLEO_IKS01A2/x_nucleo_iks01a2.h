@@ -51,7 +51,7 @@ extern "C" {
 #include "stm32f4xx_hal.h"
 #endif
 
-#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)))
+#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
 #include "stm32l0xx_hal.h"
 #endif
 
@@ -61,6 +61,10 @@ extern "C" {
 
 #ifdef USE_STM32L4XX_NUCLEO
 #include "stm32l4xx_hal.h"
+#endif
+
+#ifdef USE_STM32WB55_NUCLEO
+#include "stm32wbxx_hal.h"
 #endif
 
 #include "accelerometer.h"
@@ -87,18 +91,18 @@ extern "C" {
  */
 
 /* I2C clock speed configuration (in Hz) */
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32WB55_NUCLEO)))
 #define NUCLEO_I2C_EXPBD_SPEED                         400000
 #endif /* USE_STM32F4XX_NUCLEO or USE_STM32L1XX_NUCLEO */
 
 /* Timing samples for L0 with SYSCLK 32MHz set in SystemClock_Config() */
-#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)))
+#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
 #define NUCLEO_I2C_EXPBD_TIMING_100KHZ       0x10A13E56 /* Analog Filter ON, Rise Time 400ns, Fall Time 100ns */
 #define NUCLEO_I2C_EXPBD_TIMING_400KHZ       0x00B1112E /* Analog Filter ON, Rise Time 250ns, Fall Time 100ns */
 #endif /* USE_STM32L0XX_NUCLEO */
 
 /* Timing samples for L4 with SYSCLK 80MHz set in SystemClock_Config() */
-#if (defined (USE_STM32L4XX_NUCLEO))
+#if (defined (USE_STM32L4XX_NUCLEO) || (defined (USE_STM32WB55_NUCLEO)))
 #define NUCLEO_I2C_EXPBD_TIMING_400KHZ       0x10D1143A /* Analog Filter ON, Rise time 250ns, Fall Time 100ns */
 #define NUCLEO_I2C_EXPBD_TIMING_1000KHZ      0x00D00E28 /* Analog Filter ON, Rise time 120ns, Fall time 25ns */
 #endif /* USE_STM32L4XX_NUCLEO */
@@ -116,12 +120,12 @@ extern "C" {
 #define NUCLEO_I2C_EXPBD_RELEASE_RESET()            __I2C1_RELEASE_RESET()
 
 /* I2C interrupt requests */
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32WB55_NUCLEO)))
 #define NUCLEO_I2C_EXPBD_EV_IRQn                    I2C1_EV_IRQn
 #define NUCLEO_I2C_EXPBD_ER_IRQn                    I2C1_ER_IRQn
 #endif
 
-#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)))
+#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
 #define NUCLEO_I2C_EXPBD_EV_IRQn                    I2C1_IRQn
 #endif
 
@@ -138,11 +142,11 @@ extern "C" {
 #define LPS22H_INT1_O_GPIO_CLK_DISABLE()  __GPIOB_CLK_DISABLE()
 #define LPS22H_INT1_O_PIN                 GPIO_PIN_10
 
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32WB55_NUCLEO)))
 #define LPS22H_INT1_O_EXTI_IRQn           EXTI15_10_IRQn
 #endif
 
-#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)))
+#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
 #define LPS22H_INT1_O_EXTI_IRQn           EXTI4_15_IRQn
 #endif
 
@@ -151,11 +155,11 @@ extern "C" {
 #define LSM6DSL_INT1_O_GPIO_CLK_DISABLE()  __GPIOB_CLK_DISABLE()
 #define LSM6DSL_INT1_O_PIN                 GPIO_PIN_5
 
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32WB55_NUCLEO)))
 #define LSM6DSL_INT1_O_EXTI_IRQn           EXTI9_5_IRQn
 #endif
 
-#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)))
+#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
 #define LSM6DSL_INT1_O_EXTI_IRQn           EXTI4_15_IRQn
 #endif
 
@@ -164,11 +168,11 @@ extern "C" {
 #define M_INT1_O_GPIO_CLK_DISABLE()  __GPIOC_CLK_DISABLE()
 #define M_INT1_O_PIN                 GPIO_PIN_0
 
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32WB55_NUCLEO)))
 #define M_INT1_O_EXTI_IRQn           EXTI0_IRQn
 #endif
 
-#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)))
+#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
 #define M_INT1_O_EXTI_IRQn           EXTI0_1_IRQn
 #endif
 
@@ -177,11 +181,11 @@ extern "C" {
 #define M_INT2_O_GPIO_CLK_DISABLE()  __GPIOC_CLK_DISABLE()
 #define M_INT2_O_PIN                 GPIO_PIN_1
 
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32WB55_NUCLEO)))
 #define M_INT2_O_EXTI_IRQn           EXTI1_IRQn
 #endif
 
-#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)))
+#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
 #define M_INT2_O_EXTI_IRQn           EXTI0_1_IRQn
 #endif
 
@@ -190,11 +194,11 @@ extern "C" {
 #define LSM6DSL_INT2_O_GPIO_CLK_DISABLE()  __GPIOB_CLK_DISABLE()
 #define LSM6DSL_INT2_O_PIN                 GPIO_PIN_4
 
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32WB55_NUCLEO)))
 #define LSM6DSL_INT2_O_EXTI_IRQn           EXTI4_IRQn
 #endif
 
-#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)))
+#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
 #define LSM6DSL_INT2_O_EXTI_IRQn           EXTI4_15_IRQn
 #endif
 
@@ -204,11 +208,11 @@ extern "C" {
 #define USER_INT_O_GPIO_CLK_DISABLE()  __GPIOA_CLK_DISABLE()
 #define USER_INT_O_PIN                 GPIO_PIN_10
 
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32WB55_NUCLEO)))
 #define USER_INT_O_EXTI_IRQn           EXTI15_10_IRQn
 #endif
 
-#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)))
+#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
 #define USER_INT_O_EXTI_IRQn           EXTI4_15_IRQn
 #endif
 
@@ -218,11 +222,11 @@ extern "C" {
 #define LSM303AGR_DRDY_O_GPIO_CLK_DISABLE()  __GPIOA_CLK_DISABLE()
 #define LSM303AGR_DRDY_O_PIN                 GPIO_PIN_4
 
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32WB55_NUCLEO)))
 #define LSM303AGR_DRDY_O_EXTI_IRQn           EXTI4_IRQn
 #endif
 
-#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)))
+#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
 #define LSM303AGR_DRDY_O_EXTI_IRQn           EXTI4_15_IRQn
 #endif
 
@@ -232,11 +236,11 @@ extern "C" {
 #define LSM303AGR_INT_O_GPIO_CLK_DISABLE()  __GPIOB_CLK_DISABLE()
 #define LSM303AGR_INT_O_PIN                 GPIO_PIN_0
 
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32WB55_NUCLEO)))
 #define LSM303AGR_INT_O_EXTI_IRQn           EXTI0_IRQn
 #endif
 
-#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)))
+#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
 #define LSM303AGR_INT_O_EXTI_IRQn           EXTI0_1_IRQn
 #endif
 

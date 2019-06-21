@@ -92,7 +92,7 @@ void HAL_Delay(uint32_t Delay)
 
 uint32_t HAL_GetTick(void)
 {
-	HW_RTC_GetTimerValue();
+	return HW_RTC_GetTimerValue();
 }
 
 

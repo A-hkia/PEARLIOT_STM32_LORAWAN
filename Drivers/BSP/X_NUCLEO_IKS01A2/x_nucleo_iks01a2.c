@@ -1,4 +1,4 @@
-/**
+	/**
  ******************************************************************************
  * @file    x_nucleo_iks01a2.c
  * @author  MEMS Application Team
@@ -117,7 +117,7 @@ DrvStatusTypeDef LSM6DSL_Sensor_IO_ITConfig( void )
   /* Configure GPIO PINs to detect Interrupts */
   GPIO_InitStructureInt1.Pin = LSM6DSL_INT1_O_PIN;
   GPIO_InitStructureInt1.Mode = GPIO_MODE_IT_RISING;
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L0XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO))|| (defined (USE_B_L072Z_LRWAN1)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L0XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO))|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
   GPIO_InitStructureInt1.Speed = GPIO_SPEED_FAST;
 #endif
 
@@ -137,7 +137,7 @@ DrvStatusTypeDef LSM6DSL_Sensor_IO_ITConfig( void )
   /* Configure GPIO PINs to detect Interrupts */
   GPIO_InitStructureInt2.Pin = LSM6DSL_INT2_O_PIN;
   GPIO_InitStructureInt2.Mode = GPIO_MODE_IT_RISING;
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L0XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_B_L072Z_LRWAN1))|| (defined (USE_B_L072Z_LRWAN1)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L0XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
   GPIO_InitStructureInt2.Speed = GPIO_SPEED_FAST;
 #endif
 
@@ -173,7 +173,7 @@ DrvStatusTypeDef LPS22HB_Sensor_IO_ITConfig( void )
   /* Configure GPIO PINs to detect Interrupts */
   GPIO_InitStructureInt1.Pin = LPS22H_INT1_O_PIN;
   GPIO_InitStructureInt1.Mode = GPIO_MODE_IT_RISING;
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L0XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO))|| (defined (USE_B_L072Z_LRWAN1)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L0XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO))|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
   GPIO_InitStructureInt1.Speed = GPIO_SPEED_FAST;
 #endif
 
@@ -276,7 +276,7 @@ static uint8_t I2C_EXPBD_Init( void )
     I2C_EXPBD_Handle.Init.DutyCycle = I2C_DUTYCYCLE_2;
 #endif
 
-#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1)))
+#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1))|| (defined (USE_MIROMICO)))
     I2C_EXPBD_Handle.Init.Timing = NUCLEO_I2C_EXPBD_TIMING_400KHZ;    /* 400KHz */
 #endif
 #if (defined (USE_STM32L4XX_NUCLEO))
@@ -403,7 +403,7 @@ static void I2C_EXPBD_MspInit( void )
   /* I2C_EXPBD SCL and SDA pins configuration -------------------------------------*/
   GPIO_InitStruct.Pin        = NUCLEO_I2C_EXPBD_SCL_PIN | NUCLEO_I2C_EXPBD_SDA_PIN;
   GPIO_InitStruct.Mode       = GPIO_MODE_AF_OD;
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L0XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO))|| (defined (USE_B_L072Z_LRWAN1)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L0XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO))|| (defined (USE_B_L072Z_LRWAN1)) || (defined (USE_MIROMICO)))
   GPIO_InitStruct.Speed = GPIO_SPEED_FAST;
 #endif
 
@@ -425,10 +425,8 @@ static void I2C_EXPBD_MspInit( void )
   NUCLEO_I2C_EXPBD_RELEASE_RESET();
 
   /* Enable and set I2C_EXPBD Interrupt to the highest priority */
-#ifndef USE_MIROMICO
   HAL_NVIC_SetPriority(NUCLEO_I2C_EXPBD_EV_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(NUCLEO_I2C_EXPBD_EV_IRQn);
-#endif
 #if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)))
   /* Enable and set I2C_EXPBD Interrupt to the highest priority */
   HAL_NVIC_SetPriority(NUCLEO_I2C_EXPBD_ER_IRQn, 0, 0);

@@ -17,6 +17,25 @@
 #include "hw_gpio.h"
 #include "FMLR72_L0.h"
 
+#if defined(LRWAN_NS1)
+#include "lrwan_ns1_humidity.h"
+#include "lrwan_ns1_pressure.h"
+#include "lrwan_ns1_temperature.h"
+#else  /* not LRWAN_NS1 */
+#if defined(SENSOR_ENABLED)
+#if defined (X_NUCLEO_IKS01A1)
+#warning "Do not forget to select X_NUCLEO_IKS01A1 files group instead of X_NUCLEO_IKS01A2"
+#include "x_nucleo_iks01a1_humidity.h"
+#include "x_nucleo_iks01a1_pressure.h"
+#include "x_nucleo_iks01a1_temperature.h"
+#else  /* not X_NUCLEO_IKS01A1 */
+#include "x_nucleo_iks01a2.h"
+#include "x_nucleo_iks01a2_humidity.h"
+#include "x_nucleo_iks01a2_pressure.h"
+#include "x_nucleo_iks01a2_temperature.h"
+#endif  /* X_NUCLEO_IKS01A1 */
+#endif  /* SENSOR_ENABLED */
+#endif  /* LRWAN_NS1 */
 
 /* Private variables ---------------------------------------------------------*/
 static SHT_HandleTypedef h_sht;
@@ -103,6 +122,10 @@ int8_t BSP_sensor_Init(const volatile eSensorConfig_t* sensorConfig)
   // Initialize I2C
   I2C_Init();
 
+  //Initialisation of the sensors on the sensor board
+  #if defined (SENSOR_ENABLED)
+  	  return Sensor_IO_Init();
+  #endif
   uint8_t sensorCnt = 0;
 
   if (sensorConfig->reportBattLevel == ENABLE) {

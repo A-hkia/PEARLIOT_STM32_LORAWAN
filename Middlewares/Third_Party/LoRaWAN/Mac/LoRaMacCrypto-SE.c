@@ -271,7 +271,8 @@ uint8_t SE_RSC_i2c_Init(uint32_t frequency)
         return SE_RSC_I2C_FAIL;
     }
 #elif defined(USE_MIROMICO)
-    I2cHandle.Init.Timing =0x00B07DB9;
+    //I2cHandle.Init.Timing =0x00B07DB9;
+    I2cHandle.Init.Timing = 0x00B1112E;
     I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
     I2cHandle.Init.OwnAddress2     = 0;
 #elif defined(USE_STM32WB55_NUCLEO)
@@ -384,7 +385,6 @@ static uint16_t MDL_i2c_prot_SendReceiveAppCommand(uint8_t* sendRcvBuffer, uint8
     uint8_t nb_read_resp = 0;
     uint8_t status;
 
-    HAL_ResumeTick();
     SE_RSC_serial_debug_hex (LOG_DBG, (char*)"[I2C PROT] Command: ", sendRcvBuffer, *sendRcvBufferLength);
 
     //Initialize peripheral

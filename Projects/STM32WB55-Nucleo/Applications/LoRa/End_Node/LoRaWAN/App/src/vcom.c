@@ -74,20 +74,20 @@ void vcom_Init(  void (*TxCb)(void) )
       - Parity = ODD parity
       - BaudRate = 921600 baud
       - Hardware flow control disabled (RTS and CTS signals) */
-//  UartHandle.Instance        = USARTx;
-//
-//  UartHandle.Init.BaudRate   = 9600;
-//  UartHandle.Init.WordLength = UART_WORDLENGTH_8B;
-//  UartHandle.Init.StopBits   = UART_STOPBITS_1;
-//  UartHandle.Init.Parity     = UART_PARITY_NONE;
-//  UartHandle.Init.HwFlowCtl  = UART_HWCONTROL_NONE;
-//  UartHandle.Init.Mode       = UART_MODE_TX_RX;
-//
-//  if(HAL_UART_Init(&UartHandle) != HAL_OK)
-//  {
-//    /* Initialization Error */
-//    Error_Handler();
-//  }
+  UartHandle.Instance        = USARTx;
+
+  UartHandle.Init.BaudRate   = 9600;
+  UartHandle.Init.WordLength = UART_WORDLENGTH_8B;
+  UartHandle.Init.StopBits   = UART_STOPBITS_1;
+  UartHandle.Init.Parity     = UART_PARITY_NONE;
+  UartHandle.Init.HwFlowCtl  = UART_HWCONTROL_NONE;
+  UartHandle.Init.Mode       = UART_MODE_TX_RX;
+
+  if(HAL_UART_Init(&UartHandle) != HAL_OK)
+  {
+    /* Initialization Error */
+    Error_Handler();
+  }
 }
 
 void vcom_Trace(  uint8_t *p_data, uint16_t size )

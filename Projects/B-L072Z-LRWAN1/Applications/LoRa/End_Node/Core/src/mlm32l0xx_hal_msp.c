@@ -67,6 +67,7 @@
   * @param TickPriority: Tick interrupt priority.
   * @retval HAL status
   */
+
 HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
 {
 	/* Return function status */
@@ -86,7 +87,7 @@ void HAL_Delay(uint32_t Delay)
 
 uint32_t HAL_GetTick(void)
 {
-	HW_RTC_GetTimerValue();
+	return HW_RTC_GetTimerValue();
 }
 
 /**

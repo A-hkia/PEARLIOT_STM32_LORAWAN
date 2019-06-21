@@ -91,30 +91,30 @@ void HW_SPI_Init( void )
   /*##-1- Configure the SPI peripheral */
   /* Set the SPI parameters */
 
-//  hspi.Instance = SPI1;
-//
-//  hspi.Init.BaudRatePrescaler = SpiFrequency( 10000000 );
-//  hspi.Init.Direction      = SPI_DIRECTION_2LINES;
-//  hspi.Init.Mode           = SPI_MODE_MASTER;
-//  hspi.Init.CLKPolarity    = SPI_POLARITY_LOW;
-//  hspi.Init.CLKPhase       = SPI_PHASE_1EDGE;
-//  hspi.Init.DataSize       = SPI_DATASIZE_8BIT;
-//  hspi.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
-//  hspi.Init.FirstBit       = SPI_FIRSTBIT_MSB;
-//  hspi.Init.NSS            = SPI_NSS_SOFT;
-//  hspi.Init.TIMode         = SPI_TIMODE_DISABLE;
-//
-//
+  hspi.Instance = SPI1;
+
+  hspi.Init.BaudRatePrescaler = SpiFrequency( 10000000 );
+  hspi.Init.Direction      = SPI_DIRECTION_2LINES;
+  hspi.Init.Mode           = SPI_MODE_MASTER;
+  hspi.Init.CLKPolarity    = SPI_POLARITY_LOW;
+  hspi.Init.CLKPhase       = SPI_PHASE_1EDGE;
+  hspi.Init.DataSize       = SPI_DATASIZE_8BIT;
+  hspi.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  hspi.Init.FirstBit       = SPI_FIRSTBIT_MSB;
+  hspi.Init.NSS            = SPI_NSS_SOFT;
+  hspi.Init.TIMode         = SPI_TIMODE_DISABLE;
+
+
   SPI_CLK_ENABLE();
-//
-//
-//  if(HAL_SPI_Init( &hspi) != HAL_OK)
-//  {
-//    /* Initialization Error */
-//     Error_Handler();
-//  }
-//
-//  /*##-2- Configure the SPI GPIOs */
+
+
+  if(HAL_SPI_Init( &hspi) != HAL_OK)
+  {
+    /* Initialization Error */
+     Error_Handler();
+  }
+
+  /*##-2- Configure the SPI GPIOs */
   HW_SPI_IoInit(  );
 }
 
