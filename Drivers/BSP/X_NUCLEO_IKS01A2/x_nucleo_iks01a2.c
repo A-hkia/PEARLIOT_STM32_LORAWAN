@@ -124,6 +124,10 @@ DrvStatusTypeDef LSM6DSL_Sensor_IO_ITConfig( void )
 #if (defined (USE_STM32L1XX_NUCLEO))
   GPIO_InitStructureInt1.Speed = GPIO_SPEED_MEDIUM;
 #endif
+
+#if (defined (USE_STM32WB55_NUCLEO))
+  GPIO_InitStructureInt1.Speed = GPIO_SPEED_FREQ_HIGH;
+#endif
   GPIO_InitStructureInt1.Pull  = GPIO_NOPULL;
   HAL_GPIO_Init(LSM6DSL_INT1_O_GPIO_PORT, &GPIO_InitStructureInt1);
 
@@ -143,6 +147,10 @@ DrvStatusTypeDef LSM6DSL_Sensor_IO_ITConfig( void )
 
 #if (defined (USE_STM32L1XX_NUCLEO))
   GPIO_InitStructureInt2.Speed = GPIO_SPEED_MEDIUM;
+#endif
+
+#if (defined (USE_STM32WB55_NUCLEO))
+  GPIO_InitStructureInt1.Speed = GPIO_SPEED_FREQ_HIGH;
 #endif
   GPIO_InitStructureInt2.Pull  = GPIO_NOPULL;
   HAL_GPIO_Init(LSM6DSL_INT2_O_GPIO_PORT, &GPIO_InitStructureInt2);
@@ -179,6 +187,10 @@ DrvStatusTypeDef LPS22HB_Sensor_IO_ITConfig( void )
 
 #if (defined (USE_STM32L1XX_NUCLEO))
   GPIO_InitStructureInt1.Speed = GPIO_SPEED_MEDIUM;
+#endif
+
+#if (defined (USE_STM32WB55_NUCLEO))
+  GPIO_InitStructureInt1.Speed = GPIO_SPEED_FREQ_HIGH;
 #endif
   GPIO_InitStructureInt1.Pull  = GPIO_NOPULL;
   HAL_GPIO_Init(LPS22H_INT1_O_GPIO_PORT, &GPIO_InitStructureInt1);
@@ -276,7 +288,7 @@ static uint8_t I2C_EXPBD_Init( void )
     I2C_EXPBD_Handle.Init.DutyCycle = I2C_DUTYCYCLE_2;
 #endif
 
-#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1))|| (defined (USE_MIROMICO)))
+#if (defined (USE_STM32L0XX_NUCLEO)|| (defined (USE_B_L072Z_LRWAN1))|| (defined (USE_MIROMICO)) || (defined (USE_STM32WB55_NUCLEO)))
     I2C_EXPBD_Handle.Init.Timing = NUCLEO_I2C_EXPBD_TIMING_400KHZ;    /* 400KHz */
 #endif
 #if (defined (USE_STM32L4XX_NUCLEO))
@@ -410,6 +422,10 @@ static void I2C_EXPBD_MspInit( void )
 #if (defined (USE_STM32L1XX_NUCLEO))
   GPIO_InitStruct.Speed = GPIO_SPEED_MEDIUM;
 #endif
+
+#if (defined (USE_STM32WB55_NUCLEO))
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+#endif
   GPIO_InitStruct.Pull       = GPIO_NOPULL;
   GPIO_InitStruct.Alternate  = NUCLEO_I2C_EXPBD_SCL_SDA_AF;
 
@@ -427,7 +443,7 @@ static void I2C_EXPBD_MspInit( void )
   /* Enable and set I2C_EXPBD Interrupt to the highest priority */
   HAL_NVIC_SetPriority(NUCLEO_I2C_EXPBD_EV_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(NUCLEO_I2C_EXPBD_EV_IRQn);
-#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)))
+#if ((defined (USE_STM32F4XX_NUCLEO)) || (defined (USE_STM32L1XX_NUCLEO)) || (defined (USE_STM32L4XX_NUCLEO)) || (defined (USE_STM32WB55_NUCLEO)))
   /* Enable and set I2C_EXPBD Interrupt to the highest priority */
   HAL_NVIC_SetPriority(NUCLEO_I2C_EXPBD_ER_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(NUCLEO_I2C_EXPBD_ER_IRQn);

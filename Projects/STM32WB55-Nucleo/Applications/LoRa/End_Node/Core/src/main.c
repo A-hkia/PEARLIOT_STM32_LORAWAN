@@ -210,6 +210,8 @@ int main(void)
   MX_RTC_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
+  TraceInit( );
+  BSP_sensor_Init( );
   /*Disable Stand-by mode*/
     LPM_SetOffMode(LPM_APPLI_Id , LPM_Disable );
 

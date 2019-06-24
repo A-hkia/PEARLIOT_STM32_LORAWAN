@@ -60,14 +60,17 @@ extern "C" {
 /* Definition for UARTx clock resources */
 #define USARTx                           USART1
 #define USARTx_CLK_ENABLE()              __USART1_CLK_ENABLE();
-#define USARTx_RX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
-#define USARTx_TX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
+#define USARTx_RX_GPIO_CLK_ENABLE()      __GPIOB_CLK_ENABLE()
+#define USARTx_TX_GPIO_CLK_ENABLE()      __GPIOB_CLK_ENABLE()
 #define DMAx_CLK_ENABLE()                __HAL_RCC_DMA1_CLK_ENABLE()
 
-#define USARTx_TX_PIN                    GPIO_PIN_9
+#define USARTx_FORCE_RESET()             __USART1_FORCE_RESET()
+#define USARTx_RELEASE_RESET()           __USART1_RELEASE_RESET()
+
+#define USARTx_TX_PIN                    GPIO_PIN_6
 #define USARTx_TX_GPIO_PORT              GPIOA
 #define USARTx_TX_AF                     GPIO_AF7_USART1
-#define USARTx_RX_PIN                    GPIO_PIN_10
+#define USARTx_RX_PIN                    GPIO_PIN_7
 #define USARTx_RX_GPIO_PORT              GPIOA
 #define USARTx_RX_AF                     GPIO_AF7_USART1
 
@@ -84,8 +87,8 @@ extern "C" {
 #define USARTx_DMA_TX_IRQn                DMA1_Channel1_IRQn
 #define USARTx_DMA_TX_IRQHandler          DMA1_Channel4_5_6_7_IRQHandler
 
-#define USARTx_Priority 1
-#define USARTx_DMA_Priority 1
+#define USARTx_Priority 0
+#define USARTx_DMA_Priority 0
 
 /* Exported functions ------------------------------------------------------- */
 /** 
