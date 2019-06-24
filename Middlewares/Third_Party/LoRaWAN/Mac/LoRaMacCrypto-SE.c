@@ -641,7 +641,11 @@ LoRaMacCryptoStatus_t LoRaMacCryptoDeriveMcSessionKeyPair( AddressIdentifier_t a
 }
 
 
+<<<<<<< HEAD
 LoRaMacCryptoStatus_t HW_GetUniqueId(uint8_t *id)
+=======
+void HW_GetUniqueId(uint8_t *id)
+>>>>>>> branch 'master' of git@192.168.0.1:/opt/git/lora
 {
 
 	uint8_t length;
@@ -654,9 +658,16 @@ LoRaMacCryptoStatus_t HW_GetUniqueId(uint8_t *id)
 	status = MDL_i2c_prot_SendReceiveAppCommand(pearliot_buffer, &length);
 	if (status == SE_API_SUCCESS) {
 		memcpy(id,pearliot_buffer,length);
+<<<<<<< HEAD
 	     return LORAMAC_CRYPTO_SUCCESS;
+=======
+>>>>>>> branch 'master' of git@192.168.0.1:/opt/git/lora
 	}
+<<<<<<< HEAD
 	else{
     return LORAMAC_CRYPTO_ERROR;
 	}
+=======
+	return;
+>>>>>>> branch 'master' of git@192.168.0.1:/opt/git/lora
 }
