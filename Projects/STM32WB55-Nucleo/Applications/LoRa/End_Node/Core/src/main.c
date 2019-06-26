@@ -24,6 +24,7 @@
 #include "low_power_manager.h"
 #include "hw_msp.h"
 #include "hw.h"
+#include "hw_rtc.h"
 #include "bsp.h"
 #include "timeServer.h"
 #include "vcom.h"
@@ -145,12 +146,18 @@ static  LoRaParam_t LoRaParamInit= {LORAWAN_ADR_STATE,
 
 /* Private variables ---------------------------------------------------------*/
 I2C_HandleTypeDef hi2c1;
+I2C_HandleTypeDef *PearlIot_i2c;
 
 RTC_HandleTypeDef hrtc;
+RTC_HandleTypeDef *phrtc;
 
 SPI_HandleTypeDef hspi1;
 
 UART_HandleTypeDef huart1;
+UART_HandleTypeDef *phuart;
+
+DMA_HandleTypeDef hdma_usart1_tx;
+DMA_HandleTypeDef hdma_usart1_rx;
 
 PCD_HandleTypeDef hpcd_USB_FS;
 
@@ -161,6 +168,7 @@ PCD_HandleTypeDef hpcd_USB_FS;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_DMA_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_USB_PCD_Init(void);
 static void MX_I2C1_Init(void);
@@ -182,7 +190,8 @@ static void MX_SPI1_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	PearlIot_i2c = &hi2c1;
+	phrtc= &hrtc;
   /* USER CODE END 1 */
   
 
@@ -192,7 +201,8 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+//  HAL_InitTick(0);
+//  HAL_ResumeTick();
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -204,6 +214,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
   MX_USART1_UART_Init();
   MX_USB_PCD_Init();
   MX_I2C1_Init();
@@ -304,9 +315,9 @@ void SystemClock_Config(void)
   }
   /** Initializes the peripherals clocks 
   */
-  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_SMPS|RCC_PERIPHCLK_RTC
-                              |RCC_PERIPHCLK_USART1|RCC_PERIPHCLK_I2C1
-                              |RCC_PERIPHCLK_USB;
+  PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_SMPS|RCC_PERIPHCLK_RFWAKEUP
+                              |RCC_PERIPHCLK_RTC|RCC_PERIPHCLK_USART1
+                              |RCC_PERIPHCLK_I2C1|RCC_PERIPHCLK_USB;
   PeriphClkInitStruct.PLLSAI1.PLLN = 24;
   PeriphClkInitStruct.PLLSAI1.PLLP = RCC_PLLP_DIV2;
   PeriphClkInitStruct.PLLSAI1.PLLQ = RCC_PLLQ_DIV2;
@@ -316,8 +327,9 @@ void SystemClock_Config(void)
   PeriphClkInitStruct.I2c1ClockSelection = RCC_I2C1CLKSOURCE_PCLK1;
   PeriphClkInitStruct.UsbClockSelection = RCC_USBCLKSOURCE_PLLSAI1;
   PeriphClkInitStruct.RTCClockSelection = RCC_RTCCLKSOURCE_LSI;
-  PeriphClkInitStruct.SmpsClockSelection = RCC_SMPSCLKSOURCE_HSI;
-  PeriphClkInitStruct.SmpsDivSelection = RCC_SMPSCLKDIV_RANGE1;
+  PeriphClkInitStruct.RFWakeUpClockSelection = RCC_RFWKPCLKSOURCE_LSI;
+  PeriphClkInitStruct.SmpsClockSelection = RCC_SMPSCLKSOURCE_HSE;
+  PeriphClkInitStruct.SmpsDivSelection = RCC_SMPSCLKDIV_RANGE0;
 
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInitStruct) != HAL_OK)
   {
@@ -374,7 +386,9 @@ static void MX_I2C1_Init(void)
 
 }
 
+
 /**
+ * 
   * @brief RTC Initialization Function
   * @param None
   * @retval None
@@ -600,6 +614,25 @@ static void MX_USB_PCD_Init(void)
   /* USER CODE BEGIN USB_Init 2 */
 
   /* USER CODE END USB_Init 2 */
+
+}
+
+/** 
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void) 
+{
+  /* DMA controller clock enable */
+  __HAL_RCC_DMAMUX1_CLK_ENABLE();
+  __HAL_RCC_DMA1_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA1_Channel1_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
+  /* DMA1_Channel2_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel2_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel2_IRQn);
 
 }
 

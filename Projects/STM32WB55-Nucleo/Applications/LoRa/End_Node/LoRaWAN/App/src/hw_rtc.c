@@ -158,6 +158,7 @@ static const uint8_t DaysInMonth[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 3
 static const uint8_t DaysInMonthLeapYear[] = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
 static RTC_HandleTypeDef RtcHandle={0};
+extern RTC_HandleTypeDef *phrtc;
 
 static RTC_AlarmTypeDef RTC_AlarmStructure;
 
@@ -229,14 +230,14 @@ static void HW_RTC_SetConfig( void )
   RtcHandle.Init.OutPutType = RTC_OUTPUT_TYPE_OPENDRAIN;
 
   HAL_RTC_Init( &RtcHandle );
-  
+
   /*Monday 1st January 2016*/
   RTC_DateStruct.Year = 0;
   RTC_DateStruct.Month = RTC_MONTH_JANUARY;
   RTC_DateStruct.Date = 1;
   RTC_DateStruct.WeekDay = RTC_WEEKDAY_MONDAY;
   HAL_RTC_SetDate(&RtcHandle , &RTC_DateStruct, RTC_FORMAT_BIN);
-  
+
   /*at 0:0:0*/
   RTC_TimeStruct.Hours = 0;
   RTC_TimeStruct.Minutes = 0;
@@ -246,9 +247,9 @@ static void HW_RTC_SetConfig( void )
   RTC_TimeStruct.SubSeconds = 0;
   RTC_TimeStruct.StoreOperation = RTC_DAYLIGHTSAVING_NONE;
   RTC_TimeStruct.DayLightSaving = RTC_STOREOPERATION_RESET;
-  
+
   HAL_RTC_SetTime(&RtcHandle , &RTC_TimeStruct, RTC_FORMAT_BIN);
-  
+
  /*Enable Direct Read of the calendar registers (not through Shadow) */
   HAL_RTCEx_EnableBypassShadow(&RtcHandle);
 }
@@ -594,13 +595,13 @@ static uint64_t HW_RTC_GetCalendarValue( RTC_DateTypeDef* RTC_DateStruct, RTC_Ti
   uint32_t seconds;
   
   /* Get Time and Date*/
-  HAL_RTC_GetTime( &RtcHandle, RTC_TimeStruct, RTC_FORMAT_BIN );
+  HAL_RTC_GetTime( phrtc, RTC_TimeStruct, RTC_FORMAT_BIN );
  
    /* make sure it is correct due to asynchronus nature of RTC*/
   do {
     first_read = RTC_TimeStruct->SubSeconds;
-    HAL_RTC_GetDate( &RtcHandle, RTC_DateStruct, RTC_FORMAT_BIN );
-    HAL_RTC_GetTime( &RtcHandle, RTC_TimeStruct, RTC_FORMAT_BIN );
+    HAL_RTC_GetDate( phrtc, RTC_DateStruct, RTC_FORMAT_BIN );
+    HAL_RTC_GetTime( phrtc, RTC_TimeStruct, RTC_FORMAT_BIN );
   } while (first_read != RTC_TimeStruct->SubSeconds);
  
   /* calculte amount of elapsed days since 01/01/2000 */

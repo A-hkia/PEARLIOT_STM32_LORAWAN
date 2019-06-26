@@ -102,6 +102,9 @@
 #define SE_API_SUCCESS                                  0x00    /*!< Generic no error */
 
 
+extern I2C_HandleTypeDef *PearlIot_i2c;
+
+
 //Debug
 //***************************************
 
@@ -134,7 +137,7 @@
 
 
 static I2C_HandleTypeDef I2cHandle;                     /*!< I2C handler declaration */
-static uint8_t slaveAddress = SE_RSC_I2C_ADDRESS;
+static const uint8_t slaveAddress = SE_RSC_I2C_ADDRESS;
 static uint32_t timeout = SE_RSC_I2C_TIMEOUT_1S;        /*!< I2C timeout */
 
 #define I2Cx                            I2C1
@@ -248,7 +251,7 @@ static uint8_t pearliot_buffer[256];
 //***************************************
 uint8_t SE_RSC_i2c_Init(uint32_t frequency)
 {
-
+//
     I2cHandle.Instance             = I2Cx;
 
 #if defined(USE_STM32L1XX_NUCLEO)
@@ -641,13 +644,10 @@ LoRaMacCryptoStatus_t LoRaMacCryptoDeriveMcSessionKeyPair( AddressIdentifier_t a
 }
 
 
-<<<<<<< HEAD
-LoRaMacCryptoStatus_t HW_GetUniqueId(uint8_t *id)
-=======
-void HW_GetUniqueId(uint8_t *id)
->>>>>>> branch 'master' of git@192.168.0.1:/opt/git/lora
-{
 
+void HW_GetUniqueId(uint8_t *id)
+
+{
 	uint8_t length;
 	uint8_t  status;
 
@@ -658,16 +658,8 @@ void HW_GetUniqueId(uint8_t *id)
 	status = MDL_i2c_prot_SendReceiveAppCommand(pearliot_buffer, &length);
 	if (status == SE_API_SUCCESS) {
 		memcpy(id,pearliot_buffer,length);
-<<<<<<< HEAD
-	     return LORAMAC_CRYPTO_SUCCESS;
-=======
->>>>>>> branch 'master' of git@192.168.0.1:/opt/git/lora
 	}
-<<<<<<< HEAD
 	else{
-    return LORAMAC_CRYPTO_ERROR;
-	}
-=======
 	return;
->>>>>>> branch 'master' of git@192.168.0.1:/opt/git/lora
+	}
 }

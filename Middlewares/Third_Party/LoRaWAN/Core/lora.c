@@ -87,10 +87,7 @@
 #define HEX16(X)  X[0],X[1], X[2],X[3], X[4],X[5], X[6],X[7],X[8],X[9], X[10],X[11], X[12],X[13], X[14],X[15]
 #define HEX8(X)   X[0],X[1], X[2],X[3], X[4],X[5], X[6],X[7]
 static uint8_t DevEui[] = LORAWAN_DEVICE_EUI;
-<<<<<<< HEAD
-=======
-// allow extern reference to JoinEUI
->>>>>>> branch 'master' of git@192.168.0.1:/opt/git/lora
+
 static uint8_t JoinEui[] = LORAWAN_JOIN_EUI;
 static uint8_t AppKey[] = LORAWAN_APP_KEY;
 static uint8_t NwkKey[] = LORAWAN_NWK_KEY;

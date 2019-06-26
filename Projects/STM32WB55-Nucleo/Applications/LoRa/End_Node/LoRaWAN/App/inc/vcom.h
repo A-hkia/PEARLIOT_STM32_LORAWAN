@@ -68,10 +68,10 @@ extern "C" {
 #define USARTx_RELEASE_RESET()           __USART1_RELEASE_RESET()
 
 #define USARTx_TX_PIN                    GPIO_PIN_6
-#define USARTx_TX_GPIO_PORT              GPIOA
+#define USARTx_TX_GPIO_PORT              GPIOB
 #define USARTx_TX_AF                     GPIO_AF7_USART1
 #define USARTx_RX_PIN                    GPIO_PIN_7
-#define USARTx_RX_GPIO_PORT              GPIOA
+#define USARTx_RX_GPIO_PORT              GPIOB
 #define USARTx_RX_AF                     GPIO_AF7_USART1
 
 /* Definition for USARTx's NVIC */

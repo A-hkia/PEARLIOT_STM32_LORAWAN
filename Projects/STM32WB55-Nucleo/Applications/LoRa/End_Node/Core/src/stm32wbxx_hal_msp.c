@@ -21,13 +21,16 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "hw_rtc.h"
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
+extern DMA_HandleTypeDef hdma_usart1_tx;
 
+extern DMA_HandleTypeDef hdma_usart1_rx;
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN TD */
-
+extern RTC_HandleTypeDef *phrtc;
 /* USER CODE END TD */
 
 /* Private define ------------------------------------------------------------*/
@@ -53,6 +56,21 @@
 /* External functions --------------------------------------------------------*/
 /* USER CODE BEGIN ExternalFunctions */
 
+/**
+  * @brief This function provides delay (in ms)
+  * @param Delay: specifies the delay time length, in milliseconds.
+  * @retval None
+  */
+void HAL_Delay(uint32_t Delay)
+{
+  HW_RTC_DelayMs(Delay);
+  //DelayMs(Delay);   /* based on RTC */
+}
+
+uint32_t HAL_GetTick(void)
+{
+	return HW_RTC_GetTimerValue();
+}
 /* USER CODE END ExternalFunctions */
 
 /* USER CODE BEGIN 0 */
@@ -66,9 +84,18 @@ void HAL_MspInit(void)
   /* USER CODE BEGIN MspInit 0 */
 
   /* USER CODE END MspInit 0 */
+  PWR_PVDTypeDef sConfigPVD = {0};
 
   /* System interrupt init*/
-
+  
+  /** PVD Configuration 
+  */
+  sConfigPVD.PVDLevel = PWR_PVDLEVEL_0;
+  sConfigPVD.Mode = PWR_PVD_MODE_NORMAL;
+  HAL_PWR_ConfigPVD(&sConfigPVD);
+  /** Enable the PVD Output 
+  */
+  HAL_PWR_EnablePVD();
   /* USER CODE BEGIN MspInit 1 */
 
   /* USER CODE END MspInit 1 */
@@ -297,6 +324,41 @@ void HAL_UART_MspInit(UART_HandleTypeDef* huart)
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
     GPIO_InitStruct.Alternate = GPIO_AF7_USART1;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+    /* USART1 DMA Init */
+    /* USART1_TX Init */
+    hdma_usart1_tx.Instance = DMA1_Channel1;
+    hdma_usart1_tx.Init.Request = DMA_REQUEST_USART1_TX;
+    hdma_usart1_tx.Init.Direction = DMA_MEMORY_TO_PERIPH;
+    hdma_usart1_tx.Init.PeriphInc = DMA_PINC_DISABLE;
+    hdma_usart1_tx.Init.MemInc = DMA_MINC_ENABLE;
+    hdma_usart1_tx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+    hdma_usart1_tx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+    hdma_usart1_tx.Init.Mode = DMA_NORMAL;
+    hdma_usart1_tx.Init.Priority = DMA_PRIORITY_LOW;
+    if (HAL_DMA_Init(&hdma_usart1_tx) != HAL_OK)
+    {
+      Error_Handler();
+    }
+
+    __HAL_LINKDMA(huart,hdmatx,hdma_usart1_tx);
+
+    /* USART1_RX Init */
+    hdma_usart1_rx.Instance = DMA1_Channel2;
+    hdma_usart1_rx.Init.Request = DMA_REQUEST_USART1_RX;
+    hdma_usart1_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
+    hdma_usart1_rx.Init.PeriphInc = DMA_PINC_DISABLE;
+    hdma_usart1_rx.Init.MemInc = DMA_MINC_ENABLE;
+    hdma_usart1_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+    hdma_usart1_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+    hdma_usart1_rx.Init.Mode = DMA_NORMAL;
+    hdma_usart1_rx.Init.Priority = DMA_PRIORITY_LOW;
+    if (HAL_DMA_Init(&hdma_usart1_rx) != HAL_OK)
+    {
+      Error_Handler();
+    }
+
+    __HAL_LINKDMA(huart,hdmarx,hdma_usart1_rx);
 
   /* USER CODE BEGIN USART1_MspInit 1 */
 

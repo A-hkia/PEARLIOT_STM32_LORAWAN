@@ -1095,7 +1095,7 @@ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevA
       hi2c->XferSize = hi2c->XferCount;
       I2C_TransferConfig(hi2c, DevAddress, (uint8_t)hi2c->XferSize, I2C_AUTOEND_MODE, I2C_GENERATE_START_WRITE);
     }
-
+    HAL_Delay(2);
     while (hi2c->XferCount > 0U)
     {
       /* Wait until TXIS flag is set */
@@ -1105,7 +1105,6 @@ HAL_StatusTypeDef HAL_I2C_Master_Transmit(I2C_HandleTypeDef *hi2c, uint16_t DevA
       }
       /* Write data to TXDR */
       hi2c->Instance->TXDR = *hi2c->pBuffPtr;
-
       /* Increment Buffer pointer */
       hi2c->pBuffPtr++;
 
