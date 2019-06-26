@@ -183,9 +183,10 @@ int main( void )
   
   /* Configure the hardware*/
   HW_Init();
-//  HAL_InitTick(0);
-//  HAL_ResumeTick();
+
   /* USER CODE BEGIN 1 */
+  //  HAL_InitTick(0);
+  //  HAL_ResumeTick();
   /* USER CODE END 1 */
   
   /*Disable Stand-by mode*/

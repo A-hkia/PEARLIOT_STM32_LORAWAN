@@ -68,12 +68,12 @@
   * @retval HAL status
   */
 
-HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
-{
-	/* Return function status */
-	HW_RTC_Init();
-	return HAL_OK;
-}
+//HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
+//{
+//	/* Return function status */
+//	HW_RTC_Init();
+//	return HAL_OK;
+//}
 
 /**
   * @brief This function provides delay (in ms)
