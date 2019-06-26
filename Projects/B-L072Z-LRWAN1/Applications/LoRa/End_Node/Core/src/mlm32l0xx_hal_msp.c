@@ -228,4 +228,5 @@ IRQn_Type MSP_GetIRQn( uint16_t GPIO_Pin)
   }
 }
 
+
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

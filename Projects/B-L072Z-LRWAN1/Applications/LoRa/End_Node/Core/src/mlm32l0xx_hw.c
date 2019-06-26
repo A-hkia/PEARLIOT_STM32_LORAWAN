@@ -114,6 +114,14 @@ static bool AdcInitialized = false;
  */
 static bool McuInitialized = false;
 
+/*
+ * I2C private definitions
+ */
+I2C_HandleTypeDef I2C_Handle;
+PearlIot_i2c=&I2C_Handle;
+uint8_t HW_I2C_Init(void);
+void HW_I2C_MspInit(void);
+
 /**
   * @brief This function initializes the hardware
   * @param None
@@ -136,6 +144,8 @@ void HW_Init( void )
 
     HW_RTC_Init( );
     
+    HW_I2C_Init();
+
     TraceInit( );
     
     BSP_sensor_Init( );
@@ -554,5 +564,70 @@ void LPM_EnterSleepMode( void)
     HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_SLEEPENTRY_WFI);
 }
 
+/**
+ * @brief  Configures I2C interface.
+ * @param  None
+ * @retval 0 in case of success
+ * @retval 1 in case of failure
+ */
+uint8_t HW_I2C_Init( void ){
+	 if(HAL_I2C_GetState(&I2C_Handle) == HAL_I2C_STATE_RESET )
+	  {
+
+	    /* I2C_EXPBD peripheral configuration */
+		I2C_Handle.Init.Timing 		 = 0x00B1112E;    /* 400KHz */
+		I2C_Handle.Init.OwnAddress1    = 0x33;
+		I2C_Handle.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+		I2C_Handle.Instance            = I2C1;
+
+	    HW_I2C_MspInit();
+	    HAL_I2C_Init(&I2C_Handle);
+	  }
+
+	  if( HAL_I2C_GetState(&I2C_Handle) == HAL_I2C_STATE_READY )
+	  {
+	    return 0;
+	  }
+	  else
+	  {
+	    return 1;
+	  }
+}
+
+
+/**
+* @brief I2C MSP Initialization
+* This function configures the hardware resources used in this example
+* @param hi2c: I2C handle pointer
+* @retval None
+*/
+void HW_I2C_MspInit(void)
+{
+  GPIO_InitTypeDef  GPIO_InitStruct;
+
+  /* Enable I2C GPIO clocks */
+  __GPIOB_CLK_ENABLE();
+
+  /* I2C_EXPBD SCL and SDA pins configuration -------------------------------------*/
+  GPIO_InitStruct.Pin        = GPIO_PIN_8 | GPIO_PIN_9;
+  GPIO_InitStruct.Mode       = GPIO_MODE_AF_OD;
+  GPIO_InitStruct.Speed 	 = GPIO_SPEED_FAST;
+  GPIO_InitStruct.Pull       = GPIO_NOPULL;
+  GPIO_InitStruct.Alternate  = GPIO_AF4_I2C1;
+
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct );
+
+  /* Enable the I2C_EXPBD peripheral clock */
+  __I2C1_CLK_ENABLE();
+
+  /* Force the I2C peripheral clock reset */
+  __HAL_RCC_I2C1_FORCE_RESET();
+  /* Release the I2C peripheral clock reset */
+  __HAL_RCC_I2C1_RELEASE_RESET();
+
+  /* Enable and set I2C_EXPBD Interrupt to the highest priority */
+  HAL_NVIC_SetPriority(I2C1_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(I2C1_IRQn);
+}
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 

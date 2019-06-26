@@ -252,52 +252,52 @@ static uint8_t pearliot_buffer[256];
 uint8_t SE_RSC_i2c_Init(uint32_t frequency)
 {
 //
-    I2cHandle.Instance             = I2Cx;
+//    I2cHandle.Instance             = I2Cx;
 
-#if defined(USE_STM32L1XX_NUCLEO)
-    I2cHandle.Init.ClockSpeed      = frequency;
-    I2cHandle.Init.DutyCycle       = I2C_DUTYCYCLE;
-    I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
-#elif defined (USE_B_L072Z_LRWAN1)
-    I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
-    if (frequency == 100000)
-    {
-        I2cHandle.Init.Timing = NUCLEO_I2C_EXPBD_TIMING_100KHZ;
-    }
-    else if (frequency == 400000)
-    {
-        I2cHandle.Init.Timing = NUCLEO_I2C_EXPBD_TIMING_400KHZ;
-    }
-    else
-    {
-        /* Not supported yet -> please add your desired frequency settings */
-        return SE_RSC_I2C_FAIL;
-    }
-#elif defined(USE_MIROMICO)
-    //I2cHandle.Init.Timing =0x00B07DB9;
-    I2cHandle.Init.Timing = 0x00B1112E;
-    I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
-    I2cHandle.Init.OwnAddress2     = 0;
-#elif defined(USE_STM32WB55_NUCLEO)
-    I2cHandle.Init.Timing =0x00707CBB;
-    I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
-    I2cHandle.Init.OwnAddress2     = 0;
-#else
-#error "Add your platform here"
-#endif
-    I2cHandle.Init.AddressingMode  = I2C_ADDRESSINGMODE_7BIT;
-    I2cHandle.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
-    //I2cHandle.Init.OwnAddress2     = 0xFF;
-    I2cHandle.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
-    I2cHandle.Init.NoStretchMode   = I2C_NOSTRETCH_DISABLE;
+//#if defined(USE_STM32L1XX_NUCLEO)
+//    I2cHandle.Init.ClockSpeed      = frequency;
+//    I2cHandle.Init.DutyCycle       = I2C_DUTYCYCLE;
+//    I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
+//#elif defined (USE_B_L072Z_LRWAN1)
+//    I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
+//    if (frequency == 100000)
+//    {
+//        I2cHandle.Init.Timing = NUCLEO_I2C_EXPBD_TIMING_100KHZ;
+//    }
+//    else if (frequency == 400000)
+//    {
+//        I2cHandle.Init.Timing = NUCLEO_I2C_EXPBD_TIMING_400KHZ;
+//    }
+//    else
+//    {
+//        /* Not supported yet -> please add your desired frequency settings */
+//        return SE_RSC_I2C_FAIL;
+//    }
+//#elif defined(USE_MIROMICO)
+//    //I2cHandle.Init.Timing =0x00B07DB9;
+//    I2cHandle.Init.Timing = 0x00B1112E;
+//    I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
+//    I2cHandle.Init.OwnAddress2     = 0;
+//#elif defined(USE_STM32WB55_NUCLEO)
+//    I2cHandle.Init.Timing =0x00707CBB;
+//    I2cHandle.Init.OwnAddress1     = (slaveAddress<<1);
+//    I2cHandle.Init.OwnAddress2     = 0;
+//#else
+//#error "Add your platform here"
+//#endif
+//    I2cHandle.Init.AddressingMode  = I2C_ADDRESSINGMODE_7BIT;
+//    I2cHandle.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
+//    //I2cHandle.Init.OwnAddress2     = 0xFF;
+//    I2cHandle.Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
+//    I2cHandle.Init.NoStretchMode   = I2C_NOSTRETCH_DISABLE;
+//
+//    if(HAL_I2C_Init(&I2cHandle) != HAL_OK)
+//    {
+//        /* Initialization Error */
+//        return SE_RSC_I2C_FAIL;
+//    }
 
-    if(HAL_I2C_Init(&I2cHandle) != HAL_OK)
-    {
-        /* Initialization Error */
-        return SE_RSC_I2C_FAIL;
-    }
-
-    return SE_RSC_I2C_SUCCESS;
+//    return SE_RSC_I2C_SUCCESS;
 
 }
 /*
@@ -314,12 +314,12 @@ static uint8_t SE_RSC_i2c_Write(uint8_t *writeBuffer, uint8_t writeBufferLength)
     /*## Start the transmission process #####################################*/
     /* While the I2C in reception process, user can transmit data through
        "aTxBuffer" buffer */
-    while(HAL_I2C_Master_Transmit(&I2cHandle, (uint16_t)(slaveAddress<<1), writeBuffer, writeBufferLength, timeout)!= HAL_OK)
+    while(HAL_I2C_Master_Transmit(PearlIot_i2c, (uint16_t)(slaveAddress<<1), writeBuffer, writeBufferLength, timeout)!= HAL_OK)
     {
         /* Error_Handler() function is called when Timeout error occurs.
         When Acknowledge failure occurs (Slave don't acknowledge it's address)
         Master restarts communication */
-        if (HAL_I2C_GetError(&I2cHandle) != HAL_I2C_ERROR_AF)
+        if (HAL_I2C_GetError(PearlIot_i2c) != HAL_I2C_ERROR_AF)
                 return SE_RSC_I2C_FAIL;
     }
 
@@ -334,12 +334,12 @@ static uint8_t SE_RSC_i2c_Read(uint8_t *rcvBuffer, uint8_t rcvBufferLength)
    */
 
     /*## Put I2C peripheral in reception process ############################*/
-    while(HAL_I2C_Master_Receive(&I2cHandle, (uint16_t)(slaveAddress<<1), (uint8_t*)rcvBuffer, rcvBufferLength, timeout)!= HAL_OK)
+    while(HAL_I2C_Master_Receive(PearlIot_i2c, (uint16_t)(slaveAddress<<1), (uint8_t*)rcvBuffer, rcvBufferLength, timeout)!= HAL_OK)
     {
         /* Error_Handler() function is called when Timout error occurs.
            When Acknowledge failure occurs (Slave don't acknowledge it's address)
            Master restarts communication */
-        if (HAL_I2C_GetError(&I2cHandle) != HAL_I2C_ERROR_AF)
+        if (HAL_I2C_GetError(PearlIot_i2c) != HAL_I2C_ERROR_AF)
             return SE_RSC_I2C_FAIL;
     }
 
@@ -391,13 +391,13 @@ static uint16_t MDL_i2c_prot_SendReceiveAppCommand(uint8_t* sendRcvBuffer, uint8
     SE_RSC_serial_debug_hex (LOG_DBG, (char*)"[I2C PROT] Command: ", sendRcvBuffer, *sendRcvBufferLength);
 
     //Initialize peripheral
-    ret_i2c=SE_RSC_i2c_Init(400000);
-    if(ret_i2c == SE_RSC_I2C_SUCCESS){
-    }
-    else{
-    	SE_RSC_serial_debug_log (LOG_ERR, "Peripheral could not be initialized");
-    }
-    /* Enable Systick for the duration of the I2C command to handle timeouts and wait */
+//    ret_i2c=SE_RSC_i2c_Init(400000);
+//    if(ret_i2c == SE_RSC_I2C_SUCCESS){
+//    }
+//    else{
+//    	SE_RSC_serial_debug_log (LOG_ERR, "Peripheral could not be initialized");
+//    }
+//    /* Enable Systick for the duration of the I2C command to handle timeouts and wait */
 
 
     ret_i2c = SE_RSC_i2c_Write( sendRcvBuffer, *sendRcvBufferLength );

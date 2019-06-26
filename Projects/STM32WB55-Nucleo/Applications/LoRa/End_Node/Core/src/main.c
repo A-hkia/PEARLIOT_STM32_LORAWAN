@@ -154,7 +154,6 @@ RTC_HandleTypeDef *phrtc;
 SPI_HandleTypeDef hspi1;
 
 UART_HandleTypeDef huart1;
-UART_HandleTypeDef *phuart;
 
 DMA_HandleTypeDef hdma_usart1_tx;
 DMA_HandleTypeDef hdma_usart1_rx;
@@ -218,7 +217,7 @@ int main(void)
   MX_USART1_UART_Init();
   MX_USB_PCD_Init();
   MX_I2C1_Init();
-  MX_RTC_Init();
+  HW_RTC_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
   TraceInit( );
@@ -381,7 +380,6 @@ static void MX_I2C1_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN I2C1_Init 2 */
-
   /* USER CODE END I2C1_Init 2 */
 
 }
