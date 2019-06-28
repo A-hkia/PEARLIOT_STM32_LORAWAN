@@ -52,7 +52,7 @@
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 /* Uart Handle */
-static UART_HandleTypeDef UartHandle;
+extern UART_HandleTypeDef huart1;
 
 uint8_t charRx;
 
@@ -74,16 +74,16 @@ void vcom_Init(  void (*TxCb)(void) )
       - Parity = ODD parity
       - BaudRate = 921600 baud
       - Hardware flow control disabled (RTS and CTS signals) */
-  UartHandle.Instance        = USARTx;
+  huart1.Instance        = USARTx;
 
-  UartHandle.Init.BaudRate   = 115200;
-  UartHandle.Init.WordLength = UART_WORDLENGTH_8B;
-  UartHandle.Init.StopBits   = UART_STOPBITS_1;
-  UartHandle.Init.Parity     = UART_PARITY_NONE;
-  UartHandle.Init.HwFlowCtl  = UART_HWCONTROL_NONE;
-  UartHandle.Init.Mode       = UART_MODE_TX_RX;
+  huart1.Init.BaudRate   = 115200;
+  huart1.Init.WordLength = UART_WORDLENGTH_8B;
+  huart1.Init.StopBits   = UART_STOPBITS_1;
+  huart1.Init.Parity     = UART_PARITY_NONE;
+  huart1.Init.HwFlowCtl  = UART_HWCONTROL_NONE;
+  huart1.Init.Mode       = UART_MODE_TX_RX;
 
-  if(HAL_UART_Init(&UartHandle) != HAL_OK)
+  if(HAL_UART_Init(&huart1) != HAL_OK)
   {
     /* Initialization Error */
     Error_Handler();
@@ -92,11 +92,11 @@ void vcom_Init(  void (*TxCb)(void) )
 
 void vcom_Trace(  uint8_t *p_data, uint16_t size )
 {
-  HAL_UART_Transmit_DMA(&UartHandle,p_data, size);
+  HAL_UART_Transmit_DMA(&huart1,p_data, size);
 }
 
 
-void HAL_UART_TxCpltCallback(UART_HandleTypeDef *UartHandle)
+void HAL_UART_TxCpltCallback(UART_HandleTypeDef *huart1)
 {
   /* buffer transmission complete*/
    if (NULL != TxCpltCallback)
@@ -115,37 +115,38 @@ void vcom_ReceiveInit(  void (*RxCb)(uint8_t *rxChar) )
   /*Set wakeUp event on start bit*/
   WakeUpSelection.WakeUpEvent=UART_WAKEUP_ON_STARTBIT;  
 //  
-  HAL_UARTEx_StopModeWakeUpSourceConfig(&UartHandle, WakeUpSelection );
+  HAL_UARTEx_StopModeWakeUpSourceConfig(&huart1, WakeUpSelection );
   
   /*Enable wakeup from stop mode*/
-  HAL_UARTEx_EnableStopMode(&UartHandle);
+  HAL_UARTEx_EnableStopMode(&huart1);
   
   /*Start LPUART receive on IT*/
-  HAL_UART_Receive_IT(&UartHandle, &charRx,1);
+  HAL_UART_Receive_IT(&huart1, &charRx,1);
 }
 
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *UartHandle)
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart1)
 {
-   if ((NULL != RxCpltCallback) && (HAL_UART_ERROR_NONE ==UartHandle->ErrorCode))
+   if ((NULL != RxCpltCallback) && (HAL_UART_ERROR_NONE ==huart1->ErrorCode))
    {
      RxCpltCallback(&charRx);
    }
-   HAL_UART_Receive_IT(UartHandle, &charRx,1);
+   HAL_UART_Receive_IT(huart1, &charRx,1);
 }
+
 
 void vcom_DMA_TX_IRQHandler(void)
 {
-  HAL_DMA_IRQHandler(UartHandle.hdmatx);
+  HAL_DMA_IRQHandler(huart1.hdmatx);
 }
 
-void vcom_IRQHandler(void)
-{
-  HAL_UART_IRQHandler(&UartHandle);
-}
+//void vcom_IRQHandler(void)
+//{
+//  HAL_UART_IRQHandler(&huart1);
+//}
 
 void vcom_DeInit(void)
 {
-  HAL_UART_DeInit(&UartHandle);
+  HAL_UART_DeInit(&huart1);
 }
 
 

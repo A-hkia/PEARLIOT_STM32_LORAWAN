@@ -78,14 +78,14 @@ extern "C" {
 #define USARTx_IRQn                      USART1_IRQn
 #define USARTx_IRQHandler                USART1_IRQHandler
 /* Definition for USARTx's DMA */
-#define USARTx_TX_DMA_CHANNEL             DMA1_Channel7
+#define USARTx_TX_DMA_CHANNEL             DMA1_Channel1
 
 /* Definition for USARTx's DMA Request */
 #define USARTx_TX_DMA_REQUEST             DMA_REQUEST_USART1_TX
 
 /* Definition for USARTx's NVIC */
 #define USARTx_DMA_TX_IRQn                DMA1_Channel1_IRQn
-#define USARTx_DMA_TX_IRQHandler          DMA1_Channel4_5_6_7_IRQHandler
+#define USARTx_DMA_TX_IRQHandler          DMA1_Channel1_IRQHandler
 
 #define USARTx_Priority 0
 #define USARTx_DMA_Priority 0

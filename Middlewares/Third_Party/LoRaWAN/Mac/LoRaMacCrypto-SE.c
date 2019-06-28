@@ -135,31 +135,30 @@ extern I2C_HandleTypeDef *PearlIot_i2c;
 #define MDL_I2C_PROT_WAIT               0x20    /*!< Protocol delay between 2 consecutive reads  */
 #define MDL_I2C_PROT_RETRIES_MAX        0xF0    /*!< Maximum number of retries */
 
-
-static I2C_HandleTypeDef I2cHandle;                     /*!< I2C handler declaration */
 static const uint8_t slaveAddress = SE_RSC_I2C_ADDRESS;
 static uint32_t timeout = SE_RSC_I2C_TIMEOUT_1S;        /*!< I2C timeout */
 
-#define I2Cx                            I2C1
-#define I2Cx_CLK_ENABLE()               __HAL_RCC_I2C1_CLK_ENABLE()
-#define I2Cx_SDA_GPIO_CLK_ENABLE()      __HAL_RCC_GPIOB_CLK_ENABLE()
-#define I2Cx_SCL_GPIO_CLK_ENABLE()      __HAL_RCC_GPIOB_CLK_ENABLE()
-
-#define I2Cx_FORCE_RESET()              __HAL_RCC_I2C1_FORCE_RESET()
-#define I2Cx_RELEASE_RESET()            __HAL_RCC_I2C1_RELEASE_RESET()
-
-/* Definition for I2Cx Pins */
-#define I2Cx_SCL_PIN                    GPIO_PIN_8
-#define I2Cx_SCL_GPIO_PORT              GPIOB
-#define I2Cx_SDA_PIN                    GPIO_PIN_9
-#define I2Cx_SDA_GPIO_PORT              GPIOB
-#define I2Cx_SCL_SDA_AF                 GPIO_AF4_I2C1
-#define I2C_DUTYCYCLE                   I2C_DUTYCYCLE_16_9
-
-#if defined (USE_B_L072Z_LRWAN1)
-#define NUCLEO_I2C_EXPBD_TIMING_100KHZ  0x10A13E56 /* Analog Filter ON, Rise Time 400ns, Fall Time 100ns */
-#define NUCLEO_I2C_EXPBD_TIMING_400KHZ  0x00B1112E /* Analog Filter ON, Rise Time 250ns, Fall Time 100ns */
-#endif
+//static I2C_HandleTypeDef I2cHandle;                     /*!< I2C handler declaration */
+//#define I2Cx                            I2C1
+//#define I2Cx_CLK_ENABLE()               __HAL_RCC_I2C1_CLK_ENABLE()
+//#define I2Cx_SDA_GPIO_CLK_ENABLE()      __HAL_RCC_GPIOB_CLK_ENABLE()
+//#define I2Cx_SCL_GPIO_CLK_ENABLE()      __HAL_RCC_GPIOB_CLK_ENABLE()
+//
+//#define I2Cx_FORCE_RESET()              __HAL_RCC_I2C1_FORCE_RESET()
+//#define I2Cx_RELEASE_RESET()            __HAL_RCC_I2C1_RELEASE_RESET()
+//
+///* Definition for I2Cx Pins */
+//#define I2Cx_SCL_PIN                    GPIO_PIN_8
+//#define I2Cx_SCL_GPIO_PORT              GPIOB
+//#define I2Cx_SDA_PIN                    GPIO_PIN_9
+//#define I2Cx_SDA_GPIO_PORT              GPIOB
+//#define I2Cx_SCL_SDA_AF                 GPIO_AF4_I2C1
+//#define I2C_DUTYCYCLE                   I2C_DUTYCYCLE_16_9
+//
+//#if defined (USE_B_L072Z_LRWAN1)
+//#define NUCLEO_I2C_EXPBD_TIMING_100KHZ  0x10A13E56 /* Analog Filter ON, Rise Time 400ns, Fall Time 100ns */
+//#define NUCLEO_I2C_EXPBD_TIMING_400KHZ  0x00B1112E /* Analog Filter ON, Rise Time 250ns, Fall Time 100ns */
+//#endif
 
 #define LOG_DBG     4 /*!< Debug, info, error, warning Log level */
 // Command tags
@@ -249,8 +248,8 @@ static uint8_t pearliot_buffer[256];
 
 //Initialization of the peripheral
 //***************************************
-uint8_t SE_RSC_i2c_Init(uint32_t frequency)
-{
+//uint8_t SE_RSC_i2c_Init(uint32_t frequency)
+//{
 //
 //    I2cHandle.Instance             = I2Cx;
 
@@ -299,7 +298,7 @@ uint8_t SE_RSC_i2c_Init(uint32_t frequency)
 
 //    return SE_RSC_I2C_SUCCESS;
 
-}
+//}
 /*
  *************************************************************************************************************
  * Defining Read and Write functions to be able to use them in the MDL_i2c_prot_SendReceiveAppCommand Function
@@ -336,7 +335,7 @@ static uint8_t SE_RSC_i2c_Read(uint8_t *rcvBuffer, uint8_t rcvBufferLength)
     /*## Put I2C peripheral in reception process ############################*/
     while(HAL_I2C_Master_Receive(PearlIot_i2c, (uint16_t)(slaveAddress<<1), (uint8_t*)rcvBuffer, rcvBufferLength, timeout)!= HAL_OK)
     {
-        /* Error_Handler() function is called when Timout error occurs.
+        /* Error_Handler() function is called when Timeout error occurs.
            When Acknowledge failure occurs (Slave don't acknowledge it's address)
            Master restarts communication */
         if (HAL_I2C_GetError(PearlIot_i2c) != HAL_I2C_ERROR_AF)
@@ -650,6 +649,9 @@ void HW_GetUniqueId(uint8_t *id)
 {
 	uint8_t length;
 	uint8_t  status;
+
+    //Make sure the Secure Element is ready to accept the command
+    SE_RSC_i2c_Read (pearliot_buffer, MDL_I2C_PROT_RS_SIZE);
 
 	pearliot_buffer[0]=TAG_GET_DATA;
 	pearliot_buffer[1]=0x84;

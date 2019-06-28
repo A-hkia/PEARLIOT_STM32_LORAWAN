@@ -70,6 +70,7 @@ void DBG_Init( void );
 
 void Error_Handler( void );
 
+
 #ifdef DEBUG
 
 #define DBG_GPIO_WRITE( gpio, n, x )  HAL_GPIO_WritePin( gpio, n, (GPIO_PinState)(x) )
@@ -77,6 +78,16 @@ void Error_Handler( void );
 #define DBG_GPIO_SET( gpio, n )       gpio->BSRR = n
 
 #define DBG_GPIO_RST( gpio, n )       gpio->BRR = n
+
+#ifdef TRACE
+
+#define DBG_PRINTF(...)    HW_UART1_Send(__VA_ARGS__)
+
+#else /*TRACE*/
+
+#define DBG_PRINTF(...)
+
+#endif /*TRACE*/
 
 #define DBG_RTC_OUTPUT RTC_OUTPUT_DISABLE; /* RTC_OUTPUT_ALARMA on PC13 */
 
@@ -91,6 +102,8 @@ void Error_Handler( void );
 #define DBG_GPIO_RST( gpio, n )
 
 #define DBG( x ) do{  } while(0)
+
+#define DBG_PRINTF(...)
 
 #define DBG_RTC_OUTPUT RTC_OUTPUT_DISABLE;
 

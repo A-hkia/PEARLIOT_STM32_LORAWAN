@@ -69,14 +69,7 @@
   * @param TickPriority: Tick interrupt priority.
   * @retval HAL status
   */
-//We have to disable this so the HAL_InitTick function in the HAL drivers can be used
 
-HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
-{
-  /* Return function status */
-  HW_RTC_Init();
-  return HAL_OK;
-}
 
 
 /**
@@ -84,16 +77,16 @@ HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
   * @param Delay: specifies the delay time length, in milliseconds.
   * @retval None
   */
-void HAL_Delay(uint32_t Delay)
-{
-  HW_RTC_DelayMs(Delay);
-  //DelayMs(Delay);   /* based on RTC */
-}
-
-uint32_t HAL_GetTick(void)
-{
-	return HW_RTC_GetTimerValue();
-}
+//void HAL_Delay(uint32_t Delay)
+//{
+//  HW_RTC_DelayMs(Delay);
+//  //DelayMs(Delay);   /* based on RTC */
+//}
+//
+//uint32_t HAL_GetTick(void)
+//{
+//	return HW_RTC_GetTimerValue();
+//}
 
 
 /**

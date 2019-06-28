@@ -70,7 +70,7 @@ void vcom_Init(  void (*TxCb)(void) )
       - Parity = ODD parity
       - BaudRate = 921600 baud
       - Hardware flow control disabled (RTS and CTS signals) */
-  UartHandle.Instance        = USART2;
+  UartHandle.Instance        = USART1;
 
   UartHandle.Init.BaudRate   = 115200;
   UartHandle.Init.WordLength = UART_WORDLENGTH_8B;

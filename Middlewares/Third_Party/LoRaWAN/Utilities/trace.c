@@ -101,6 +101,7 @@ int32_t TraceSend( const char *strFormat, ...)
   DISABLE_IRQ(); /**< Disable all interrupts by setting PRIMASK bit on Cortex*/
   //DBG_GPIO_SET(GPIOB, GPIO_PIN_15);
   //DBG_GPIO_RST(GPIOB, GPIO_PIN_15);
+
   buffer=CircularQueue_Add(&MsgTraceQueue,(uint8_t*)buf, bufSize,1);
   
   if ((buffer!=NULL) && (TracePeripheralReady==SET))
@@ -108,12 +109,11 @@ int32_t TraceSend( const char *strFormat, ...)
     buffer=CircularQueue_Sense(&MsgTraceQueue,&bufSize);
     TracePeripheralReady = RESET;
     //DBG_GPIO_RST(GPIOB, GPIO_PIN_12);
+
     LPM_SetStopMode(LPM_UART_TX_Id , LPM_Disable );
 
     RESTORE_PRIMASK();
-#ifndef USE_MIROMICO
     OutputTrace((uint8_t*)buffer, bufSize);
-#endif
   }
   else
   {

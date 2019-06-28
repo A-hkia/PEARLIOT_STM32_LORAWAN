@@ -146,10 +146,11 @@ static  LoRaParam_t LoRaParamInit= {LORAWAN_ADR_STATE,
 
 /* Private variables ---------------------------------------------------------*/
 I2C_HandleTypeDef hi2c1;
-I2C_HandleTypeDef *PearlIot_i2c;
-
+//I2C_HandleTypeDef *PearlIot_i2c;
+PearlIot_i2c = &hi2c1;
 RTC_HandleTypeDef hrtc;
-RTC_HandleTypeDef *phrtc;
+//RTC_HandleTypeDef *phrtc;
+//phrtc= &hrtc;
 
 SPI_HandleTypeDef hspi1;
 
@@ -171,6 +172,8 @@ static void MX_DMA_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_USB_PCD_Init(void);
 static void MX_I2C1_Init(void);
+static uint8_t HW_I2C_Init(void);
+static void HW_I2C_MspInit(void);
 static void MX_RTC_Init(void);
 static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
@@ -189,8 +192,6 @@ static void MX_SPI1_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-	PearlIot_i2c = &hi2c1;
-	phrtc= &hrtc;
   /* USER CODE END 1 */
   
 
@@ -200,8 +201,8 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-//  HAL_InitTick(0);
-//  HAL_ResumeTick();
+  HAL_InitTick(0);
+  HAL_ResumeTick();
   /* USER CODE END Init */
 
   /* Configure the system clock */
@@ -216,8 +217,10 @@ int main(void)
   MX_DMA_Init();
   MX_USART1_UART_Init();
   MX_USB_PCD_Init();
-  MX_I2C1_Init();
-  HW_RTC_Init();
+  MX_RTC_Init();
+  //HW_RTC_Init();
+  //MX_I2C1_Init();
+  HW_I2C_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
   TraceInit( );
@@ -384,7 +387,71 @@ static void MX_I2C1_Init(void)
 
 }
 
+/**
+ * @brief  Configures I2C interface.
+ * @param  None
+ * @retval 0 in case of success
+ * @retval 1 in case of failure
+ */
+uint8_t HW_I2C_Init( void ){
+	 if(HAL_I2C_GetState(&hi2c1) == HAL_I2C_STATE_RESET )
+	  {
 
+	    /* I2C_EXPBD peripheral configuration */
+		hi2c1.Init.Timing 		 = 0x00707CBB;    /* 100KHz */
+		hi2c1.Init.OwnAddress1    = 0x33;
+		hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
+		hi2c1.Instance            = I2C1;
+
+	    HW_I2C_MspInit();
+	    HAL_I2C_Init(&hi2c1);
+	  }
+
+	  if( HAL_I2C_GetState(&hi2c1) == HAL_I2C_STATE_READY )
+	  {
+	    return 0;
+	  }
+	  else
+	  {
+	    return 1;
+	  }
+}
+
+
+/**
+* @brief I2C MSP Initialization
+* This function configures the hardware resources used in this example
+* @param hi2c: I2C handle pointer
+* @retval None
+*/
+void HW_I2C_MspInit(void)
+{
+  GPIO_InitTypeDef  GPIO_InitStruct;
+
+  /* Enable I2C GPIO clocks */
+  __GPIOB_CLK_ENABLE();
+
+  /* I2C_EXPBD SCL and SDA pins configuration -------------------------------------*/
+  GPIO_InitStruct.Pin        = GPIO_PIN_8 | GPIO_PIN_9;
+  GPIO_InitStruct.Mode       = GPIO_MODE_AF_OD;
+  GPIO_InitStruct.Speed 	 = GPIO_SPEED_FREQ_HIGH;
+  GPIO_InitStruct.Pull       = GPIO_NOPULL;
+  GPIO_InitStruct.Alternate  = GPIO_AF4_I2C1;
+
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct );
+
+  /* Enable the I2C_EXPBD peripheral clock */
+  __I2C1_CLK_ENABLE();
+
+  /* Force the I2C peripheral clock reset */
+  __HAL_RCC_I2C1_FORCE_RESET();
+  /* Release the I2C peripheral clock reset */
+  __HAL_RCC_I2C1_RELEASE_RESET();
+
+  /* Enable and set I2C_EXPBD Interrupt to the highest priority */
+  HAL_NVIC_SetPriority(I2C1_EV_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(I2C1_EV_IRQn);
+}
 /**
  * 
   * @brief RTC Initialization Function
@@ -493,6 +560,46 @@ static void MX_RTC_Init(void)
   /* USER CODE END RTC_Init 2 */
 
 }
+
+//uint64_t MX_RTC_GetCalendarValue( RTC_DateTypeDef* RTC_DateStruct, RTC_TimeTypeDef* RTC_TimeStruct )
+//{
+//  uint64_t calendarValue = 0;
+//  uint32_t first_read;
+//  uint32_t correction;
+//  uint32_t seconds;
+//
+//  /* Get Time and Date*/
+//  HAL_RTC_GetTime( &hrtc, RTC_TimeStruct, RTC_FORMAT_BIN );
+//
+//   /* make sure it is correct due to asynchronus nature of RTC*/
+//  do {
+//    first_read = RTC_TimeStruct->SubSeconds;
+//    HAL_RTC_GetDate( &hrtc, RTC_DateStruct, RTC_FORMAT_BIN );
+//    HAL_RTC_GetTime( &hrtc, RTC_TimeStruct, RTC_FORMAT_BIN );
+//  } while (first_read != RTC_TimeStruct->SubSeconds);
+//
+//  /* calculte amount of elapsed days since 01/01/2000 */
+//  seconds= DIVC( (DAYS_IN_YEAR*3 + DAYS_IN_LEAP_YEAR)* RTC_DateStruct->Year , 4);
+//
+//  correction = ( (RTC_DateStruct->Year % 4) == 0 ) ? DAYS_IN_MONTH_CORRECTION_LEAP : DAYS_IN_MONTH_CORRECTION_NORM ;
+//
+//  seconds +=( DIVC( (RTC_DateStruct->Month-1)*(30+31) ,2 ) - (((correction>> ((RTC_DateStruct->Month-1)*2) )&0x3)));
+//
+//  seconds += (RTC_DateStruct->Date -1);
+//
+//  /* convert from days to seconds */
+//  seconds *= SECONDS_IN_1DAY;
+//
+//  seconds += ( ( uint32_t )RTC_TimeStruct->Seconds +
+//             ( ( uint32_t )RTC_TimeStruct->Minutes * SECONDS_IN_1MINUTE ) +
+//             ( ( uint32_t )RTC_TimeStruct->Hours * SECONDS_IN_1HOUR ) ) ;
+//
+//
+//
+//  calendarValue = (((uint64_t) seconds)<<N_PREDIV_S) + ( PREDIV_S - RTC_TimeStruct->SubSeconds);
+//
+//  return( calendarValue );
+//}
 
 /**
   * @brief SPI1 Initialization Function
@@ -959,5 +1066,6 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

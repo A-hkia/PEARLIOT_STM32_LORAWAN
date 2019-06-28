@@ -62,6 +62,7 @@ Maintainer: Miguel Luis and Gregory Cristian
 #include <math.h>
 #include <time.h>
 #include "hw.h"
+#include "main.h"
 #include "hw_rtc.h"
 #include "low_power_manager.h"
 #include "systime.h"
@@ -595,13 +596,13 @@ static uint64_t HW_RTC_GetCalendarValue( RTC_DateTypeDef* RTC_DateStruct, RTC_Ti
   uint32_t seconds;
   
   /* Get Time and Date*/
-  HAL_RTC_GetTime( phrtc, RTC_TimeStruct, RTC_FORMAT_BIN );
+  HAL_RTC_GetTime( &RtcHandle, RTC_TimeStruct, RTC_FORMAT_BIN );
  
    /* make sure it is correct due to asynchronus nature of RTC*/
   do {
     first_read = RTC_TimeStruct->SubSeconds;
-    HAL_RTC_GetDate( phrtc, RTC_DateStruct, RTC_FORMAT_BIN );
-    HAL_RTC_GetTime( phrtc, RTC_TimeStruct, RTC_FORMAT_BIN );
+    HAL_RTC_GetDate( &RtcHandle, RTC_DateStruct, RTC_FORMAT_BIN );
+    HAL_RTC_GetTime( &RtcHandle, RTC_TimeStruct, RTC_FORMAT_BIN );
   } while (first_read != RTC_TimeStruct->SubSeconds);
  
   /* calculte amount of elapsed days since 01/01/2000 */

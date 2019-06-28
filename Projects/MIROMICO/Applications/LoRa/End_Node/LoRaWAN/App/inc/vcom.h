@@ -55,36 +55,36 @@ extern "C" {
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
 /* --------------------------- UART HW definition FROM BL072 - Needed for vcom.c-------------------------------*/
-//#define USARTx                           USART2
-#define USARTx_CLK_ENABLE()              __USART2_CLK_ENABLE();
+//#define USARTx                           USART1
+#define USARTx_CLK_ENABLE()              __USART1_CLK_ENABLE();
 #define USARTx_RX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
 #define USARTx_TX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
 #define DMAx_CLK_ENABLE()                __HAL_RCC_DMA1_CLK_ENABLE()
 
-#define USARTx_FORCE_RESET()             __USART2_FORCE_RESET()
-#define USARTx_RELEASE_RESET()           __USART2_RELEASE_RESET()
+#define USARTx_FORCE_RESET()             __USART1_FORCE_RESET()
+#define USARTx_RELEASE_RESET()           __USART1_RELEASE_RESET()
 
 
-#define USARTx_TX_PIN                  GPIO_PIN_2
+#define USARTx_TX_PIN                  GPIO_PIN_9
 #define USARTx_TX_GPIO_PORT            GPIOA
-#define USARTx_TX_AF                   GPIO_AF4_USART2
-#define USARTx_RX_PIN                  GPIO_PIN_3
+#define USARTx_TX_AF                   GPIO_AF4_USART1
+#define USARTx_RX_PIN                  GPIO_PIN_10
 #define USARTx_RX_GPIO_PORT            GPIOA
-#define USARTx_RX_AF                   GPIO_AF4_USART2
+#define USARTx_RX_AF                   GPIO_AF4_USART1
 
 /* Definition for USARTx's NVIC */
-#define USARTx_IRQn                      USART2_IRQn
-#define USARTx_IRQHandler                USART2_IRQHandler
+#define USARTx_IRQn                      USART1_IRQn
+#define USARTx_IRQHandler                USART1_IRQHandler
 
 /* Definition for USARTx's DMA */
-#define USARTx_TX_DMA_CHANNEL             DMA1_Channel7
+#define USARTx_TX_DMA_CHANNEL             DMA1_Channel1
 
 /* Definition for USARTx's DMA Request */
-#define USARTx_TX_DMA_REQUEST             DMA_REQUEST_4
+#define USARTx_TX_DMA_REQUEST             DMA_REQUEST_0
 
 /* Definition for USARTx's NVIC */
-#define USARTx_DMA_TX_IRQn                DMA1_Channel4_5_6_7_IRQn
-#define USARTx_DMA_TX_IRQHandler          DMA1_Channel4_5_6_7_IRQHandler
+#define USARTx_DMA_TX_IRQn                DMA1_Channel1_IRQn
+#define USARTx_DMA_TX_IRQHandler          DMA1_Channel1_IRQHandler
 
 #define USARTx_Priority 0
 #define USARTx_DMA_Priority 0

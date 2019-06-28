@@ -150,7 +150,40 @@ extern "C" {
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
-
+//uint64_t MX_RTC_GetCalendarValue(  RTC_DateTypeDef* RTC_DateStruct, RTC_TimeTypeDef* RTC_TimeStruct  );
+///* RTC Time base in us */
+//#define USEC_NUMBER               1000000
+//#define MSEC_NUMBER               (USEC_NUMBER/1000)
+//#define RTC_ALARM_TIME_BASE       (USEC_NUMBER>>N_PREDIV_S)
+//
+//#define COMMON_FACTOR        3
+//#define CONV_NUMER                (MSEC_NUMBER>>COMMON_FACTOR)
+//#define CONV_DENOM                (1<<(N_PREDIV_S-COMMON_FACTOR))
+//
+//#define DAYS_IN_LEAP_YEAR                        ( ( uint32_t )  366U )
+//#define DAYS_IN_YEAR                             ( ( uint32_t )  365U )
+//#define SECONDS_IN_1DAY                          ( ( uint32_t )86400U )
+//#define SECONDS_IN_1HOUR                         ( ( uint32_t ) 3600U )
+//#define SECONDS_IN_1MINUTE                       ( ( uint32_t )   60U )
+//#define MINUTES_IN_1HOUR                         ( ( uint32_t )   60U )
+//#define HOURS_IN_1DAY                            ( ( uint32_t )   24U )
+//
+//#define  DAYS_IN_MONTH_CORRECTION_NORM     ((uint32_t) 0x99AAA0 )
+//#define  DAYS_IN_MONTH_CORRECTION_LEAP     ((uint32_t) 0x445550 )
+//
+//#define DIVC( X, N )                                ( ( ( X ) + ( N ) -1 ) / ( N ) )
+//
+///* MCU Wake Up Time */
+//#define MIN_ALARM_DELAY               3 /* in ticks */
+//
+///* subsecond number of bits */
+//#define N_PREDIV_S                 10
+//
+///* Synchonuous prediv  */
+//#define PREDIV_S                  ((1<<N_PREDIV_S)-1)
+//
+///* Asynchonuous prediv   */
+//#define PREDIV_A                  (1<<(15-N_PREDIV_S))-1
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */
