@@ -11,7 +11,7 @@ endif(NOT DEFINED LINKER_SCRIPT)
 #---------------------------------------------------------------------------------------
 
 # Object build options
-set(OBJECT_GEN_FLAGS "-Og -g -mthumb -g2 -fno-builtin -mcpu=cortex-m0plus -Wall -Wextra -pedantic -DFMLR72_L0 -DUSE_LRWAN_NS1 -Wno-unused-parameter -DUSE_BAND_868 -DUSE_MODEM_LORA -DUSE_MDM32L07X01 -DUSE_HAL_DRIVER -DSTM32L071xx -DUSE_MIROMICO -DDEBUG -DLOW_POWER_DISABLE -DREGION_EU868 -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize")
+set(OBJECT_GEN_FLAGS "-Og -g -mthumb -g2 -fno-builtin -mcpu=cortex-m0plus -Wall -Wextra -pedantic -DFMLR72_L0 -DUSE_LRWAN_NS1 -DUSE_FULL_LL_DRIVER -Wno-unused-parameter -DUSE_BAND_868 -DUSE_MODEM_LORA -DUSE_MDM32L07X01 -DUSE_HAL_DRIVER -DSTM32L071xx -DUSE_MIROMICO -DDEBUG -DLOW_POWER_DISABLE -DREGION_EU868 -ffunction-sections -fdata-sections -fomit-frame-pointer -mabi=aapcs -fno-unroll-loops -ffast-math -ftree-vectorize")
 
 
 set(CMAKE_C_FLAGS "${OBJECT_GEN_FLAGS} -std=gnu99 " CACHE INTERNAL "C Compiler options")

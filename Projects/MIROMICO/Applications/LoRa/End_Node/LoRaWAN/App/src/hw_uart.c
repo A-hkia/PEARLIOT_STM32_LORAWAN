@@ -8,13 +8,10 @@
  */
 
 #include "hw.h"
-#include "hw_uart.h"
-#include "hw_gpio.h"
-#include <stdarg.h>
 #include "stm32l0xx_ll_usart.h"
 #include "stm32l0xx_ll_bus.h"
-#include "FMLR72_L0.h"
-
+#include "hw_gpio.h"
+#include <stdarg.h>
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -51,105 +48,6 @@ void* HW_UART1_GetHandle()
 void* HW_UART2_GetHandle()
 {
   return &uart2Context;
-}
-
-void HW_UART_IoInit(void* handle)
-{
-  //    LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
-  //
-  //    /* Configure Tx Pin as : Alternate function, High Speed, Push pull, Pull up */
-  //    LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_9, LL_GPIO_MODE_ALTERNATE);
-  //    LL_GPIO_SetAFPin_8_15(GPIOA, LL_GPIO_PIN_9, LL_GPIO_AF_4);
-  //    LL_GPIO_SetPinSpeed(GPIOA, LL_GPIO_PIN_9, LL_GPIO_SPEED_FREQ_VERY_HIGH);
-  //    LL_GPIO_SetPinOutputType(GPIOA, LL_GPIO_PIN_9, LL_GPIO_OUTPUT_PUSHPULL);
-  //    LL_GPIO_SetPinPull(GPIOA, LL_GPIO_PIN_9, LL_GPIO_PULL_UP);
-  //
-  //    /* Configure Rx Pin as : Alternate function, High Speed, Push pull, Pull up */
-  //    LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_10, LL_GPIO_MODE_ALTERNATE);
-  //    LL_GPIO_SetAFPin_8_15(GPIOA, LL_GPIO_PIN_10, LL_GPIO_AF_4);
-  //    LL_GPIO_SetPinSpeed(GPIOA, LL_GPIO_PIN_10, LL_GPIO_SPEED_FREQ_VERY_HIGH);
-  //    LL_GPIO_SetPinOutputType(GPIOA, LL_GPIO_PIN_10, LL_GPIO_OUTPUT_PUSHPULL);
-  //    LL_GPIO_SetPinPull(GPIOA, LL_GPIO_PIN_10, LL_GPIO_PULL_UP);
-
-  GPIO_InitTypeDef  GPIO_InitStruct = {0};
-  if (IS_USART1(handle)) {
-#if defined(USE_USART1)
-    /* UART TX GPIO pin configuration  */
-    GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull      = GPIO_PULLUP;
-    GPIO_InitStruct.Speed     = GPIO_SPEED_HIGH;
-    GPIO_InitStruct.Alternate = USART1_TX_AF;
-
-    HW_GPIO_Init(USART1_TX_GPIO_PORT, USART1_TX_PIN, &GPIO_InitStruct);
-
-    /* UART RX GPIO pin configuration  */
-    if (uart1Context.rxOn == 1) {
-      GPIO_InitStruct.Alternate = USART1_RX_AF;
-    } else {
-      GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-      GPIO_InitStruct.Pull = GPIO_NOPULL;
-    }
-    HW_GPIO_Init(USART1_RX_GPIO_PORT, USART1_RX_PIN, &GPIO_InitStruct);
-#endif
-  } else {
-#if defined(USE_USART2)
-
-    GPIO_InitTypeDef  GPIO_InitStruct = {0};
-    /* UART TX GPIO pin configuration  */
-    GPIO_InitStruct.Pin       = USART2_TX_PIN;
-    GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
-    GPIO_InitStruct.Pull      = GPIO_NOPULL;
-    GPIO_InitStruct.Speed     = GPIO_SPEED_HIGH;
-    GPIO_InitStruct.Alternate = USART2_TX_AF;
-
-    HAL_GPIO_Init(USART2_TX_GPIO_PORT, &GPIO_InitStruct);
-
-    /* UART RX GPIO pin configuration  */
-    GPIO_InitStruct.Pin = USART2_RX_PIN;
-    if (uart2Context.rxOn == 1) {
-      GPIO_InitStruct.Alternate = USART2_RX_AF;
-    } else {
-      GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-      GPIO_InitStruct.Pull = GPIO_NOPULL;
-    }
-
-    HAL_GPIO_Init(USART2_RX_GPIO_PORT, &GPIO_InitStruct);
-#endif
-  }
-}
-
-void HW_UART_IoDeInit(void* handle)
-{
-  GPIO_InitTypeDef GPIO_InitStructure = {0};
-
-  if (IS_USART1(handle)) {
-#if defined(USE_USART1)
-    USART1_TX_GPIO_CLK_ENABLE();
-    USART1_RX_GPIO_CLK_ENABLE();
-
-    GPIO_InitStructure.Mode = GPIO_MODE_ANALOG;
-    GPIO_InitStructure.Pull = GPIO_NOPULL;
-    GPIO_InitStructure.Pin =  USART1_TX_PIN;
-    HAL_GPIO_Init(USART1_TX_GPIO_PORT, &GPIO_InitStructure);
-
-    GPIO_InitStructure.Pin =  USART1_RX_PIN;
-    HAL_GPIO_Init(USART1_RX_GPIO_PORT, &GPIO_InitStructure);
-#endif
-  } else {
-#if defined(USE_USART2)
-    USART2_TX_GPIO_CLK_ENABLE();
-    USART2_RX_GPIO_CLK_ENABLE();
-
-    GPIO_InitStructure.Mode = GPIO_MODE_ANALOG;
-    GPIO_InitStructure.Pull = GPIO_NOPULL;
-
-    GPIO_InitStructure.Pin =  USART2_TX_PIN ;
-    HAL_GPIO_Init(USART2_TX_GPIO_PORT, &GPIO_InitStructure);
-
-    GPIO_InitStructure.Pin =  USART2_RX_PIN ;
-    HAL_GPIO_Init(USART2_RX_GPIO_PORT, &GPIO_InitStructure);
-#endif
-  }
 }
 
 void HW_UART_Init(void* handle, uint32_t br)
@@ -290,7 +188,104 @@ void HW_UART_ReceiveInit(void* handle, bool useInt)
   HW_UART_IoInit(handle);
 }
 
+void HW_UART_IoInit(void* handle)
+{
+  //    LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
+  //
+  //    /* Configure Tx Pin as : Alternate function, High Speed, Push pull, Pull up */
+  //    LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_9, LL_GPIO_MODE_ALTERNATE);
+  //    LL_GPIO_SetAFPin_8_15(GPIOA, LL_GPIO_PIN_9, LL_GPIO_AF_4);
+  //    LL_GPIO_SetPinSpeed(GPIOA, LL_GPIO_PIN_9, LL_GPIO_SPEED_FREQ_VERY_HIGH);
+  //    LL_GPIO_SetPinOutputType(GPIOA, LL_GPIO_PIN_9, LL_GPIO_OUTPUT_PUSHPULL);
+  //    LL_GPIO_SetPinPull(GPIOA, LL_GPIO_PIN_9, LL_GPIO_PULL_UP);
+  //
+  //    /* Configure Rx Pin as : Alternate function, High Speed, Push pull, Pull up */
+  //    LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_10, LL_GPIO_MODE_ALTERNATE);
+  //    LL_GPIO_SetAFPin_8_15(GPIOA, LL_GPIO_PIN_10, LL_GPIO_AF_4);
+  //    LL_GPIO_SetPinSpeed(GPIOA, LL_GPIO_PIN_10, LL_GPIO_SPEED_FREQ_VERY_HIGH);
+  //    LL_GPIO_SetPinOutputType(GPIOA, LL_GPIO_PIN_10, LL_GPIO_OUTPUT_PUSHPULL);
+  //    LL_GPIO_SetPinPull(GPIOA, LL_GPIO_PIN_10, LL_GPIO_PULL_UP);
 
+  GPIO_InitTypeDef  GPIO_InitStruct = {0};
+  if (IS_USART1(handle)) {
+#if defined(USE_USART1)
+    /* UART TX GPIO pin configuration  */
+    GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull      = GPIO_PULLUP;
+    GPIO_InitStruct.Speed     = GPIO_SPEED_HIGH;
+    GPIO_InitStruct.Alternate = USART1_TX_AF;
+
+    HW_GPIO_Init(USART1_TX_GPIO_PORT, USART1_TX_PIN, &GPIO_InitStruct);
+
+    /* UART RX GPIO pin configuration  */
+    if (uart1Context.rxOn == 1) {
+      GPIO_InitStruct.Alternate = USART1_RX_AF;
+    } else {
+      GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+      GPIO_InitStruct.Pull = GPIO_NOPULL;
+    }
+    HW_GPIO_Init(USART1_RX_GPIO_PORT, USART1_RX_PIN, &GPIO_InitStruct);
+#endif
+  } else {
+#if defined(USE_USART2)
+
+    GPIO_InitTypeDef  GPIO_InitStruct = {0};
+    /* UART TX GPIO pin configuration  */
+    GPIO_InitStruct.Pin       = USART2_TX_PIN;
+    GPIO_InitStruct.Mode      = GPIO_MODE_AF_PP;
+    GPIO_InitStruct.Pull      = GPIO_NOPULL;
+    GPIO_InitStruct.Speed     = GPIO_SPEED_HIGH;
+    GPIO_InitStruct.Alternate = USART2_TX_AF;
+
+    HAL_GPIO_Init(USART2_TX_GPIO_PORT, &GPIO_InitStruct);
+
+    /* UART RX GPIO pin configuration  */
+    GPIO_InitStruct.Pin = USART2_RX_PIN;
+    if (uart2Context.rxOn == 1) {
+      GPIO_InitStruct.Alternate = USART2_RX_AF;
+    } else {
+      GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
+      GPIO_InitStruct.Pull = GPIO_NOPULL;
+    }
+
+    HAL_GPIO_Init(USART2_RX_GPIO_PORT, &GPIO_InitStruct);
+#endif
+  }
+}
+
+void HW_UART_IoDeInit(void* handle)
+{
+  GPIO_InitTypeDef GPIO_InitStructure = {0};
+
+  if (IS_USART1(handle)) {
+#if defined(USE_USART1)
+    USART1_TX_GPIO_CLK_ENABLE();
+    USART1_RX_GPIO_CLK_ENABLE();
+
+    GPIO_InitStructure.Mode = GPIO_MODE_ANALOG;
+    GPIO_InitStructure.Pull = GPIO_NOPULL;
+    GPIO_InitStructure.Pin =  USART1_TX_PIN;
+    HAL_GPIO_Init(USART1_TX_GPIO_PORT, &GPIO_InitStructure);
+
+    GPIO_InitStructure.Pin =  USART1_RX_PIN;
+    HAL_GPIO_Init(USART1_RX_GPIO_PORT, &GPIO_InitStructure);
+#endif
+  } else {
+#if defined(USE_USART2)
+    USART2_TX_GPIO_CLK_ENABLE();
+    USART2_RX_GPIO_CLK_ENABLE();
+
+    GPIO_InitStructure.Mode = GPIO_MODE_ANALOG;
+    GPIO_InitStructure.Pull = GPIO_NOPULL;
+
+    GPIO_InitStructure.Pin =  USART2_TX_PIN ;
+    HAL_GPIO_Init(USART2_TX_GPIO_PORT, &GPIO_InitStructure);
+
+    GPIO_InitStructure.Pin =  USART2_RX_PIN ;
+    HAL_GPIO_Init(USART2_RX_GPIO_PORT, &GPIO_InitStructure);
+#endif
+  }
+}
 
 void HW_UART_DeInitReceive(void* handle)
 {

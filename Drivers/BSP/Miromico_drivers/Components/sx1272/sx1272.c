@@ -14,6 +14,7 @@
 #include "hw_spi.h"
 #include "FMLR72_L0.h"
 #include "hw_uart.h"
+#include "util_console.h"
 #include "hw_gpio.h"
 
 /*

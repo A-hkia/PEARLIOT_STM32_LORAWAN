@@ -84,7 +84,7 @@ eResetSrc_t HW_Init()
     HW_LED_Init(LED_GREEN);
     HW_LED_Init(LED_RED);
     //We added TraceInit to be able to initialize the virtual communication ports
-    TraceInit( );
+    //TraceInit( );
 
     McuInitialized = true;
   }

@@ -28,7 +28,8 @@ void USART1_IRQHandler(void)
 //  if (LL_USART_IsActiveFlag_RXNE(USART1) && LL_USART_IsEnabledIT_RXNE(USART1)) {
     // RXNE flag will be cleared by reading of RDR register (done in call)
     // Call function in charge of handling Character reception
-    HW_UART_Rx_Callback(USART1);
+    //HW_UART_Rx_Callback(USART1);
+	HAL_UART_IRQHandler(USART1);
  // } else {
     // Error_Callback();
   //}
@@ -40,7 +41,8 @@ void USART2_IRQHandler(void)
   //if (LL_USART_IsActiveFlag_RXNE(USART2) && LL_USART_IsEnabledIT_RXNE(USART2)) {
     // RXNE flag will be cleared by reading of RDR register (done in call)
     // Call function in charge of handling Character reception
-    HW_UART_Rx_Callback(USART2);
+    //HW_UART_Rx_Callback(USART2);
+	HAL_UART_IRQHandler(USART1);
   //} else {
     // Error_Callback();
   //}
@@ -77,4 +79,14 @@ void EXTI4_15_IRQHandler(void)
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_13);
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_14);
   HAL_GPIO_EXTI_IRQHandler(GPIO_PIN_15);
+}
+
+/**
+  * @brief  This function handles SysTick Handler.
+  * @param  None
+  * @retval None
+  */
+void SysTick_Handler(void)
+{
+  HAL_IncTick();
 }

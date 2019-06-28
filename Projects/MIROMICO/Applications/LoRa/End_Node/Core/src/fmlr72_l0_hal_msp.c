@@ -77,12 +77,12 @@
   * @param Delay: specifies the delay time length, in milliseconds.
   * @retval None
   */
-//void HAL_Delay(uint32_t Delay)
-//{
-//  HW_RTC_DelayMs(Delay);
-//  //DelayMs(Delay);   /* based on RTC */
-//}
-//
+void HAL_Delay(uint32_t Delay)
+{
+  HW_RTC_DelayMs(Delay);
+  //DelayMs(Delay);   /* based on RTC */
+}
+
 //uint32_t HAL_GetTick(void)
 //{
 //	return HW_RTC_GetTimerValue();

@@ -7,6 +7,7 @@ extern "C" {
 #endif
 
 #include <sensors.h>
+#include "util_console.h"
 
 /** maximum number of sensors */
 #define MAX_SENSORS 3
