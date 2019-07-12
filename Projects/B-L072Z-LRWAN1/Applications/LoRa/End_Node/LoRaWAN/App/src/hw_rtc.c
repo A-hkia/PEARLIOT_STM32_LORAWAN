@@ -62,6 +62,7 @@ Maintainer: Miguel Luis and Gregory Cristian
 #include <math.h>
 #include <time.h>
 #include "hw.h"
+#include "hw_rtc.h"
 #include "low_power_manager.h"
 #include "systime.h"
 

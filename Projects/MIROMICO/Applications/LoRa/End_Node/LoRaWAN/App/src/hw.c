@@ -17,7 +17,8 @@
 #include "hw_adc.h"
 #include "FMLR72_L0.h"
 
-
+//DMA_HandleTypeDef hdma_usart1_tx;
+//DMA_HandleTypeDef hdma_usart1_rx;
 
 /** Get CUP reset source */
 static eResetSrc_t HW_GetResetSource();
@@ -48,16 +49,36 @@ __weak void application_hw_ioinit()   {}
 __weak void application_hw_iodeinit() {}
 
 /**
+  * Enable DMA controller clock
+  */
+//static void HW_DMA_Init(void)
+//{
+//  /* DMA controller clock enable */
+//  __HAL_RCC_DMA1_CLK_ENABLE();
+//
+//  /* DMA interrupt init */
+//  /* DMA1_Channel1_IRQn interrupt configuration */
+//  HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 0, 0);
+//  HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
+//  /* DMA1_Channel2_IRQn interrupt configuration */
+//  HAL_NVIC_SetPriority(DMA1_Channel2_3_IRQn, 0, 0);
+//  HAL_NVIC_EnableIRQ(DMA1_Channel2_3_IRQn);
+//
+//}
+/**
   * @brief This function initializes the hardware
   * @param None
   * @retval CPU reset source
   */
+extern UART_HandleTypeDef* UartHandle;
+
 eResetSrc_t HW_Init()
 {
   if (McuInitialized == false) {
 
     Radio.IoInit();
 
+    //HW_DMA_Init();
 #ifdef USE_ADC
     HW_AdcInit();
 #endif
@@ -83,8 +104,8 @@ eResetSrc_t HW_Init()
     application_hw_init();
     HW_LED_Init(LED_GREEN);
     HW_LED_Init(LED_RED);
-    //We added TraceInit to be able to initialize the virtual communication ports
-    //TraceInit( );
+    //Initializes the virtual communication ports
+    TraceInit( );
 
     McuInitialized = true;
   }

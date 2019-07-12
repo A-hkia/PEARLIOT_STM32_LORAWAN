@@ -52,8 +52,8 @@
 #define USE_RTC
 #define USE_I2C1
 
-#define USE_USART1
-#define USE_USART2
+//#define USE_USART1
+//#define USE_USART2
 
 // Usage of SPI is module and application depended.
 // Make sure LoRa SPI is enabled

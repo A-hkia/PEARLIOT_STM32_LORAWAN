@@ -651,8 +651,8 @@ void HW_GetUniqueId(uint8_t *id)
 	uint8_t  status;
 
     //Make sure the Secure Element is ready to accept the command
-	//HAL_Delay(10);
-    //SE_RSC_i2c_Read (pearliot_buffer, MDL_I2C_PROT_RS_SIZE);
+	HAL_Delay(10);
+    SE_RSC_i2c_Read (pearliot_buffer, MDL_I2C_PROT_RS_SIZE);
 
 	pearliot_buffer[0]=TAG_GET_DATA;
 	pearliot_buffer[1]=0x84;

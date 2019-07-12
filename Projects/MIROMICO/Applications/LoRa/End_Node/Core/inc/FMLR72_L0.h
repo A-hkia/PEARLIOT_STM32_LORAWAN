@@ -106,20 +106,20 @@ extern "C" {
 /* --------------------------- USART HW definition -------------------------------*/
 
 /* Definition for USART1 Pins */
-#define USARTX                           USART1
-#define USARTX_CLK_ENABLE()              __USART1_CLK_ENABLE();
-#define USART1_RX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
-#define USART1_TX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
-#define USART1_TX_PIN                   GPIO_PIN_9
-#define USART1_TX_GPIO_PORT             GPIOA
-#define USART1_TX_AF                    GPIO_AF4_USART1
-#define USART1_RX_PIN                   GPIO_PIN_10
-#define USART1_RX_GPIO_PORT             GPIOA
-#define USART1_RX_AF                    GPIO_AF4_USART1
-
-/* Definition for USARTx's NVIC */
-#define USART1_IRQn                     USART1_IRQn
-#define USART1_IRQHandler               USART1_IRQHandler
+//#define USARTX                           USART1
+//#define USARTX_CLK_ENABLE()              __USART1_CLK_ENABLE();
+//#define USART1_RX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
+//#define USART1_TX_GPIO_CLK_ENABLE()      __GPIOA_CLK_ENABLE()
+//#define USART1_TX_PIN                   GPIO_PIN_9
+//#define USART1_TX_GPIO_PORT             GPIOA
+//#define USART1_TX_AF                    GPIO_AF4_USART1
+//#define USART1_RX_PIN                   GPIO_PIN_10
+//#define USART1_RX_GPIO_PORT             GPIOA
+//#define USART1_RX_AF                    GPIO_AF4_USART1
+//
+///* Definition for USARTx's NVIC */
+//#define USART1_IRQn                     USART1_IRQn
+//#define USART1_IRQHandler               USART1_IRQHandler
 
 /* Definition for USART2 Pins */
 #define USART2_RX_GPIO_CLK_ENABLE()     __HAL_RCC_GPIOA_CLK_ENABLE()

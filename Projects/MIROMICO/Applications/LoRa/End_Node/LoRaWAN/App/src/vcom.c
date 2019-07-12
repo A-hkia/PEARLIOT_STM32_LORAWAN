@@ -46,13 +46,15 @@
   
 #include "hw.h"
 #include "vcom.h"
+#include "stm32l0xx_ll_usart.h"
+#include "stm32l0xx_ll_bus.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 /* Private macro -------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 /* Uart Handle */
-static UART_HandleTypeDef UartHandle;
+UART_HandleTypeDef UartHandle;
 
 static void (*TxCpltCallback) (void);
 /* Private function prototypes -----------------------------------------------*/
@@ -78,6 +80,17 @@ void vcom_Init(  void (*TxCb)(void) )
   UartHandle.Init.Parity     = UART_PARITY_NONE;
   UartHandle.Init.HwFlowCtl  = UART_HWCONTROL_NONE;
   UartHandle.Init.Mode       = UART_MODE_TX;
+
+  //Added for MIROMICO board
+//  LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_USART1);
+//  LL_USART_SetTransferDirection(USART1, LL_USART_DIRECTION_TX_RX);
+//
+//  /* 8 data bit, 1 start bit, 1 stop bit, no parity */
+//  LL_USART_ConfigCharacter(USART1, LL_USART_DATAWIDTH_8B, LL_USART_PARITY_NONE, LL_USART_STOPBITS_1);
+//
+//  LL_USART_SetBaudRate(USART1, SystemCoreClock, LL_USART_OVERSAMPLING_16, UartHandle.Init.BaudRate);
+//
+//  LL_USART_Enable(USART1);
 
   if(HAL_UART_Init(&UartHandle) != HAL_OK)
   {

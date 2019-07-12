@@ -23,8 +23,16 @@ elseif(PROJECT STREQUAL MIROMICO)
     set(LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/MIROMICO/Applications/LoRa/AT_Slave/SW4STM32/STM32L071CZYx_FLASH.ld)
     #The same linker script is used for the three applications (AT_Slave/End_Node/PingPong)
 	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/MIROMICO)
+    include(MIROMICO)
+
+#Choice FMLR_61_X_RSS3
+elseif(PROJECT STREQUAL FMLR_61_X_RSS3)
+    # Configure toolchain for FMLR_61_X_RSS3
+    set(LINKER_SCRIPT ${CMAKE_CURRENT_SOURCE_DIR}/FMLR_61_X_RSS3/Applications/LoRa/End_Node/SW4STM32/STM32L071CZYx_FLASH.ld)
+    #The same linker script is used for the three applications (AT_Slave/End_Node/PingPong)
+	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/FMLR_61_X_RSS3)
     include(stm32l071)
-        
+            
 #Choice STM32L053R8-Nucleo
 elseif(PROJECT STREQUAL STM32L053R8-Nucleo)
 	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/STM32L053R8-Nucleo)

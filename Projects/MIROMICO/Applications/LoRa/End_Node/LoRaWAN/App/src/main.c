@@ -152,7 +152,7 @@ int main( void )
 
   /* USER CODE BEGIN 1 */
   //HAL_InitTick(0);
-  HAL_ResumeTick();
+  //HAL_ResumeTick();
   /* USER CODE END 1 */
 
   /*Disable Stand-by mode*/

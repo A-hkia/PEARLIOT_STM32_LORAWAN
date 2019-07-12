@@ -173,7 +173,6 @@ static void MX_USART1_UART_Init(void);
 static void MX_USB_PCD_Init(void);
 static void MX_I2C1_Init(void);
 static uint8_t HW_I2C_Init(void);
-static void HW_I2C_MspInit(void);
 static void MX_RTC_Init(void);
 static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
@@ -222,9 +221,11 @@ int main(void)
   //MX_I2C1_Init();
   HW_I2C_Init();
   MX_SPI1_Init();
+  HW_SPI_Init();
   /* USER CODE BEGIN 2 */
   TraceInit( );
   BSP_sensor_Init( );
+  Radio.IoInit( );
   /*Disable Stand-by mode*/
     LPM_SetOffMode(LPM_APPLI_Id , LPM_Disable );
 
@@ -254,7 +255,6 @@ int main(void)
 	 #endif
 
 	     ENABLE_IRQ();
-
   }
   /* USER CODE END 3 */
 }

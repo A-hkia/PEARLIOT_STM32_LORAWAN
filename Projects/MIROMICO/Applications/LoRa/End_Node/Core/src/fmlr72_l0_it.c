@@ -12,6 +12,10 @@
 #include "hw_rtc.h"
 #include "stm32l0xx_ll_usart.h"
 
+/* External variables --------------------------------------------------------*/
+extern DMA_HandleTypeDef hdma_usart1_tx;
+extern DMA_HandleTypeDef hdma_usart1_rx;
+
 //void Reset_Handler(void) {
 //	while(1);
 //}
@@ -25,28 +29,57 @@
 void USART1_IRQHandler(void)
 {
   // Check RXNE flag value in ISR register
-//  if (LL_USART_IsActiveFlag_RXNE(USART1) && LL_USART_IsEnabledIT_RXNE(USART1)) {
+  if (LL_USART_IsActiveFlag_RXNE(USART1) && LL_USART_IsEnabledIT_RXNE(USART1)) {
     // RXNE flag will be cleared by reading of RDR register (done in call)
-    // Call function in charge of handling Character reception
-    //HW_UART_Rx_Callback(USART1);
-	HAL_UART_IRQHandler(USART1);
- // } else {
-    // Error_Callback();
-  //}
+    //Call function in charge of handling Character reception
+    HW_UART_Rx_Callback(USART1);
+	//HAL_UART_IRQHandler(USART1);
+  } else {
+     Error_Handler();
+  }
 }
 
 void USART2_IRQHandler(void)
 {
   // Check RXNE flag value in ISR register
-  //if (LL_USART_IsActiveFlag_RXNE(USART2) && LL_USART_IsEnabledIT_RXNE(USART2)) {
+  if (LL_USART_IsActiveFlag_RXNE(USART2) && LL_USART_IsEnabledIT_RXNE(USART2)) {
     // RXNE flag will be cleared by reading of RDR register (done in call)
     // Call function in charge of handling Character reception
-    //HW_UART_Rx_Callback(USART2);
-	HAL_UART_IRQHandler(USART1);
-  //} else {
-    // Error_Callback();
-  //}
+    HW_UART_Rx_Callback(USART2);
+	//HAL_UART_IRQHandler(USART1);
+  } else {
+     Error_Handler();
+  }
 }
+
+
+/**
+  * @brief This function handles DMA1 channel1 global interrupt.
+  */
+//void DMA1_Channel1_IRQHandler(void)
+//{
+//  /* USER CODE BEGIN DMA1_Channel1_IRQn 0 */
+//
+//  /* USER CODE END DMA1_Channel1_IRQn 0 */
+//  HAL_DMA_IRQHandler(&hdma_usart1_tx);
+//  /* USER CODE BEGIN DMA1_Channel1_IRQn 1 */
+//
+//  /* USER CODE END DMA1_Channel1_IRQn 1 */
+//}
+
+/**
+  * @brief This function handles DMA1 channel2 global interrupt.
+  */
+//void DMA1_Channel2_IRQHandler(void)
+//{
+//  /* USER CODE BEGIN DMA1_Channel2_IRQn 0 */
+//
+//  /* USER CODE END DMA1_Channel2_IRQn 0 */
+//  HAL_DMA_IRQHandler(&hdma_usart1_rx);
+//  /* USER CODE BEGIN DMA1_Channel2_IRQn 1 */
+//
+//  /* USER CODE END DMA1_Channel2_IRQn 1 */
+//}
 
 void RTC_IRQHandler(void)
 {

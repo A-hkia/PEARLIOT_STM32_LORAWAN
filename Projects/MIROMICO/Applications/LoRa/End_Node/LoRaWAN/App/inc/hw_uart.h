@@ -125,11 +125,11 @@ uint8_t HW_UART_GetNewChar(void* handle);
 void HW_UART_Rx_Callback(void* instance);
 
 /* Exported macros -----------------------------------------------------------*/
-#if 1
-#define PRINTF(...)     HW_UART_Send(HW_UART1_GetHandle(), __VA_ARGS__)
-#else
-#define PRINTF(...)
-#endif
+//#if 1
+//#define PRINTF(...)     HW_UART_Send(HW_UART1_GetHandle(), __VA_ARGS__)
+//#else
+//#define PRINTF(...)
+//#endif
 
 #ifdef DEBUG
 #define PRINTD(...)     PRINTF(__VA_ARGS__)

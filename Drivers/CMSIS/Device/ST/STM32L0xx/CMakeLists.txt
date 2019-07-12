@@ -6,25 +6,12 @@ cmake_minimum_required(VERSION 3.6)
 
 #Specify the project's source files
 file(GLOB ${PROJECT_NAME}_SOURCES
-    "${CMAKE_CURRENT_SOURCE_DIR}/Source/Templates/system_stm32l0xx.c"
-    #"${CMAKE_CURRENT_SOURCE_DIR}/Source/Templates/arm/*.s"
-    #"${CMAKE_CURRENT_SOURCE_DIR}/Source/Templates/arm/startup_stm32l072xx.s"
-    #"${CMAKE_CURRENT_SOURCE_DIR}/Source/Templates/gcc/*.s"   
-    #"${CMAKE_CURRENT_SOURCE_DIR}/Source/Templates/iar/*.s"
-#    "${CMAKE_CURRENT_SOURCE_DIR}/../../../DSP_Lib/Source/BasicMathFunctions/*.c"
-#    "${CMAKE_CURRENT_SOURCE_DIR}/../../../DSP_Lib/Source/CommonTables/*.c"   
-#    "${CMAKE_CURRENT_SOURCE_DIR}/../../../DSP_Lib/Source/ComplexMathFunctions/*.c"   
-#    "${CMAKE_CURRENT_SOURCE_DIR}/../../../DSP_Lib/Source/ControllerFunctions/*.c"   
-#    "${CMAKE_CURRENT_SOURCE_DIR}/../../../DSP_Lib/Source/FastMathFunctions/*.c"   
-#    "${CMAKE_CURRENT_SOURCE_DIR}/../../../DSP_Lib/Source/FilteringFunctions/*.c"   
-#    "${CMAKE_CURRENT_SOURCE_DIR}/../../../DSP_Lib/Source/MatrixFunctions/*.c"   
-#    "${CMAKE_CURRENT_SOURCE_DIR}/../../../DSP_Lib/Source/StatisticsFunctions/*.c"   
-#    "${CMAKE_CURRENT_SOURCE_DIR}/../../../DSP_Lib/Source/SupportFunctions/*.c"   
-#    "${CMAKE_CURRENT_SOURCE_DIR}/../../../DSP_Lib/Source/TransformFunctions/*.c"   
-       
+    "${CMAKE_CURRENT_SOURCE_DIR}/Source/Templates/system_stm32l0xx.c"  
 )
 
 add_library(${PROJECT_NAME} OBJECT EXCLUDE_FROM_ALL ${${PROJECT_NAME}_SOURCES})
+
+#add_dependencies(${PROJECT_NAME} STM32L0xx_HAL_Driver)
 
 #Add all the header files
 target_include_directories( ${PROJECT_NAME} PUBLIC

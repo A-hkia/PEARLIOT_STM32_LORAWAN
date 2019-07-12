@@ -8,12 +8,14 @@
  */
 
 #include "hw.h"
+#include "hw_uart.h"
 #include "stm32l0xx_ll_usart.h"
 #include "stm32l0xx_ll_bus.h"
 #include "hw_gpio.h"
 #include <stdarg.h>
 
 /* Private typedef -----------------------------------------------------------*/
+extern UART_HandleTypeDef* UartHandle;
 /* Private define ------------------------------------------------------------*/
 
 /* Private macro -------------------------------------------------------------*/
@@ -344,6 +346,6 @@ void HW_UART_Rx_Callback(void* instance)
   } else {
     /* force the end of a command in case of overflow so that we can process it */
     c->buffRx[c->rx_idx_free] = '\r';
-    PRINTF("uart_context.buffRx buffer overflow %d" NL);
+    //PRINTF("uart_context.buffRx buffer overflow %d" NL);
   }
 }
