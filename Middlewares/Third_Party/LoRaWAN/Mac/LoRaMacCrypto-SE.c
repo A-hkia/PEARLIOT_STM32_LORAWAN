@@ -467,6 +467,7 @@ static uint16_t MDL_i2c_prot_SendReceiveAppCommand(uint8_t* sendRcvBuffer, uint8
         }
 
         SE_RSC_serial_debug_hex (LOG_DBG, (char*)"[I2C PROT] Response 2: ", sendRcvBuffer, *sendRcvBufferLength);
+        SE_RSC_serial_debug_log (LOG_DBG, (char*)"\n ");
     }
 
     return MDL_I2C_PROT_SE_STATUS_BASE + (uint16_t)status;
@@ -593,7 +594,7 @@ LoRaMacCryptoStatus_t LoRaMacCryptoSecureMessage( uint32_t fCntUp, uint8_t txDr,
 	pearl_iot_buf[1] = 0;
 	pearl_iot_buf[2] = 0;
 	memcpy(&pearl_iot_buf[3],macMsg->Buffer, macMsg->BufSize);
-    length = macMsg->BufSize +1;
+    length = macMsg->BufSize + 3;
     status = MDL_i2c_prot_SendReceiveAppCommand(pearl_iot_buf, &length);
     if (status != SE_API_SUCCESS) {
     	return LORAMAC_CRYPTO_ERROR;
