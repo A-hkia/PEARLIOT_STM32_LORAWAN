@@ -339,7 +339,7 @@ uint32_t HW_RTC_GetTimerElapsedTime( void )
   RTC_TimeTypeDef RTC_TimeStruct;
   RTC_DateTypeDef RTC_DateStruct;
   
-  uint32_t CalendarValue = (uint32_t) HW_RTC_GetCalendarValue(&RTC_DateStruct, &RTC_TimeStruct );
+   uint32_t CalendarValue = (uint32_t) HW_RTC_GetCalendarValue(&RTC_DateStruct, &RTC_TimeStruct );
 
   return( ( uint32_t )( CalendarValue - RtcTimerContext.Rtc_Time ));
 }

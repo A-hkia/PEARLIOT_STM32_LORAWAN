@@ -424,7 +424,8 @@ static uint16_t MDL_i2c_prot_SendReceiveAppCommand(uint8_t* sendRcvBuffer, uint8
             if ( sendRcvBuffer[0] > MDL_I2C_PROT_RS_WTX_FRAME)
             {
                 // the MSB part of the return is the I2C status , the LSB one the SE status
-                SE_RSC_serial_debug_log (LOG_ERR, "[I2C PROT] TRANSPORT PROTOCOL ISSUE");
+                SE_RSC_serial_debug_hex (LOG_ERR, "[I2C PROT] TRANSPORT PROTOCOL ISSUE : ", sendRcvBuffer, 1);
+
                 return MDL_I2C_PROT_SE_STATUS_BASE + (uint16_t)sendRcvBuffer[0];
             }
         }
@@ -576,12 +577,22 @@ LoRaMacCryptoStatus_t LoRaMacCryptoSecureMessage( uint32_t fCntUp, uint8_t txDr,
 	uint8_t length, status;
 	uint8_t pearl_iot_buf [256];
 
-	if( ( macMsg == 0 ) )
+	if( macMsg == NULL )
     {
         return LORAMAC_CRYPTO_ERROR_NPE;
     }
+    // Serialize message
+    if( LoRaMacSerializerData( macMsg ) != LORAMAC_SERIALIZER_SUCCESS )
+    {
+        return LORAMAC_CRYPTO_ERROR_SERIALIZER;
+    }
+    // Remove MIC added by the serializer
+    macMsg->BufSize -= 4;
+
 	pearl_iot_buf[0] = TAG_SECURE_UPLINK;
-	memcpy(&pearl_iot_buf[1],macMsg->Buffer, macMsg->BufSize);
+	pearl_iot_buf[1] = 0;
+	pearl_iot_buf[2] = 0;
+	memcpy(&pearl_iot_buf[3],macMsg->Buffer, macMsg->BufSize);
     length = macMsg->BufSize +1;
     status = MDL_i2c_prot_SendReceiveAppCommand(pearl_iot_buf, &length);
     if (status != SE_API_SUCCESS) {
