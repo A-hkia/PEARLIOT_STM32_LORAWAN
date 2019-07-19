@@ -36,6 +36,7 @@
 
 #include "utilities.h"
 #include "secure-element.h"
+#include "util_console.h"
 
 #include "LoRaMacParser.h"
 #include "LoRaMacSerializer.h"
@@ -1343,6 +1344,7 @@ LoRaMacCryptoStatus_t LoRaMacCryptoSecureMessage( uint32_t fCntUp, uint8_t txDr,
 {
     LoRaMacCryptoStatus_t retval = LORAMAC_CRYPTO_ERROR;
     KeyIdentifier_t FRMPayloadDecryptionKeyID = APP_S_KEY;
+	PRINTF("F");
 
     if( macMsg == NULL )
     {

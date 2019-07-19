@@ -74,7 +74,7 @@ typedef enum
 #define VERBOSE_LEVEL 0
 
 #if ( VERBOSE_LEVEL < VERBOSE_LEVEL_2)
-#define DBG_TRACE_MSG_QUEUE_SIZE 256
+#define DBG_TRACE_MSG_QUEUE_SIZE 1024
 #else
 #define DBG_TRACE_MSG_QUEUE_SIZE 512
 #endif

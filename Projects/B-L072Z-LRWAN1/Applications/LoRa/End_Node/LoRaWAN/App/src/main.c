@@ -69,7 +69,7 @@
 /*!
  * Defines the application data transmission duty cycle. 5s, value in [ms].
  */
-#define APP_TX_DUTYCYCLE                            2000
+#define APP_TX_DUTYCYCLE                            1000
 /*!
  * LoRaWAN Adaptive Data Rate
  * @note Please note that when ADR is enabled the end-device should be static
@@ -154,7 +154,7 @@ static TimerEvent_t TxTimer;
 /*!
  * Timer to handle the application Tx Led to toggle
  */
-static TimerEvent_t TxLedTimer;
+TimerEvent_t TxLedTimer;
 static void OnTimerLedEvent( void );
 #endif
 /* !
@@ -235,7 +235,7 @@ static void Send( void )
   uint16_t humidity = 0;
   uint8_t batteryLevel;
   sensor_t sensor_data;
-  
+  PRINTF("A");
   if ( LORA_JoinStatus () != LORA_SET)
   {
     /*Not joined, try again later*/
@@ -337,6 +337,7 @@ static void Send( void )
   AppData.Buff[i++] = altitudeGps & 0xFF;
 #endif  /* REGION_XX915 */
 #endif  /* CAYENNE_LPP */
+  memset(&AppData.Buff[0],0xAA,i);
   AppData.BuffSize = i;
   
   LORA_send( &AppData, LORAWAN_DEFAULT_CONFIRM_MSG_STATE);

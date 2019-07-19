@@ -98,7 +98,7 @@ static LoRaMainCallback_t LoRaMainCallbacks = {
 static uint8_t AppLedStateOn = RESET;
 
 // LoRaWAN packet timer
-static TimerEvent_t TxTimer;
+TimerEvent_t TxTimer;
 
 /* !
  * Initializes the Lora Parameters
