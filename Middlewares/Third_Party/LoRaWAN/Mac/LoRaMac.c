@@ -2092,7 +2092,7 @@ LoRaMacStatus_t Send( LoRaMacHeader_t* macHdr, uint8_t fPort, void* fBuffer, uin
     int8_t txPower = MacCtx.NvmCtx->MacParams.ChannelsTxPower;
     uint32_t adrAckCounter = MacCtx.NvmCtx->AdrAckCounter;
     CalcNextAdrParams_t adrNext;
-    PRINTF("C");
+    //PRINTF("C");
     // Check if we are joined
     if( MacCtx.NvmCtx->NetworkActivation == ACTIVATION_TYPE_NONE )
     {
@@ -2217,7 +2217,7 @@ static LoRaMacStatus_t ScheduleTx( bool allowDelayedTx )
     TimerTime_t dutyCycleTimeOff = 0;
     NextChanParams_t nextChan;
     size_t macCmdsSize = 0;
-    PRINTF("D");
+    //PRINTF("D");
     // Update back-off
     CalculateBackOff( MacCtx.NvmCtx->LastTxChannel );
 
@@ -2255,7 +2255,7 @@ static LoRaMacStatus_t ScheduleTx( bool allowDelayedTx )
         }
         else
         {// State where the MAC cannot send a frame
-        	PRINTF("*");
+        	//PRINTF("*");
             return status;
         }
     }
@@ -2308,7 +2308,7 @@ static LoRaMacStatus_t SecureFrame( uint8_t txDr, uint8_t txCh )
 {
     LoRaMacCryptoStatus_t macCryptoStatus = LORAMAC_CRYPTO_ERROR;
     uint32_t fCntUp = 0;
-    PRINTF("E");
+    //PRINTF("E");
     switch( MacCtx.TxMsg.Type )
     {
         case LORAMAC_MSG_TYPE_JOIN_REQUEST:
@@ -4243,14 +4243,14 @@ LoRaMacStatus_t LoRaMacMcpsRequest( McpsReq_t* mcpsRequest )
     uint16_t fBufferSize;
     int8_t datarate = DR_0;
     bool readyToSend = false;
-    PRINTF("B");
+    //PRINTF("B");
     if( mcpsRequest == NULL )
     {
         return LORAMAC_STATUS_PARAMETER_INVALID;
     }
     if( MacCtx.MacState != LORAMAC_IDLE )
     {
-        PRINTF("$");
+        //PRINTF("$");
         return LORAMAC_STATUS_BUSY;
     }
 

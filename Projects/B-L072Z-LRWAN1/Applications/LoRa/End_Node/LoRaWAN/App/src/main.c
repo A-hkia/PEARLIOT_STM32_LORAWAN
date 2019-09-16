@@ -235,7 +235,7 @@ static void Send( void )
   uint16_t humidity = 0;
   uint8_t batteryLevel;
   sensor_t sensor_data;
-  PRINTF("A");
+  //PRINTF("A");
   if ( LORA_JoinStatus () != LORA_SET)
   {
     /*Not joined, try again later*/

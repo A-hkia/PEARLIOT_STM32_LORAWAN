@@ -181,7 +181,7 @@ static void MX_SPI1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+static uint8_t I2C_test_buffer[32];
 /* USER CODE END 0 */
 
 /**
@@ -223,6 +223,7 @@ int main(void)
   MX_SPI1_Init();
   HW_SPI_Init();
   /* USER CODE BEGIN 2 */
+  SE_RSC_i2c_Read (I2C_test_buffer, 0x03);
   TraceInit( );
   BSP_sensor_Init( );
   Radio.IoInit( );
@@ -797,6 +798,8 @@ static void Send( void )
   uint16_t humidity = 0;
   uint8_t batteryLevel;
   sensor_t sensor_data;
+  PRINTF("A");
+
 
   if ( LORA_JoinStatus () != LORA_SET)
   {
